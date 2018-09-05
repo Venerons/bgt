@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Boardgame Trove</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<a id="header-back" style="display: none; margin-left: 1rem">Back</a>
+			<h1 id="header-title" style="flex: 1; text-align: center; margin: 0">Boardgame Trove</h1>
+			<a id="header-info" style="margin-right: 1rem">Info</a>
+		</header>
+
+		<div id="home" class="page">
+			<div class="card">
+				<input id="home-search" type="search" placeholder="Search..." class="input" style="margin-bottom: 1rem; width: 100%">
+				<ul class="list">
+					<li class="list-group">Generic Tools</li>
+					<li class="list-item" data-page="generic-dice">Dice Simulator</li>
+					<li class="list-item" data-page="character-name">Random Character Name</li>
+					<li class="list-item" data-page="page1">Random Quest</li>
+					<li class="list-item" data-page="page1">Treasure Generator</li>
+					<li class="list-group">Dungeons &amp; Dragons 5th Edition</li>
+					<li class="list-item" data-page="dnd5-px">Encounter PX</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- DICE SIMULATOR -->
+		<div id="generic-dice" class="page" style="display: none">
+			<div id="generic-dice-classic" class="card">
+				<div style="margin-top: 1rem">
+					<button data-dice="4" class="button">1d4</button>
+					<button data-dice="6" class="button">1d6</button>
+					<button data-dice="8" class="button">1d8</button>
+					<button data-dice="10" class="button">1d10</button>
+					<button data-dice="12" class="button">1d12</button>
+					<button data-dice="20" class="button">1d20</button>
+					<button data-dice="100" class="button">1d100</button>
+				</div>
+				<p id="generic-dice-classic-output" style="text-align: center; font-size: 3rem">-</p>
+			</div>
+			<div id="generic-dice-custom" class="card">
+				<input id="generic-dice-custom-expression" type="text" placeholder="3d6+2" class="input" style="width: 100%; margin: 1rem 0">
+				<button id="generic-dice-custom-execute" class="button" style="width: 100%">Execute</button>
+				<p id="generic-dice-custom-output" style="text-align: center; font-size: 3rem">-</p>
+			</div>
+		</div>
+
+		<!-- RANDOM CHARACTER NAME -->
+		<div id="character-name" class="page" style="display: none">
+			<div class="card">
+				<div>
+					<label for="character-name-nameset">Name Set</label>
+					<select id="character-name-nameset">
+						<optgroup label="Classic">
+							<option value="classic-human">Human</option>
+							<option value="classic-gnome">Gnome</option>
+							<option value="classic-dwarf">Dwarf</option>
+							<option value="classic-elf">Elf</option>
+							<option value="classic-halfling">Halfling</option>
+						</optgroup>
+						<optgroup label="Dragonlance">
+						</optgroup>
+						<optgroup label="Lord of the Rings">
+						</optgroup>
+						<optgroup label="7th Sea">
+						</optgroup>
+						<optgroup label="Songs of the Winterflame">
+							<option value="sotw-human">Human</option>
+							<option value="sotw-gnome">Gnome</option>
+							<option value="sotw-dwarf">Dwarf</option>
+							<option value="sotw-elf">Elf</option>
+							<option value="sotw-woodelf">Wood Elf</option>
+							<option value="sotw-irve">Irve</option>
+							<option value="sotw-goblin">Goblin</option>
+						</optgroup>
+					</select>
+				</div>
+				<div>
+					<label for="character-name-gender">Gender</label>
+					<select id="character-name-gender">
+						<option value="m">Male</option>
+						<option value="f">Female</option>
+					</select>
+				</div>
+				<button id="character-name-button" class="button">Generate</button>
+			</div>
+			<div class="card">
+				<p id="character-name-output" style="text-align: center; font-size: 3rem">-</p>
+			</div>
+		</div>
+
+		<div id="dnd5-px" class="page" style="display: none">
+			<div class="card">
+				<div>
+					<label>Characters Level</label>
+					<select id="dnd5-px-chlevel1">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+					</select>
+					<select id="dnd5-px-chlevel2">
+						<option value="0">-</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+					</select>
+					<select id="dnd5-px-chlevel3">
+						<option value="0">-</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+					</select>
+					<select id="dnd5-px-chlevel4">
+						<option value="0">-</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+					</select>
+					<select id="dnd5-px-chlevel5">
+						<option value="0">-</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+					</select>
+					<select id="dnd5-px-chlevel6">
+						<option value="0">-</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+					</select>
+				</div>
+			</div>
+			<div class="card">
+				<p id="dnd5-px-output" style="text-align: center; font-size: 3rem">-</p>
+			</div>
+		</div>
+
+		<div id="page1" class="page" style="display: none">
+			<div class="card">
+				<p>Example page</p>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.slim.min.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
