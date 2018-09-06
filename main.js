@@ -143,12 +143,45 @@ $('#character-name-button').on('click', function () {
 // D&D 5 Encounter PX
 
 $('#dnd5-px-chlevel1, #dnd5-px-chlevel2, #dnd5-px-chlevel3, #dnd5-px-chlevel4, #dnd5-px-chlevel5, #dnd5-px-chlevel6').on('change', function () {
+	var thresholds = {
+		"1": [25, 50, 75, 100],
+		"2": [50, 100, 150, 200],
+		"3": [75, 150, 225, 400],
+		"4": [125, 250, 375, 500],
+		"5": [250, 500, 750, 1100],
+		"6": [300, 600, 900, 1400],
+		"7": [350, 750, 1100, 1700],
+		"8": [450, 900, 1400, 2100],
+		"9": [550, 1100, 1600, 2400],
+		"10": [600, 1200, 1900, 2800],
+		"11": [800, 1600, 2400, 3600],
+		"12": [1000, 2000, 3000, 4500],
+		"13": [1100, 2200, 3400, 5100],
+		"14": [1250, 2500, 3800, 5700],
+		"15": [1400, 2800, 4300, 6400],
+		"16": [1600, 3200, 4800, 7200],
+		"17": [2000, 3900, 5900, 8800],
+		"18": [2100, 4200, 6300, 9500],
+		"19": [2400, 4900, 7300, 10900],
+		"20": [2800, 5700, 8500, 12700]
+	};
 	var chlevel1 = parseInt($('#dnd5-px-chlevel1').val(), 10),
 		chlevel2 = parseInt($('#dnd5-px-chlevel2').val(), 10),
 		chlevel3 = parseInt($('#dnd5-px-chlevel3').val(), 10),
 		chlevel4 = parseInt($('#dnd5-px-chlevel4').val(), 10),
 		chlevel5 = parseInt($('#dnd5-px-chlevel5').val(), 10),
-		chlevel6 = parseInt($('#dnd5-px-chlevel6').val(), 10);
-	// TODO
-	$('#dnd5-px-output').text('Easy: PX - Medium: PX - Hard: PX - Lethal: PX');
+		chlevel6 = parseInt($('#dnd5-px-chlevel6').val(), 10),
+		easy = 0,
+		medium = 0,
+		hard = 0,
+		lethal = 0;
+	[chlevel1, chlevel2, chlevel3, chlevel4, chlevel5, chlevel6].forEach(function (level) {
+		if (level > 0) {
+			easy += thresholds[level.toString()][0];
+			medium += thresholds[level.toString()][1];
+			hard += thresholds[level.toString()][2];
+			lethal += thresholds[level.toString()][3];
+		}
+	});
+	$('#dnd5-px-output').text('Easy: ' + easy + ' PX - Medium: ' + medium + ' PX - Hard: ' + hard + ' PX - Lethal: ' + lethal + ' PX');
 });
