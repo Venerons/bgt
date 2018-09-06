@@ -140,9 +140,9 @@ $('#character-name-button').on('click', function () {
 	}
 });
 
-// D&D 5 Encounter PX
+// D&D 5 Combat Encounter XP Thresholds
 
-$('#dnd5-px-chlevel1, #dnd5-px-chlevel2, #dnd5-px-chlevel3, #dnd5-px-chlevel4, #dnd5-px-chlevel5, #dnd5-px-chlevel6').on('change', function () {
+$('#dnd5-xp-chlevel1, #dnd5-xp-chlevel2, #dnd5-xp-chlevel3, #dnd5-xp-chlevel4, #dnd5-xp-chlevel5, #dnd5-xp-chlevel6').on('change', function () {
 	var thresholds = {
 		"1": [25, 50, 75, 100],
 		"2": [50, 100, 150, 200],
@@ -165,12 +165,12 @@ $('#dnd5-px-chlevel1, #dnd5-px-chlevel2, #dnd5-px-chlevel3, #dnd5-px-chlevel4, #
 		"19": [2400, 4900, 7300, 10900],
 		"20": [2800, 5700, 8500, 12700]
 	};
-	var chlevel1 = parseInt($('#dnd5-px-chlevel1').val(), 10),
-		chlevel2 = parseInt($('#dnd5-px-chlevel2').val(), 10),
-		chlevel3 = parseInt($('#dnd5-px-chlevel3').val(), 10),
-		chlevel4 = parseInt($('#dnd5-px-chlevel4').val(), 10),
-		chlevel5 = parseInt($('#dnd5-px-chlevel5').val(), 10),
-		chlevel6 = parseInt($('#dnd5-px-chlevel6').val(), 10),
+	var chlevel1 = parseInt($('#dnd5-xp-chlevel1').val(), 10),
+		chlevel2 = parseInt($('#dnd5-xp-chlevel2').val(), 10),
+		chlevel3 = parseInt($('#dnd5-xp-chlevel3').val(), 10),
+		chlevel4 = parseInt($('#dnd5-xp-chlevel4').val(), 10),
+		chlevel5 = parseInt($('#dnd5-xp-chlevel5').val(), 10),
+		chlevel6 = parseInt($('#dnd5-xp-chlevel6').val(), 10),
 		easy = 0,
 		medium = 0,
 		hard = 0,
@@ -183,5 +183,5 @@ $('#dnd5-px-chlevel1, #dnd5-px-chlevel2, #dnd5-px-chlevel3, #dnd5-px-chlevel4, #
 			lethal += thresholds[level.toString()][3];
 		}
 	});
-	$('#dnd5-px-output').text('Easy: ' + easy + ' PX - Medium: ' + medium + ' PX - Hard: ' + hard + ' PX - Lethal: ' + lethal + ' PX');
+	$('#dnd5-xp-output').text('Easy: ' + easy + ' XP - Medium: ' + medium + ' XP - Hard: ' + hard + ' XP - Lethal: ' + lethal + ' XP');
 });
