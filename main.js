@@ -142,6 +142,10 @@ $('#character-name-button').on('click', function () {
 
 // D&D 5 Combat Encounter XP Thresholds
 
+for (var i = 0; i <= 20; ++i) {
+	$('#dnd5-xp-chlevel1, #dnd5-xp-chlevel2, #dnd5-xp-chlevel3, #dnd5-xp-chlevel4, #dnd5-xp-chlevel5, #dnd5-xp-chlevel6').append('<option value="' + i + '">' + (i === 0 ? '-' : i) + '</option>');
+}
+
 $('#dnd5-xp-chlevel1, #dnd5-xp-chlevel2, #dnd5-xp-chlevel3, #dnd5-xp-chlevel4, #dnd5-xp-chlevel5, #dnd5-xp-chlevel6').on('change', function () {
 	var thresholds = {
 		"1": [25, 50, 75, 100],
@@ -184,4 +188,41 @@ $('#dnd5-xp-chlevel1, #dnd5-xp-chlevel2, #dnd5-xp-chlevel3, #dnd5-xp-chlevel4, #
 		}
 	});
 	$('#dnd5-xp-output').text('Easy: ' + easy + ' XP - Medium: ' + medium + ' XP - Hard: ' + hard + ' XP - Lethal: ' + lethal + ' XP');
+});
+
+// D&D 5 Combat Encounter XP Budget
+
+
+dnd5-encounter-m1-number
+dnd5-encounter-m1-type
+
+var $m_selects = $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-encounter-m3-type, #dnd5-encounter-m4-type, #dnd5-encounter-m5-type');
+[
+	{ label: 'None', value: 0 },
+	{ label: 'Challenge 0 (0-10 XP)', value: 10, options: [] },
+	{ label: 'Challenge 1/8 (25 XP)', value: 25, options: [] },
+	{ label: 'Challenge 1/4 (50 XP)', value: 50, options: [] },
+	{ label: 'Challenge 1/2 (100 XP)', value: 100, options: [] },
+	{ label: 'Challenge 1 (200 XP)', value: 200, options: [] }
+].forEach(function (item) {
+	if (!item.options) {
+		$m_selects.append('<option value="' + item.value + '">' + item.label + '</option>');
+	} else {
+		var $optgroup = $('<optgroup label="' + item.label + '"></optgroup>');
+		item.options.forEach(function (option) {
+			$m_selects.append('<option value="' + item.value + '">' + option.label + '</option>');
+		});
+		$m_selects.append($optgroup);
+	}
+});
+
+$('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-encounter-m3-type, #dnd5-encounter-m4-type, #dnd5-encounter-m5-type').on('change', function () {
+	var budget = parseInt($('#dnd5-encounter-budget').val(), 10),
+		output = 0;
+	['m1', 'm2', 'm3', 'm4', 'm5'].forEach(function (item) {
+		var number = parseInt($('#dnd5-encounter-' + item + '-number').val(), 10),
+			type = parseInt($('#dnd5-encounter-' + item + '-type').val(), 10);
+		output += number * type;
+	});
+	$('#dnd5-encounter-output').text(output).css({ color: output > budget ? 'crimson' : '' });
 });
