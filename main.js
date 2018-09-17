@@ -192,10 +192,6 @@ $('#dnd5-xp-chlevel1, #dnd5-xp-chlevel2, #dnd5-xp-chlevel3, #dnd5-xp-chlevel4, #
 
 // D&D 5 Combat Encounter XP Budget
 
-
-dnd5-encounter-m1-number
-dnd5-encounter-m1-type
-
 var $m_selects = $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-encounter-m3-type, #dnd5-encounter-m4-type, #dnd5-encounter-m5-type');
 [
 	{ label: 'None', value: 0 },
@@ -210,7 +206,7 @@ var $m_selects = $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-enco
 	} else {
 		var $optgroup = $('<optgroup label="' + item.label + '"></optgroup>');
 		item.options.forEach(function (option) {
-			$m_selects.append('<option value="' + item.value + '">' + option.label + '</option>');
+			$m_selects.append('<option value="' + item.value + '">' + option + '</option>');
 		});
 		$m_selects.append($optgroup);
 	}
