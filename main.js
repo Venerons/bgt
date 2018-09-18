@@ -35,20 +35,22 @@ var goToPage = function (pageID) {
 $('#header-back').on('click', function () {
 	goToPage('home');
 });
+$('#header-info').on('click', function () {
+	goToPage('info');
+});
 $('#home-search').on('input', function () {
 	var input = $(this).val().trim().toLowerCase();
-	$('.list-item').each(function () {
-		if (input !== '' && $(this).text().toLowerCase().indexOf(input) === -1) {
-			$(this).hide();
+	$('#home-list').find('.list-item').each(function () {
+		var $this = $(this);
+		if (input !== '' && $this.text().toLowerCase().indexOf(input) === -1) {
+			$this.hide();
 		} else {
-			$(this).show();
+			$this.show();
 		}
 	});
 });
-$('.list-item').each(function () {
-	$(this).on('click', function () {
-		goToPage($(this).data('page'));
-	});
+$('#home-list').on('click', '.list-item', function () {
+	goToPage($(this).data('page'));
 });
 
 // DICE SIMULATOR
