@@ -213,13 +213,58 @@ var $m_selects = $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-enco
 });
 
 $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-encounter-m3-type, #dnd5-encounter-m4-type, #dnd5-encounter-m5-type').on('change', function () {
-	var characters = parseInt($('#dnd5-encounter-characters').val(), 10),
+	var characters = $('#dnd5-encounter-characters').val(),
 		budget = parseInt($('#dnd5-encounter-budget').val(), 10),
-		output = 0;
+		output_number
+		output_xp = 0;
 	['m1', 'm2', 'm3', 'm4', 'm5'].forEach(function (item) {
 		var number = parseInt($('#dnd5-encounter-' + item + '-number').val(), 10),
 			type = parseInt($('#dnd5-encounter-' + item + '-type').val(), 10);
-		output += number * type;
+		output_number += number;
+		output_xp += number * type;
 	});
-	$('#dnd5-encounter-output').text(output).css({ color: output > budget ? 'crimson' : '' });
+	var multiplier = 1;
+	if (characters === '1-2') {
+		if (output_number === 1) {
+			multiplier = 1.5;
+		} else if (output_number === 2) {
+			multiplier = 2;
+		} else if (output_number >= 3 && output_number <= 6) {
+			multiplier = 2.5;
+		} else if (output_number >= 7 && output_number <= 10) {
+			multiplier = 3;
+		} else if (output_number >= 11) {
+			multiplier = 4;
+		}
+	} else if (characters === '3-4-5') {
+		if (output_number === 1) {
+			multiplier = 1;
+		} else if (output_number === 2) {
+			multiplier = 1.5;
+		} else if (output_number >= 3 && output_number <= 6) {
+			multiplier = 2;
+		} else if (output_number >= 7 && output_number <= 10) {
+			multiplier = 2.5;
+		} else if (output_number >= 11 && output_number <= 14) {
+			multiplier = 3;
+		} else if (output_number >= 15) {
+			multiplier = 4;
+		}
+	} else if (characters === '6+') {
+		if (output_number === 1) {
+			multiplier = 0.5;
+		} else if (output_number === 2) {
+			multiplier = 1;
+		} else if (output_number >= 3 && output_number <= 6) {
+			multiplier = 1.5;
+		} else if (output_number >= 7 && output_number <= 10) {
+			multiplier = 2;
+		} else if (output_number >= 11 && output_number <= 14) {
+			multiplier = 2.5;
+		} else if (output_number >= 15) {
+			multiplier = 3;
+		}
+	}
+	var output_xp_multiplier = output_xp * multiplier;
+	$('#dnd5-encounter-output').text(output_xp + 'XP' + (output_xp_multiplier !== output_xp ? ' (' + output_xp_multiplier + ' XP after multiplier)' : '')).css({ color: output_xp_multiplier > budget ? 'crimson' : '' });
 });
