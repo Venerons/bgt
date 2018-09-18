@@ -195,11 +195,11 @@ $('#dnd5-xp-chlevel1, #dnd5-xp-chlevel2, #dnd5-xp-chlevel3, #dnd5-xp-chlevel4, #
 var $m_selects = $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-encounter-m3-type, #dnd5-encounter-m4-type, #dnd5-encounter-m5-type');
 [
 	{ label: 'None', value: 0 },
-	{ label: 'Challenge 0 (0-10 XP)', value: 10, options: [] },
-	{ label: 'Challenge 1/8 (25 XP)', value: 25, options: [] },
-	{ label: 'Challenge 1/4 (50 XP)', value: 50, options: [] },
-	{ label: 'Challenge 1/2 (100 XP)', value: 100, options: [] },
-	{ label: 'Challenge 1 (200 XP)', value: 200, options: [] }
+	{ label: 'Challenge 0 (0-10 XP)', value: 10, options: ['Awakened Shrub', 'Baboon', 'Badger', 'Bat', 'Cat', 'Commoner', 'Crab', 'Crawling Claw', 'Deer', 'Eagle', 'Frog', 'Giant Fire Beetle', 'Goat', 'Hawk', 'Homunculus', 'Hyena', 'Jackal', 'Lemure', 'Lizard', 'Myconid Sprout', 'Octopus', 'Owl', 'Quipper', 'Rat', 'Raven', 'Scorpion', 'Sea Horse', 'Shrieker', 'Spider', 'Vulture', 'Weasel'] },
+	{ label: 'Challenge 1/8 (25 XP)', value: 25, options: ['Blood Hawk', 'Camel', 'Cultist', 'Flumph', 'Flying Snake', 'Giant Crab', 'Giant Rat', 'Giant Weasel', 'Guard', 'Kobold', 'Manes', 'Mastiff', 'Merfolk', 'Monodrone', 'Mule', 'Noble', 'Poisonous Snake', 'Pony', 'Slaad Tadpole', 'Stirge', 'Tribal Warrior', 'Twig Blight'] },
+	{ label: 'Challenge 1/4 (50 XP)', value: 50, options: ['Aarakocra', 'Acolyte', 'Axe Beak', 'Bling Dog', 'Boar', 'Bullywug', 'Constrictor Snake', 'Draft Horse', 'Dretch', 'Drow', 'Duodrone', 'Elk', 'Flying Sword', 'Giant Badger', 'Giant Bat', 'Giant Centipede', 'Giant Frog', 'Giant Lizard', 'Giant Owl', 'Giant Poisonous Snake', 'Giant Wolf Spider', 'Goblin', 'Grimlock', 'Kenku', 'Kuo-Toa', 'Mud Mephit', 'Needle Blight', 'Panther', 'Pixie', 'Pseudodragon', 'Pteranodon', 'Riding Horse', 'Skeleton', 'Smoke Mephit', 'Sprite', 'Steam Mephit', 'Swarm of Bats', 'Swarm of Rats', 'Swarm of Ravens', 'Troglodyte', 'Violet Fungus', 'Winged Kobold', 'Wolf', 'Zombie'] },
+	{ label: 'Challenge 1/2 (100 XP)', value: 100, options: ['Ape', 'Black Bear', 'Cockatrice', 'Crocodile', 'Darkmantle', 'Deep Gnome', 'Dust Mephit', 'Gas Spore', 'Giant Goat', 'Giant Sea Horse', 'Giant Wasp', 'Gnoll', 'Gray Ooze', 'Hobgoblin', 'Ice Mephit', 'Jackalwere', 'Lizardfolk', 'Magma Mephit', 'Magmin', 'Myconid Adult', 'Orc', 'Piercer', 'Reef Shark', 'Rust Monster', 'Sahuagin', 'Satyr', 'Scout', 'Shadow', 'Swarm of Insects', 'Thug', 'Tridrone', 'Vine Blight', 'Warhorse', 'Warhorse Skeleton', 'Worg'] },
+	{ label: 'Challenge 1 (200 XP)', value: 200, options: ['Animated Armor', 'Brass Dragon Wyrmling', 'Brown Bear', 'Bugbear', 'Copper Dragon Wyrmling', 'Death Dog', 'Dire Wolf', 'Dryad', 'Duergar', 'Faerie Dragon (Young)', 'Fire Snake', 'Ghoul', 'Giant Eagle', 'Giant Hyena', 'Giant Octopus', 'Giant Spider', 'Giant Toad', 'Giant Vulture', 'Goblin Boss', 'Half-Ogre', 'Harpy', 'Hippogriff', 'Imp', 'Huo-Toa Whip', 'Lion', 'Quadrone', 'Quaggoth Spore Sevant', 'Quasit', 'Scarecrow', 'Specter', 'Spy', 'Swarm of Quippers', 'Thri-Kreen', 'Tiger', 'Yuan-Ti Pureblood'] }
 ].forEach(function (item) {
 	if (!item.options) {
 		$m_selects.append('<option value="' + item.value + '">' + item.label + '</option>');
@@ -213,7 +213,8 @@ var $m_selects = $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-enco
 });
 
 $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-encounter-m3-type, #dnd5-encounter-m4-type, #dnd5-encounter-m5-type').on('change', function () {
-	var budget = parseInt($('#dnd5-encounter-budget').val(), 10),
+	var characters = parseInt($('#dnd5-encounter-characters').val(), 10),
+		budget = parseInt($('#dnd5-encounter-budget').val(), 10),
 		output = 0;
 	['m1', 'm2', 'm3', 'm4', 'm5'].forEach(function (item) {
 		var number = parseInt($('#dnd5-encounter-' + item + '-number').val(), 10),
