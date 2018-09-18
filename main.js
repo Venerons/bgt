@@ -206,7 +206,7 @@ var $m_selects = $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-enco
 	} else {
 		var $optgroup = $('<optgroup label="' + item.label + '"></optgroup>');
 		item.options.forEach(function (option) {
-			$m_selects.append('<option value="' + item.value + '">' + option + '</option>');
+			$optgroup.append('<option value="' + item.value + '">' + option + '</option>');
 		});
 		$m_selects.append($optgroup);
 	}
@@ -220,8 +220,10 @@ $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-encounter-m3-type, #d
 	['m1', 'm2', 'm3', 'm4', 'm5'].forEach(function (item) {
 		var number = parseInt($('#dnd5-encounter-' + item + '-number').val(), 10),
 			type = parseInt($('#dnd5-encounter-' + item + '-type').val(), 10);
-		output_number += number;
-		output_xp += number * type;
+		if (type !== 0) {
+			output_number += number;
+			output_xp += number * type;
+		}
 	});
 	var multiplier = 1;
 	if (characters === '1-2') {
@@ -266,5 +268,5 @@ $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-encounter-m3-type, #d
 		}
 	}
 	var output_xp_multiplier = output_xp * multiplier;
-	$('#dnd5-encounter-output').text(output_xp + 'XP' + (output_xp_multiplier !== output_xp ? ' (' + output_xp_multiplier + ' XP after multiplier)' : '')).css({ color: output_xp_multiplier > budget ? 'crimson' : '' });
+	$('#dnd5-encounter-output').text(output_xp + ' XP' + (output_xp_multiplier !== output_xp ? ' (' + output_xp_multiplier + ' XP after multiplier)' : '')).css({ color: output_xp_multiplier > budget ? 'crimson' : '' });
 });
