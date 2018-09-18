@@ -96,33 +96,45 @@ $('#generic-dice-custom-execute').on('click', function () {
 // RANDOM CHARACTER NAME
 
 var RCN = {
-	"sotw-human": {
-		"m": ["Tashbaan"],
-		"f": ["Anna", "Elsa", "Laura", "Vanessa", "Sandra", "Francesca", "Eleonora", "Anastasia", "Angela", "Diana"]
+	'sotw-human': {
+		m: [],
+		f: []
 	},
-	"sotw-gnome": {
-		"m": [],
-		"f": ["Zoe", "Leah", "Jade", "Mara", "Dara", "Amalia", "Kate", "Corinne", "Talullah"]
+	'sotw-elf': {
+		m: [],
+		f: []
 	},
-	"sotw-dwarf": {
-		"m": [],
-		"f": ["Hilde", "Hilda"]
+	'sotw-irve': {
+		m: [],
+		f: []
 	},
-	"sotw-elf": {
-		"m": [],
-		"f": ["Nissa", "Angelina", "Eva", "Masha", "Irina", "Katya", "Liliya"]
+	'sotw-dwarf': {
+		m: [],
+		f: []
 	},
-	"sotw-woodelf": {
-		"m": [],
-		"f": ["Lesya", "Maha", "Anfisa", "Esfir", "Manya", "Agafya", "Alyona"]
+	'sotw-goblin': {
+		m: [],
+		f: []
 	},
-	"sotw-irve": {
-		"m": [],
-		"f": ["Sila", "Siri", "Gala", "Inna", "Krina", "Luba"]
+	'sotw-orc': {
+		m: [],
+		f: []
 	},
-	"sotw-goblin": {
-		"m": ["Lugdash"],
-		"f": []
+	'sotw-minotaur': {
+		m: [],
+		f: []
+	},
+	'sotw-centaur': {
+		m: [],
+		f: []
+	},
+	'sotw-dragonborn': {
+		m: [],
+		f: []
+	},
+	'sotw-tiefling': {
+		m: [],
+		f: []
 	}
 };
 
@@ -143,43 +155,38 @@ $('#character-name-button').on('click', function () {
 // D&D 5 Combat Encounter XP Thresholds
 
 for (var i = 0; i <= 20; ++i) {
-	$('#dnd5-xp-chlevel1, #dnd5-xp-chlevel2, #dnd5-xp-chlevel3, #dnd5-xp-chlevel4, #dnd5-xp-chlevel5, #dnd5-xp-chlevel6').append('<option value="' + i + '">' + (i === 0 ? '-' : i) + '</option>');
+	$('#dnd5-xp .control').append('<option value="' + i + '">' + (i === 0 ? '-' : i) + '</option>');
 }
 
-$('#dnd5-xp-chlevel1, #dnd5-xp-chlevel2, #dnd5-xp-chlevel3, #dnd5-xp-chlevel4, #dnd5-xp-chlevel5, #dnd5-xp-chlevel6').on('change', function () {
+$('#dnd5-xp').on('change', '.control', function () {
 	var thresholds = {
-		"1": [25, 50, 75, 100],
-		"2": [50, 100, 150, 200],
-		"3": [75, 150, 225, 400],
-		"4": [125, 250, 375, 500],
-		"5": [250, 500, 750, 1100],
-		"6": [300, 600, 900, 1400],
-		"7": [350, 750, 1100, 1700],
-		"8": [450, 900, 1400, 2100],
-		"9": [550, 1100, 1600, 2400],
-		"10": [600, 1200, 1900, 2800],
-		"11": [800, 1600, 2400, 3600],
-		"12": [1000, 2000, 3000, 4500],
-		"13": [1100, 2200, 3400, 5100],
-		"14": [1250, 2500, 3800, 5700],
-		"15": [1400, 2800, 4300, 6400],
-		"16": [1600, 3200, 4800, 7200],
-		"17": [2000, 3900, 5900, 8800],
-		"18": [2100, 4200, 6300, 9500],
-		"19": [2400, 4900, 7300, 10900],
-		"20": [2800, 5700, 8500, 12700]
+		'1': [25, 50, 75, 100],
+		'2': [50, 100, 150, 200],
+		'3': [75, 150, 225, 400],
+		'4': [125, 250, 375, 500],
+		'5': [250, 500, 750, 1100],
+		'6': [300, 600, 900, 1400],
+		'7': [350, 750, 1100, 1700],
+		'8': [450, 900, 1400, 2100],
+		'9': [550, 1100, 1600, 2400],
+		'10': [600, 1200, 1900, 2800],
+		'11': [800, 1600, 2400, 3600],
+		'12': [1000, 2000, 3000, 4500],
+		'13': [1100, 2200, 3400, 5100],
+		'14': [1250, 2500, 3800, 5700],
+		'15': [1400, 2800, 4300, 6400],
+		'16': [1600, 3200, 4800, 7200],
+		'17': [2000, 3900, 5900, 8800],
+		'18': [2100, 4200, 6300, 9500],
+		'19': [2400, 4900, 7300, 10900],
+		'20': [2800, 5700, 8500, 12700]
 	};
-	var chlevel1 = parseInt($('#dnd5-xp-chlevel1').val(), 10),
-		chlevel2 = parseInt($('#dnd5-xp-chlevel2').val(), 10),
-		chlevel3 = parseInt($('#dnd5-xp-chlevel3').val(), 10),
-		chlevel4 = parseInt($('#dnd5-xp-chlevel4').val(), 10),
-		chlevel5 = parseInt($('#dnd5-xp-chlevel5').val(), 10),
-		chlevel6 = parseInt($('#dnd5-xp-chlevel6').val(), 10),
-		easy = 0,
+	var easy = 0,
 		medium = 0,
 		hard = 0,
 		lethal = 0;
-	[chlevel1, chlevel2, chlevel3, chlevel4, chlevel5, chlevel6].forEach(function (level) {
+	[1, 2, 3, 4, 5, 6].forEach(function (id) {
+		var level = parseInt($('#dnd5-xp-chlevel' + id).val(), 10);
 		if (level > 0) {
 			easy += thresholds[level.toString()][0];
 			medium += thresholds[level.toString()][1];
@@ -212,10 +219,10 @@ var $m_selects = $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-enco
 	}
 });
 
-$('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-encounter-m3-type, #dnd5-encounter-m4-type, #dnd5-encounter-m5-type').on('change', function () {
+$('#dnd5-encounter').on('change', '.control', function () {
 	var characters = $('#dnd5-encounter-characters').val(),
 		budget = parseInt($('#dnd5-encounter-budget').val(), 10),
-		output_number
+		output_number = 0,
 		output_xp = 0;
 	['m1', 'm2', 'm3', 'm4', 'm5'].forEach(function (item) {
 		var number = parseInt($('#dnd5-encounter-' + item + '-number').val(), 10),
