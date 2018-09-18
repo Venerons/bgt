@@ -20,8 +20,8 @@
 					<li class="list-group">Generic Tools</li>
 					<li class="list-item" data-page="generic-dice">Dice Simulator</li>
 					<li class="list-item" data-page="character-name">Random Character Name</li>
-					<li class="list-item" data-page="page1">Random Quest</li>
-					<li class="list-item" data-page="page1">Treasure Generator</li>
+					<li class="list-item" data-page="wip">Random Quest</li>
+					<li class="list-item" data-page="wip">Treasure Generator</li>
 					<li class="list-group">Dungeons &amp; Dragons 5th Edition</li>
 					<li class="list-item" data-page="dnd5-xp">Combat Encounter XP Thresholds</li>
 					<li class="list-item" data-page="dnd5-encounter">Combat Encounter XP Budget</li>
@@ -29,7 +29,19 @@
 			</div>
 		</div>
 
-		<!-- DICE SIMULATOR -->
+		<div id="wip" class="page" style="display: none">
+			<div class="card">
+				<p>Work in progress</p>
+			</div>
+		</div>
+
+		<div id="info" class="page" style="display: none">
+			<div class="card">
+				<p><span style="font-weight: bold">Boardgame Trove</span> is a collection of boardgame tools created and maintained by <a href="https://venerons.github.io">Daniele Veneroni</a>.</p>
+				<p>Want to contribute? Check the Github repository: <a href="https://github.com/Venerons/bgt" target="_blank">https://github.com/Venerons/bgt</a>!</p>
+			</div>
+		</div>
+
 		<div id="generic-dice" class="page" style="display: none">
 			<div id="generic-dice-classic" class="card">
 				<div style="margin-top: 1rem">
@@ -50,33 +62,28 @@
 			</div>
 		</div>
 
-		<!-- RANDOM CHARACTER NAME -->
 		<div id="character-name" class="page" style="display: none">
 			<div class="card">
 				<div>
 					<label for="character-name-nameset">Name Set</label>
 					<select id="character-name-nameset">
 						<optgroup label="Classic">
-							<option value="classic-human">Human</option>
-							<option value="classic-gnome">Gnome</option>
-							<option value="classic-dwarf">Dwarf</option>
-							<option value="classic-elf">Elf</option>
-							<option value="classic-halfling">Halfling</option>
 						</optgroup>
 						<optgroup label="Dragonlance">
-						</optgroup>
-						<optgroup label="Lord of the Rings">
 						</optgroup>
 						<optgroup label="7th Sea">
 						</optgroup>
 						<optgroup label="Songs of the Winterflame">
 							<option value="sotw-human">Human</option>
-							<option value="sotw-gnome">Gnome</option>
-							<option value="sotw-dwarf">Dwarf</option>
 							<option value="sotw-elf">Elf</option>
-							<option value="sotw-woodelf">Wood Elf</option>
 							<option value="sotw-irve">Irve</option>
+							<option value="sotw-dwarf">Dwarf</option>
 							<option value="sotw-goblin">Goblin</option>
+							<option value="sotw-orc">Orc</option>
+							<option value="sotw-minotaur">Minotaur</option>
+							<option value="sotw-centaur">Centaur</option>
+							<option value="sotw-dragonborn">Dragonborn</option>
+							<option value="sotw-tiefling">Tiefling</option>
 						</optgroup>
 					</select>
 				</div>
@@ -153,12 +160,6 @@
 			</div>
 			<div class="card">
 				<p id="dnd5-encounter-output" style="text-align: center; font-size: 3rem">-</p>
-			</div>
-		</div>
-
-		<div id="page1" class="page" style="display: none">
-			<div class="card">
-				<p>Example page</p>
 			</div>
 		</div>
 
