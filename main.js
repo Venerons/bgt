@@ -189,7 +189,7 @@ $('#dnd5-monsters').on('input change', '.control', function () {
 		if (search !== '' && $this.data('search').toLowerCase().indexOf(search) === -1) {
 			show = false;
 		}
-		if (challenge !== '' && $this.data('challenge') !== challenge) {
+		if (challenge !== '' && $this.data('challenge').toString() !== challenge) {
 			show = false;
 		}
 		if (show) {
