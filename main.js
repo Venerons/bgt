@@ -154,6 +154,55 @@ $('#character-name-button').on('click', function () {
 	}
 });
 
+// D&D 5 Monsters Database
+
+var challenges = {};
+MONSTERS.forEach(function (monster) {
+	if (!challenges[monster.challenge]) {
+		challenges[monster.challenge] = monster.xp;
+	}
+});
+var $challenge = $('#dnd5-monsters-challenge').empty().append('<option value="">-</option>');
+Object.keys(challenges).sort(function (a, b) {
+	return challenges[a] < challenges[b] ? -1 : 1;
+}).forEach(function (item) {
+	$challenge.append('<option value="' + item + '">' + item + ' (' + challenges[item] + ' XP)</option>');
+});
+var $tbody = $('<tbody></tbody>');
+MONSTERS.forEach(function (monster) {
+	$tbody.append(
+		'<tr data-search="' + monster.name + '" data-challenge="' + monster.challenge + '">' +
+			'<td>' + monster.name + '</td>' +
+			'<td>' + monster.challenge + '</td>' +
+			'<td>' + monster.xp + '</td>' +
+			'<td>' + monster.reference + '</td>' +
+		'</tr>');
+});
+$('#dnd5-monsters-table').append($tbody);
+
+$('#dnd5-monsters').on('input change', '.control', function () {
+	var search = $('#dnd5-monsters-search').val().trim().toLowerCase(),
+		challenge = $('#dnd5-monsters-challenge').val();
+	$('#dnd5-monsters-table > tbody').find('tr').each(function () {
+		var $this = $(this),
+			show = true;
+		if (search !== '' && $this.data('search').toLowerCase().indexOf(search) === -1) {
+			show = false;
+		}
+		if (challenge !== '' && $this.data('challenge') !== challenge) {
+			show = false;
+		}
+		if (show) {
+			$this.show();
+		} else {
+			$this.hide();
+		}
+	});
+});
+$('#home-search').on('input', function () {
+	
+});
+
 // D&D 5 Combat Encounter XP Thresholds
 
 for (var i = 0; i <= 20; ++i) {
@@ -211,7 +260,9 @@ MONSTERS.forEach(function (monster) {
 var array = [
 	{ label: 'None', value: 0 }
 ];
-Object.keys(tmp).sort().forEach(function (item) {
+Object.keys(tmp).sort(function (a, b) {
+	return tmp[a].value < tmp[b].value ? -1 : 1;
+}).forEach(function (item) {
 	array.push(tmp[item]);
 });
 var $m_selects = $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-encounter-m3-type, #dnd5-encounter-m4-type, #dnd5-encounter-m5-type');
