@@ -15,7 +15,9 @@
 
 		<div id="home" class="page">
 			<div class="card">
-				<input id="home-search" type="search" placeholder="Search..." class="input" style="margin-bottom: 1rem; width: 100%">
+				<div class="flex-row flex-row-margins">
+					<input id="home-search" type="search" placeholder="Search..." class="input" style="flex: 1">
+				</div>
 				<ul id="home-list" class="list">
 					<li class="list-group">Generic Tools</li>
 					<li class="list-item" data-page="generic-dice">Dice Simulator</li>
@@ -23,6 +25,7 @@
 					<li class="list-item" data-page="wip">Random Quest</li>
 					<li class="list-item" data-page="wip">Treasure Generator</li>
 					<li class="list-group">Dungeons &amp; Dragons 5th Edition</li>
+					<li class="list-item" data-page="dnd5-monsters">Monsters Database</li>
 					<li class="list-item" data-page="dnd5-xp">Combat Encounter XP Thresholds</li>
 					<li class="list-item" data-page="dnd5-encounter">Combat Encounter XP Budget</li>
 				</ul>
@@ -44,7 +47,7 @@
 
 		<div id="generic-dice" class="page" style="display: none">
 			<div id="generic-dice-classic" class="card">
-				<div style="margin-top: 1rem">
+				<div class="flex-row flex-row-margins">
 					<button data-dice="4" class="button">1d4</button>
 					<button data-dice="6" class="button">1d6</button>
 					<button data-dice="8" class="button">1d8</button>
@@ -56,17 +59,21 @@
 				<p id="generic-dice-classic-output" style="text-align: center; font-size: 3rem">-</p>
 			</div>
 			<div id="generic-dice-custom" class="card">
-				<input id="generic-dice-custom-expression" type="text" placeholder="3d6+2" class="input" style="width: 100%; margin: 1rem 0">
-				<button id="generic-dice-custom-execute" class="button" style="width: 100%">Execute</button>
+				<div class="flex-row flex-row-margins">
+					<input id="generic-dice-custom-expression" type="text" placeholder="3d6+2" class="input" style="flex: 1">
+				</div>
+				<div class="flex-row flex-row-margins">
+					<button id="generic-dice-custom-execute" class="button" style="flex: 1">Execute</button>
+				</div>
 				<p id="generic-dice-custom-output" style="text-align: center; font-size: 3rem">-</p>
 			</div>
 		</div>
 
 		<div id="character-name" class="page" style="display: none">
 			<div class="card">
-				<div>
-					<label for="character-name-nameset">Name Set</label>
-					<select id="character-name-nameset">
+				<div class="flex-row flex-row-margins">
+					<label for="character-name-nameset" style="flex: 1">Name Set</label>
+					<select id="character-name-nameset" class="input" style="flex: 2">
 						<optgroup label="Classic">
 						</optgroup>
 						<optgroup label="Dragonlance">
@@ -87,45 +94,69 @@
 						</optgroup>
 					</select>
 				</div>
-				<div>
-					<label for="character-name-gender">Gender</label>
-					<select id="character-name-gender">
+				<div class="flex-row flex-row-margins">
+					<label for="character-name-gender" style="flex: 1">Gender</label>
+					<select id="character-name-gender" class="input" style="flex: 2">
 						<option value="m">Male</option>
 						<option value="f">Female</option>
 					</select>
 				</div>
-				<button id="character-name-button" class="button">Generate</button>
+				<div class="flex-row flex-row-margins">
+					<button id="character-name-button" class="button" style="flex: 1">Generate</button>
+				</div>
 			</div>
 			<div class="card">
 				<p id="character-name-output" style="text-align: center; font-size: 3rem">-</p>
 			</div>
 		</div>
 
+		<div id="dnd5-monsters" class="page" style="display: none">
+			<div class="card">
+				<div class="flex-row flex-row-margins">
+					<input id="dnd5-monsters-search" type="search" placeholder="Search..." class="input control" style="flex: 1">
+					<label for="dnd5-monsters-challenge">Challenge</label>
+					<select id="dnd5-monsters-challenge" class="input control"></select>
+				</div>
+			</div>
+			<div class="card">
+				<table id="dnd5-monsters-table" class="table table-sticky table-bordered table-striped table-hover" style="width: 100%">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Challenge</th>
+							<th>XP</th>
+							<th>Reference</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+
 		<div id="dnd5-xp" class="page" style="display: none">
 			<div class="card">
-				<div>
-					<label>Level Character 1</label>
-					<select id="dnd5-xp-chlevel1" class="input control"></select>
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Level Character 1</label>
+					<select id="dnd5-xp-chlevel1" class="input control" style="flex: 2"></select>
 				</div>
-				<div>
-					<label>Level Character 2</label>
-					<select id="dnd5-xp-chlevel2" class="input control"></select>
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Level Character 2</label>
+					<select id="dnd5-xp-chlevel2" class="input control" style="flex: 2"></select>
 				</div>
-				<div>
-					<label>Level Character 3</label>
-					<select id="dnd5-xp-chlevel3" class="input control"></select>
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Level Character 3</label>
+					<select id="dnd5-xp-chlevel3" class="input control" style="flex: 2"></select>
 				</div>
-				<div>
-					<label>Level Character 4</label>
-					<select id="dnd5-xp-chlevel4" class="input control"></select>
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Level Character 4</label>
+					<select id="dnd5-xp-chlevel4" class="input control" style="flex: 2"></select>
 				</div>
-				<div>
-					<label>Level Character 5</label>
-					<select id="dnd5-xp-chlevel5" class="input control"></select>
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Level Character 5</label>
+					<select id="dnd5-xp-chlevel5" class="input control" style="flex: 2"></select>
 				</div>
-				<div>
-					<label>Level Character 6</label>
-					<select id="dnd5-xp-chlevel6" class="input control"></select>
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Level Character 6</label>
+					<select id="dnd5-xp-chlevel6" class="input control" style="flex: 2"></select>
 				</div>
 			</div>
 			<div class="card">
@@ -135,42 +166,52 @@
 
 		<div id="dnd5-encounter" class="page" style="display: none">
 			<div class="card">
-				<div>
-					<label>Number of Characters</label>
-					<select id="dnd5-encounter-characters" class="input control">
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Number of Characters</label>
+					<select id="dnd5-encounter-characters" class="input control" style="flex: 2">
 						<option value="1-2">1 - 2</option>
 						<option value="3-4-5" selected>3 - 4 - 5</option>
 						<option value="6+">6+</option>
 					</select>
 				</div>
-				<div>
-					<label>Encounter XP Budget</label>
-					<input id="dnd5-encounter-budget" type="number" min="1" step="25" value="200" class="input control">
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Encounter XP Budget</label>
+					<input id="dnd5-encounter-budget" type="number" min="1" step="25" value="200" class="input control" style="flex: 2">
 				</div>
-				<div>
-					<label>Monster 1</label>
-					<input id="dnd5-encounter-m1-number" type="number" min="0" max="100" step="1" value="1" class="input control">
-					<select id="dnd5-encounter-m1-type" class="input control"></select>
+				<div class="flex-row">
+					<label style="flex: 1">Monster 1</label>
+					<div class="flex-row flex-row-margins" style="flex: 2">
+						<input id="dnd5-encounter-m1-number" type="number" min="0" max="100" step="1" value="1" class="input control" style="width: 5rem">
+						<select id="dnd5-encounter-m1-type" class="input control" style="flex: 1"></select>
+					</div>
 				</div>
-				<div>
-					<label>Monster 2</label>
-					<input id="dnd5-encounter-m2-number" type="number" min="0" max="100" step="1" value="1" class="input control">
-					<select id="dnd5-encounter-m2-type" class="input control"></select>
+				<div class="flex-row">
+					<label style="flex: 1">Monster 2</label>
+					<div class="flex-row flex-row-margins" style="flex: 2">
+						<input id="dnd5-encounter-m2-number" type="number" min="0" max="100" step="1" value="1" class="input control" style="width: 5rem">
+						<select id="dnd5-encounter-m2-type" class="input control" style="flex: 1"></select>
+					</div>
 				</div>
-				<div>
-					<label>Monster 3</label>
-					<input id="dnd5-encounter-m3-number" type="number" min="0" max="100" step="1" value="1" class="input control">
-					<select id="dnd5-encounter-m3-type" class="input control"></select>
+				<div class="flex-row">
+					<label style="flex: 1">Monster 3</label>
+					<div class="flex-row flex-row-margins" style="flex: 2">
+						<input id="dnd5-encounter-m3-number" type="number" min="0" max="100" step="1" value="1" class="input control" style="width: 5rem">
+						<select id="dnd5-encounter-m3-type" class="input control" style="flex: 1"></select>
+					</div>
 				</div>
-				<div>
-					<label>Monster 4</label>
-					<input id="dnd5-encounter-m4-number" type="number" min="0" max="100" step="1" value="1" class="input control">
-					<select id="dnd5-encounter-m4-type" class="input control"></select>
+				<div class="flex-row">
+					<label style="flex: 1">Monster 4</label>
+					<div class="flex-row flex-row-margins" style="flex: 2">
+						<input id="dnd5-encounter-m4-number" type="number" min="0" max="100" step="1" value="1" class="input control" style="width: 5rem">
+						<select id="dnd5-encounter-m4-type" class="input control" style="flex: 1"></select>
+					</div>
 				</div>
-				<div>
-					<label>Monster 5</label>
-					<input id="dnd5-encounter-m5-number" type="number" min="0" max="100" step="1" value="1" class="input control">
-					<select id="dnd5-encounter-m5-type" class="input control"></select>
+				<div class="flex-row">
+					<label style="flex: 1">Monster 5</label>
+					<div class="flex-row flex-row-margins" style="flex: 2">
+						<input id="dnd5-encounter-m5-number" type="number" min="0" max="100" step="1" value="1" class="input control" style="width: 5rem">
+						<select id="dnd5-encounter-m5-type" class="input control" style="flex: 1"></select>
+					</div>
 				</div>
 			</div>
 			<div class="card">
