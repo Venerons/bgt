@@ -130,7 +130,7 @@ $('#home-list').on('click', '.list-item', function () {
 		if (set && set[gender]) {
 			var output = set[gender][Math.floor(Math.random() * set[gender].length)];
 			if (set.c) {
-				output += set.c[Math.floor(Math.random() * set.c.length)];
+				output += ' ' + set.c[Math.floor(Math.random() * set.c.length)];
 			}
 			$('#generic-name-output').text(output);
 		} else {
