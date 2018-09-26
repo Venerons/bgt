@@ -181,6 +181,46 @@ $('#home-list').on('click', '.list-item', function () {
 			virtue: ['Art', 'Carrion', 'Chant', 'Creed', 'Despair', 'Excellence', 'Fear', 'Glory', 'Hope', 'Ideal', 'Music', 'Nowhere', 'Open', 'Poetry', 'Quest', 'Random', 'Reverence', 'Sorrow', 'Temerity', 'Torment', 'Weary'],
 			m: ['Akmenos', 'Amnon', 'Barakas', 'Damakos', 'Ekemon', 'Iados', 'Kairon', 'Leucis', 'Melech', 'Mordai', 'Morthos', 'Pelaios', 'Skamos', 'Therai'],
 			f: ['Akta', 'Anakis', 'Bryseis', 'Criella', 'Damaia', 'Ea', 'Kallista', 'Lerissa', 'Makaria', 'Nemeia', 'Orianna', 'Phelaia', 'Rieta']
+		},
+		'7thsea-avalon': {
+			m: ['Aidan', 'Alan', 'Bran', 'Dwyer', 'Edward', 'Finn', 'Harold', 'Jerome', 'Keith', 'Liam', 'Luke', 'Malcolm', 'Michael', 'Morgan', 'Ossian', 'Quinn', 'Richard', 'Shawn', 'Thomas', 'Walter'],
+			f: ['Aileen', 'Alison', 'Bridgit', 'Caroline', 'Denise', 'Elaine', 'Grace', 'Helen', 'Jane', 'Karen', 'Leila', 'Maeve', 'Mary', 'Pamela', 'Sabbina', 'Sybil', 'Teresa', 'Veronica']
+		},
+		'7thsea-inismore': {
+			m: ['Abbán', 'Ádhamh', 'Aidan', 'Barrfind', 'Barrie', 'Brady', 'Carey', 'Ceallach', 'Donagh', 'Dónal', 'Dubhán', 'Enda', 'Ennis', 'Finn', 'Keelan', 'Lochlainn', 'Mannix', 'Riordan', 'Séaghdha', 'Teige', 'Torin', 'Uilleag'],
+			f: ['Aideen', 'Aignéis', 'Bébhinn', 'Blaind', 'Brígh', 'Catlín', 'Clodagh', 'Dáríne', 'Deirdre', 'Éabha', 'Eavan', 'Ena', 'Fionnuala', 'Gobnait', 'Íde', 'Keelan', 'Léan', 'Maeve', 'Máirín', 'Mór', 'Neassa', 'Nóra', 'Órlaith', 'Siobhán']
+		},
+		'7thsea-the-highland-marches': {
+			m: ['Aonghas', 'Aodhagán', 'Beathan', 'Blair', 'Cailean', 'Cairbre', 'Carson', 'Colin', 'Dugald', 'Ealair', 'Eoghan', 'Ewen', 'Fearchar', 'Fingall', 'Goraidh', 'Grier', 'Hamish', 'Kerr', 'Seumas', 'Sláine', 'Tam'],
+			f: ['Aileen', 'Ailsa', 'Beileag', 'Blair', 'Caoimhe', 'Deóiridh', 'Ealasaid', 'Eimhir', 'Eithne', 'Fionnuala', 'Gormlaith', 'Isla', 'Lachina', 'Lilias', 'Máiri', 'Oighrig', 'Seona', 'Sheona', 'Síleas', 'Teárlag', 'Úna']
+		},
+		'7thsea-castille': {
+			m: ['Alonso', 'Andrés', 'Baltasar', 'Benito', 'Carlos', 'Diego', 'Domingo', 'Esteban', 'Felipe', 'Gaspar', 'Héctor', 'Jaime', 'Juan', 'Lucas', 'Miguel', 'Rodrigo', 'Sancho', 'Sebastián', 'Tomás'],
+			f: ['Andrea', 'Ángela', 'Beatriz', 'Catalina', 'Clara', 'Constantina', 'Cristina', 'Floriana', 'Francisca', 'Inés', 'Isabel', 'Juliana', 'Lucía', 'Luisa', 'María', 'Quiteria', 'Sancha', 'Susana', 'Úrsula', 'Yolanda']
+		},
+		'7thsea-eisen': {
+			m: ['Adrian', 'Bernhard', 'Dirk', 'Erich', 'Gustav', 'Hans', 'Josef', 'Kurt', 'Lorenz', 'Max', 'Oliver', 'Philip', 'Reinhard', 'Rolf', 'Stefan', 'Volker', 'Wenzel', 'Willi', 'Xaver'],
+			f: ['Anna', 'Cordula', 'Cornelia', 'Dora', 'Eva', 'Gabriele', 'Ingrid', 'Janina', 'Kirstin', 'Lena', 'Margrit', 'Mona', 'Nina', 'Ruth', 'Sigrid', 'Silvia', 'Tina', 'Ursula']
+		},
+		'7thsea-montaigne': {
+			m: ['Ambroise', 'Blaise', 'Cédric', 'Daniel', 'Denis', 'Eugène', 'Félix', 'Gérard', 'Guy', 'Henri', 'Jacques', 'Jules', 'Luc', 'Marc', 'Martin', 'Pierre', 'Rémy', 'Sébastien', 'Victor', 'Zacharie'],
+			f: ['Allette', 'Andrée', 'Arielle', 'Blanche', 'Camille', 'Cosette', 'Dominique', 'Estelle', 'Francine', 'Georgette', 'Henriette', 'Irène', 'Julie', 'Lydie', 'Nicole', 'Philippine', 'Roseline', 'Sylvie', 'Vivianne']
+		},
+		'7thsea-the-sarmatian-commonwealth': {
+			m: ['Andrzej', 'Bartłomiej', 'Dawid', 'Gaweł', 'Ignacy', 'Jarosław', 'Lesław', 'Maciej', 'Przemysław', 'Roch', 'Zygmunt', 'Bronius', 'Darijus', 'Erikas', 'Herkus', 'Ignas', 'Jurgis', 'Kasparas', 'Mykolas', 'Nojus', 'Petras', 'Pilypas', 'Žydrūnas'],
+			f: ['Adelajda', 'Czesława', 'Dorota', 'Eligia', 'Gracja', 'Hanna', 'Ignacja', 'Janina', 'Józefa', 'Mirosława', 'Urszula', 'Zyta', 'Agnė', 'Danutė', 'Emilija', 'Estera', 'Gabija', 'Jelena', 'Kamilė', 'Katrė', 'Laima', 'Lėja', 'Lilija', 'Svajonė', 'Ugnė', 'Viltautė']
+		},
+		'7thsea-ussura': {
+			m: ['Aleksei', 'Alexandr', 'Boris', 'Dimitri', 'Danil', 'Erema', 'Fyodor', 'Georgi', 'Ignati', 'Ilya', 'Kiril', 'Mikhail', 'Nikita', 'Pyotyr', 'Sergei', 'Taras', 'Timofey', 'Vasily', 'Vladimir', 'Yevgeni'],
+			f: ['Agafya', 'Anna', 'Avdotia', 'Darya', 'Ekaterina', 'Elizaveta', 'Galina', 'Irina', 'Ksenya', 'Larisa', 'Ludmila', 'Lyuba', 'Marya', 'Nina', 'Natalya', 'Natasha', 'Nastasya', 'Olga', 'Sofia', 'Tamara', 'Yelena', 'Yevpraskia', 'Zhanna']
+		},
+		'7thsea-vestenmennavenjar': {
+			m: ['Alfgeir', 'Bragi', 'Brøn', 'Eldgrim', 'Gellir', 'Hägin', 'Hallbjørn', 'Hrafn', 'Jön', 'Ketil', 'Magnus', 'Olväld', 'Reinn', 'Serk', 'Sigurd', 'Solmünd', 'Thørfinn', 'Thrand', 'Ulf', 'Velëif'],
+			f: ['Asgerd', 'Asny', 'Bera', 'Dalla', 'Grøa', 'Gudrid', 'Hrafnhild', 'Ingibjørg', 'Jofrid', 'Kadlin', 'Ljüfa', 'Osk', 'Rannvëig', 'Sæun', 'Sigrid', 'Thørhild', 'Ulfeid', 'Vigdis', 'Yngvild', 'Yr']
+		},
+		'7thsea-vodacce': {
+			m: ['Alberto', 'Antonio', 'Carlo', 'Ernesto', 'Felice', 'Fortunato', 'Gianni', 'Giuseppe', 'Leon', 'Marco', 'Modesto', 'Pietro', 'Rinaldo', 'Rolando', 'Savino', 'Siro', 'Timeo', 'Toni', 'Umberto', 'Vito'],
+			f: ['Alessia', 'Angelina', 'Clarissa', 'Crescenza', 'Elena', 'Fiora', 'Iolanda', 'Lea', 'Luisa', 'Miranda', 'Natalia', 'Paola', 'Penelope', 'Rachele', 'Rebecca', 'Regina', 'Sandra', 'Valeria', 'Veronica', 'Viola']
 		}
 	};
 
@@ -220,8 +260,9 @@ $('#home-list').on('click', '.list-item', function () {
 	var $tbody = $('<tbody></tbody>');
 	MONSTERS.forEach(function (monster) {
 		$tbody.append(
-			'<tr data-search="' + monster.name + '" data-challenge="' + monster.challenge + '">' +
-				'<td>' + monster.name + '</td>' +
+			'<tr data-search="' + monster.name.en + ' ' + monster.name.it + '" data-challenge="' + monster.challenge + '">' +
+				'<td>' + monster.name.en + '</td>' +
+				'<td>' + monster.name.it + '</td>' +
 				'<td>' + monster.challenge + '</td>' +
 				'<td>' + monster.xp + '</td>' +
 				'<td>' + monster.reference + '</td>' +
@@ -307,7 +348,7 @@ $('#home-list').on('click', '.list-item', function () {
 		if (!tmp[monster.challenge]) {
 			tmp[monster.challenge] = { label: 'Challenge ' + monster.challenge + ' (' + monster.xp + ' XP)', value: monster.xp, options: [] };
 		}
-		tmp[monster.challenge].options.push(monster.name);
+		tmp[monster.challenge].options.push(monster.name.en + (monster.name.it !== monster.name.en ? ' (' + monster.name.it + ')' : ''));
 	});
 	var array = [
 		{ label: 'None', value: 0 }
