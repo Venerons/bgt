@@ -105,79 +105,83 @@ $('#home-list').on('click', '.list-item', function () {
 	'use strict';
 
 	var RCN = {
-		'classic-dwarf': {
-			m: ['Adrik', 'Alberich', 'Baern', 'Barendd', 'Brottor', 'Bruenor', 'Dain', 'Darrak', 'Delg', 'Eberk', 'Einkil', 'Fargrim', 'Flint', 'Gardain', 'Harbek', 'Kildrak', 'Morgran', 'Orsik', 'Oskar', 'Rangrim', 'Rurik', 'Taklinn', 'Thoradin', 'Thorin', 'Tordek', 'Traubon', 'Travok', 'Ulfgar', 'Veit', 'Vondal'],
-			f: ['Amber', 'Artin', 'Audhil', 'Bardryn', 'Dagnal', 'Diesa', 'Eldeth', 'Falkrunn', 'Finellen', 'Gunnloda', 'Gurdis', 'Helja', 'Hlin', 'Kathra', 'Kristryd', 'Ilde', 'Liftrasa', 'Mardred', 'Riswynn', 'Sannl', 'Torbera', 'Torgga', 'Vistra'],
-			c: ['Balderk', 'Battlehammer', 'Brawnanvil', 'Dankil', 'Fireforge', 'Frostbeard', 'Gorunn', 'Holderhek', 'Ironfist', 'Loderr', 'Lutgehr', 'Rumnaheim', 'Strakeln', 'Torunn', 'Ungart']
+		'dnd-human': {
+			m: ['Alain', 'Alek', 'Benn', 'Brandis', 'Donn', 'Drew', 'Erik', 'Gregg', 'Jonn', 'Kris', 'Marc', 'Mikal', 'Pieter', 'Regdar', 'Quinn', 'Samm', 'Thom', 'Wil'],
+			f: ['Ana', 'Cassi', 'Eliza', 'Gwenn', 'Jenn', 'Kat', 'Keira', 'Luusi', 'Mari', 'Mika', 'Miri', 'Stasi', 'Shawna', 'Zanne']
 		},
-		'classic-elf': {
-			child: ['Ara', 'Bryn', 'Del', 'Eryn', 'Faen', 'Innil', 'Lael', 'Mella', 'Naill', 'Naeris', 'Phann', 'Rael', 'Rinn', 'Sai', 'Syllin', 'Thia', 'Vall'],
-			m: ['Adran', 'Aelar', 'Aramil', 'Arannis', 'Aus', 'Beiro', 'Berrian', 'Carric', 'Enialis', 'Erdan', 'Erevan', 'Galinndan', 'Hadarai', 'Heian', 'Himo', 'Immeral', 'Ivellios', 'Laucian', 'Mindartis', 'Paelias', 'Peren', 'Quarion', 'Riardon', 'Rolen', 'Soveliss', 'Thamior', 'Tharivol', 'Theren', 'Varis'],
-			f: ['Adrie', 'Althaea', 'Anastrianna', 'Andraste', 'Antinua', 'Bethrynna', 'Birel', 'Caelynn', 'Drusilia', 'Enna', 'Felosial', 'Ielenia', 'Jelenneth', 'Keyleth', 'Leshanna', 'Lia Meriele', 'Mialee', 'Naivara', 'Quelenna', 'Quillathe', 'Sariel', 'Shanairra', 'Shava', 'Silaqui', 'Theirastra', 'Thia', 'Vadania', 'Valanthe', 'Xanaphia'],
-			c: ['Amakiir (Gemflower)', 'Amastacia (Starflower)', 'Galanodel (Moonwhisper)', 'Holimion (Diamonddew)', 'Ilphelkiir (Gemblossom)', 'Liadon (Silverfrond)', 'Meliamne (Oakenheel)', 'Nailo (Nightbreeze)', 'Siannodel (Moonbrook)', 'Xiloscient (Goldpetal)']
-		},
-		'classic-halfling': {
-			m: ['Alton', 'Ander', 'Cade', 'Corrin', 'Eldon', 'Errich', 'Finnan', 'Garret', 'Lindal', 'Lyle', 'Merric', 'Milo', 'Osborn', 'Perrin', 'Reed', 'Roscoe', 'Wellby'],
-			f: ['Andry', 'Bree', 'Callie', 'Cora', 'Euphemia', 'Jillian', 'Kithri', 'Lavinia', 'Lidda', 'Merla', 'Nedda', 'Paela', 'Portia', 'Seraphina', 'Shaena', 'Trym', 'Vani', 'Verna'],
-			c: ['Brushgather', 'Goodbarrel', 'Greenbottle', 'High-hill', 'Hilltopple', 'Leagallow', 'Tealeaf', 'Thorngage', 'Tosscobble', 'Underbough']
-		},
-		'classic-human-calishite': {
+		'dnd-human-calishite': {
 			m: ['Aseir', 'Bardeid', 'Haseid', 'Khemed', 'Mehmen', 'Sudeiman', 'Zasheir'],
 			f: ['Atala', 'Ceidil', 'Hama', 'Jasmal', 'Meilil', 'Seipora', 'Yasheira', 'Zasheida'],
 			c: ['Basha', 'Dumein', 'Jassan', 'Khalid', 'Mostana', 'Pashar', 'Rein']
 		},
-		'classic-human-chondathan': {
+		'dnd-human-chondathan': {
 			m: ['Darvin', 'Dorn', 'Evendur', 'Gorstag', 'Grim', 'Helm', 'Malark', 'Morn', 'Randal', 'Stedd'],
 			f: ['Arveene', 'Esvele', 'Jhessail', 'Kerri', 'Lureene', 'Miri', 'Rowan', 'Shandri', 'Tessele'],
 			c: ['Amblecrown', 'Buckman', 'Dundragon', 'Evenwood', 'Greycastle', 'Tallstag']
 		},
-		'classic-human-damaran': {
+		'dnd-human-damaran': {
 			m: ['Bor', 'Fodel', 'Glar', 'Grigor', 'Igan', 'Ivor', 'Kosef', 'Mival', 'Orel', 'Pavel', 'Sergor'],
 			f: ['Alethra', 'Kara', 'Katernin', 'Mara', 'Natali', 'Olma', 'Tana', 'Zora'],
 			c: ['Bersk', 'Chernin', 'Dotsk', 'Kulenov', 'Marsk', 'Nemetsk', 'Shemov', 'Starag']
 		},
-		'classic-human-illuskan': {
+		'dnd-human-illuskan': {
 			m: ['Ander', 'Blath', 'Bran', 'Frath', 'Geth', 'Lander', 'Luth', 'Malcer', 'Stor', 'Taman', 'Urth'],
 			f: ['Amafrey', 'Betha', 'Cefrey', 'Kethra', 'Mara', 'Olga', 'Silifrey', 'Westra'],
 			c: ['Brightwood', 'Helder', 'Hornraven', 'Lackman', 'Stormwind', 'Windrivver']
 		},
-		'classic-human-mulan': {
+		'dnd-human-mulan': {
 			m: ['Aoth', 'Bareris', 'Ehput-Ki', 'Kethoth', 'Mumed', 'Ramas', 'So-Kehur', 'Thazar-De', 'Urhur'],
 			f: ['Arizima', 'Chathi', 'Nephis', 'Nulara', 'Murithi', 'Sefris', 'Thola', 'Umara', 'Zolis'],
 			c: ['Ankhalab', 'Anskuld', 'Fezim', 'Hahpet', 'Nathandem', 'Sepret', 'Uuthrakt']
 		},
-		'classic-human-rashemi': {
+		'dnd-human-rashemi': {
 			m: ['Borivik', 'Faurgar', 'Jandar', 'Kanithar', 'Madislak', 'Ralmevik', 'Shaumar', 'Vladislak'],
 			f: ['Fyevarra', 'Hulmarra', 'Immith', 'Imzel', 'Navarra', 'Shevarra', 'Tammith', 'Yuldra'],
 			c: ['Chergoba', 'Dyernina', 'Iltazyara', 'Murnyethara', 'Stayanoga', 'Ulmokina']
 		},
-		'classic-human-shou': {
+		'dnd-human-shou': {
 			m: ['An', 'Chen', 'Chi', 'Fai', 'Jiang', 'Jun', 'Lian', 'Long', 'Meng', 'On', 'Shan', 'Shui', 'Wen'],
 			f: ['Bai', 'Chao', 'Jia', 'Lei', 'Mei', 'Qiao', 'Shui', 'Tai'],
 			c: ['Chien', 'Huang', 'Kao', 'Kung', 'Lao', 'Ling', 'Mei', 'Pin', 'Shin', 'Sum', 'Tan', 'Wan']
 		},
-		'classic-human-turami': {
+		'dnd-human-turami': {
 			m: ['Anton', 'Diero', 'Marcon', 'Pieron', 'Rimardo', 'Romero', 'Salazar', 'Umbero'],
 			f: ['Balama', 'Dona', 'Faila', 'Jalana', 'Luisa', 'Marta', 'Quara', 'Selise', 'Vonda'],
 			c: ['Agosto', 'Astorio', 'Calabra', 'Domine', 'Falone', 'Marivaldi', 'Pisacar', 'Ramondo']
 		},
-		'classic-dragonborn': {
-			child: ['Climber', 'Earbender', 'Leaper', 'Pious', 'Shieldbiter', 'Zealous'],
-			m: ['Arjhan', 'Balasar', 'Bharash', 'Donaar', 'Ghesh', 'Heskan', 'Kriv', 'Medrash', 'Mehen', 'Nadarr', 'Pandjed', 'Patrin', 'Rhogar', 'Shamash', 'Shedinn', 'Tarhun', 'Torinn'],
-			f: ['Akra', 'Biri', 'Daar', 'Farideh', 'Harann', 'Flavilar', 'Jheri', 'Kava', 'Korinn', 'Mishann', 'Nala', 'Perra', 'Raiann', 'Sora', 'Surina', 'Thava', 'Uadjit'],
-			c: ['Clethtinthiallor', 'Daardendrian', 'Delmirev', 'Drachedandion', 'Fenkenkabradon', 'Kepeshkmolik', 'Kerrhylon', 'Kimbatuul', 'Linxakasendalor', 'Myastan', 'Nemmonis', 'Norixius', 'Ophinshtalajiir', 'Prexijandilin', 'Shestendeliath', 'Turnuroth', 'Verthisathurgiesh', 'Yarjerit']
+		'dnd-elf': {
+			child: ['Ara', 'Bryn', 'Del', 'Eryn', 'Faen', 'Innil', 'Lael', 'Mella', 'Naill', 'Naeris', 'Phann', 'Rael', 'Rinn', 'Sai', 'Syllin', 'Thia', 'Vall'],
+			m: ['Adran', 'Aelar', 'Aramil', 'Arannis', 'Aus', 'Beiro', 'Berrian', 'Carric', 'Dayereth', 'Enialis', 'Erdan', 'Erevan', 'Galinndan', 'Gennal', 'Hadarai', 'Heian', 'Himo', 'Immeral', 'Ivellios', 'Laucian', 'Mindartis', 'Paelias', 'Peren', 'Quarion', 'Riardon', 'Rolen', 'Soveliss', 'Thamior', 'Tharivol', 'Theren', 'Varis'],
+			f: ['Adrie', 'Althaea', 'Anastrianna', 'Andraste', 'Antinua', 'Bethrynna', 'Birel', 'Caelynn', 'Chaedi', 'Dara', 'Drusilia', 'Enna', 'Faral', 'Felosial', 'Irann', 'Ielenia', 'Jelenneth', 'Keyleth', 'Leshanna', 'Lia', 'Meriele', 'Mialee', 'Naivara', 'Quelenna', 'Quillathe', 'Sariel', 'Shanairra', 'Shava', 'Silaqui', 'Theirastra', 'Thia', 'Vadania', 'Valanthe', 'Valenae', 'Valna', 'Xanaphia'],
+			c: ['Amakiir (Gemflower)', 'Amastacia (Starflower)', 'Galanodel (Moonwhisper)', 'Holimion (Diamonddew)', 'Ilphelkiir (Gemblossom)', 'Liadon (Silverfrond)', 'Meliamne (Oakenheel)', 'Nailo (Nightbreeze)', 'Siannodel (Moonbrook)', 'Xiloscient (Goldpetal)']
 		},
-		'classic-gnome': {
+		'dnd-dwarf': {
+			m: ['Adrik', 'Alberich', 'Baern', 'Berend', 'Barendd', 'Brottor', 'Bruenor', 'Dain', 'Darrak', 'Delg', 'Eberk', 'Einkil', 'Fargrim', 'Flint', 'Gardain', 'Harbek', 'Kildrak', 'Morgran', 'Orsik', 'Oskar', 'Rangrim', 'Rurik', 'Taklinn', 'Thoradin', 'Thorfin', 'Thorin', 'Tordek', 'Traubon', 'Travok', 'Ulfgar', 'Veit', 'Vondal'],
+			f: ['Amber', 'Artin', 'Audhil', 'Bardryn', 'Dagnal', 'Diesa', 'Eldeth', 'Falkrunn', 'Finellen', 'Gunnloda', 'Gurdis', 'Helja', 'Hlin', 'Kathra', 'Kristryd', 'Ilde', 'Liftrasa', 'Mardred', 'Riswynn', 'Sannl', 'Torbera', 'Torgga', 'Vistra'],
+			c: ['Balderk', 'Battlehammer', 'Brawnanvil', 'Dankil', 'Fireforge', 'Frostbeard', 'Gorunn', 'Holderhek', 'Ironfist', 'Loderr', 'Lutgehr', 'Rumnaheim', 'Strakeln', 'Torunn', 'Ungart']
+		},
+		'dnd-halfling': {
+			m: ['Alton', 'Ander', 'Cade', 'Corrin', 'Dannad', 'Eldon', 'Errich', 'Finnan', 'Garret', 'Lazam', 'Lindal', 'Lyle', 'Merric', 'Milo', 'Nebin', 'Ostran', 'Osborn', 'Perrin', 'Reed', 'Roscoe', 'Shardon', 'Ulmo', 'Wenner', 'Wellby'],
+			f: ['Andry', 'Bree', 'Callie', 'Chenna', 'Cora', 'Eida', 'Euphemia', 'Jillian', 'Kithri', 'Lavinia', 'Lidda', 'Merla', 'Nedda', 'Paela', 'Portia', 'Seraphina', 'Shaena', 'Tryn', 'Vani', 'Verna', 'Wella'],
+			c: ['Brushgather', 'Goodbarrel', 'Greenbottle', 'High-hill', 'Hilltopple', 'Leagallow', 'Tealeaf', 'Thorngage', 'Tosscobble', 'Underbough']
+		},
+		'dnd-gnome': {
 			nickname: ['Aleslosh', 'Ashhearth', 'Badger', 'Cloak', 'Doublelock', 'Filchbatter', 'Fnipper', 'Ku', 'Nim', 'Oneshoe', 'Pock', 'Sparklegem', 'Stumbleduck'],
 			m: ['Alston', 'Alvyn', 'Boddynock', 'Brocc', 'Burgell', 'Dimble', 'Eldon', 'Erky', 'Fonkin', 'Frug', 'Gerbo', 'Gimble', 'Glim', 'Jebeddo', 'Kellen', 'Namfoodle', 'Orryn', 'Roondar', 'Seebo', 'Sindri', 'Warryn', 'Wrenn', 'Zook'],
 			f: ['Bimpnottin', 'Breena', 'Caramip', 'Carlin', 'Donella', 'Duvamil', 'Ella', 'Ellyjobell', 'Ellywick', 'Lilli', 'Loopmottin', 'Lorilla', 'Mardnab', 'Nissa', 'Nyx', 'Oda', 'Orla', 'Roywyn', 'Shamil', 'Tana', 'Waywocket', 'Zanna'],
 			c: ['Beren', 'Daergel', 'Folkor', 'Garrick', 'Nackle', 'Murnig', 'Ningel', 'Raulnor', 'Scheppen', 'Timbers', 'Turen']
 		},
-		'classic-half-orc': {
+		'dnd-half-orc': {
 			m: ['Dench', 'Feng', 'Gell', 'Henk', 'Holg', 'Imsh', 'Keth', 'Krusk', 'Mhurren', 'Ront', 'Shump', 'Thokk'],
 			f: ['Baggi', 'Emen', 'Engong', 'Kansif', 'Myev', 'Neega', 'Ovak', 'Ownka', 'Shautha', 'Sutha', 'Vola', 'Volen', 'Yevelda']
 		},
-		'classic-tiefling': {
+		'dnd-dragonborn': {
+			child: ['Climber', 'Earbender', 'Leaper', 'Pious', 'Shieldbiter', 'Zealous'],
+			m: ['Arjhan', 'Balasar', 'Bharash', 'Donaar', 'Ghesh', 'Heskan', 'Kriv', 'Medrash', 'Mehen', 'Nadarr', 'Pandjed', 'Patrin', 'Rhogar', 'Shamash', 'Shedinn', 'Tarhun', 'Torinn'],
+			f: ['Akra', 'Biri', 'Daar', 'Farideh', 'Harann', 'Flavilar', 'Jheri', 'Kava', 'Korinn', 'Mishann', 'Nala', 'Perra', 'Raiann', 'Sora', 'Surina', 'Thava', 'Uadjit'],
+			c: ['Clethtinthiallor', 'Daardendrian', 'Delmirev', 'Drachedandion', 'Fenkenkabradon', 'Kepeshkmolik', 'Kerrhylon', 'Kimbatuul', 'Linxakasendalor', 'Myastan', 'Nemmonis', 'Norixius', 'Ophinshtalajiir', 'Prexijandilin', 'Shestendeliath', 'Turnuroth', 'Verthisathurgiesh', 'Yarjerit']
+		},
+		'dnd-tiefling': {
 			virtue: ['Art', 'Carrion', 'Chant', 'Creed', 'Despair', 'Excellence', 'Fear', 'Glory', 'Hope', 'Ideal', 'Music', 'Nowhere', 'Open', 'Poetry', 'Quest', 'Random', 'Reverence', 'Sorrow', 'Temerity', 'Torment', 'Weary'],
 			m: ['Akmenos', 'Amnon', 'Barakas', 'Damakos', 'Ekemon', 'Iados', 'Kairon', 'Leucis', 'Melech', 'Mordai', 'Morthos', 'Pelaios', 'Skamos', 'Therai'],
 			f: ['Akta', 'Anakis', 'Bryseis', 'Criella', 'Damaia', 'Ea', 'Kallista', 'Lerissa', 'Makaria', 'Nemeia', 'Orianna', 'Phelaia', 'Rieta']
@@ -221,6 +225,19 @@ $('#home-list').on('click', '.list-item', function () {
 		'7thsea-vodacce': {
 			m: ['Alberto', 'Antonio', 'Carlo', 'Ernesto', 'Felice', 'Fortunato', 'Gianni', 'Giuseppe', 'Leon', 'Marco', 'Modesto', 'Pietro', 'Rinaldo', 'Rolando', 'Savino', 'Siro', 'Timeo', 'Toni', 'Umberto', 'Vito'],
 			f: ['Alessia', 'Angelina', 'Clarissa', 'Crescenza', 'Elena', 'Fiora', 'Iolanda', 'Lea', 'Luisa', 'Miranda', 'Natalia', 'Paola', 'Penelope', 'Rachele', 'Rebecca', 'Regina', 'Sandra', 'Valeria', 'Veronica', 'Viola']
+		},
+		'7thsea-numa': {
+			m: ['Acacius', 'Agapetus', 'Andreas', 'Basilius', 'Chares', 'Dareios', 'Epapharas', 'Heliodoros', 'Hyakinthos', 'Kleisthenes', 'Leontinus', 'Markus', 'Melanthios', 'Nicanor', 'Nikostratos', 'Paramonos', 'Phaedrus', 'Paton', 'Polykarpos', 'Solon', 'Sophos', 'Teocritus', 'Teodosius', 'Timo', 'Zeno'],
+			f: ['Agape', 'Agathe', 'Ambrosia', 'Berenike', 'Charis', 'Corinna', 'Demeter', 'Elpis', 'Euthalia', 'Galene', 'Helene', 'Isidora', 'Kallisto', 'Ligeia', 'Lysandra', 'Lysistrata', 'Metrodora', 'Myrrine', 'Pelagia', 'Pherenike', 'Phile', 'Phoibe', 'Sappho', 'Sophia', 'Sostrate', 'Teodora', 'Teodosia', 'Tryphaina', 'Xanthe', 'Zenais']
+		},
+		'7thsea-rahuri': {
+			m: ['Abey', 'Ameyro', 'Arieto', 'Aymaco', 'Batea', 'Cacimar', 'Colibri', 'Comerio', 'Guey', 'Juracan', 'Kaiman', 'Liren', 'Loquillo', 'Maboyas', 'Mucaro', 'Nasa', 'Ralay', 'Tabonuco', 'Yabisi', 'Yacahu'],
+			f: ['Ana', 'Acindina', 'Anacaona', 'Aji', 'Aramana', 'Ayiti', 'Cajaya', 'Casguaya', 'Guama', 'Jadzia', 'Kakata', 'Karaya', 'Liani', 'Mayneri', 'Nimita', 'Tinima', 'Tonina', 'Xiomara', 'Yari', 'Zemi']
+		},
+		'7thsea-jaragua': {
+			m: ['Adisa', 'Bamidele', 'Chukwuemeka', 'Dzigbode', 'Emeka', 'Fela', 'Gaddo', 'Hogan', 'Ikenna', 'Jawara', 'Kof', 'Lanre', 'Mamadou', 'Nnamdi', 'Okoro', 'Qwao', 'Senghor', 'Tomi', 'Uzochi', 'Yohance', 'Zebenjo'],
+			f: ['Akosua', 'Bosede', 'Chidimma', 'Dada', 'Ebele', 'Funanya', 'Gbemisola', 'Ige', 'Kunto', 'Lumusi', 'Mojisola', 'Nkiruka', 'Oni', 'Simisola', 'Thema', 'Urbi', 'Zinsa'],
+			neutral: ['Ayo', 'Baako', 'Chi', 'Dubaku', 'Ekundayo', 'Folami', 'Gameli', 'Hauhouot', 'Ime', 'Kayin', 'Lebene', 'Makafui', 'Ngozi', 'Opeyemi', 'Pereko', 'Quaco', 'Senyo', 'Temitope', 'Uzoma', 'Xoese', 'Yayra']
 		}
 	};
 
