@@ -385,7 +385,7 @@ $('#home-list').on('click', '.list-item', function () {
 				lethal += tmp[3];
 			}
 		});
-		$('#dnd5-encounter-thresholds').text('Easy: ' + easy + ' XP - Medium: ' + medium + ' XP - Hard: ' + hard + ' XP - Lethal: ' + lethal + ' XP');
+		$('#dnd5-encounter-thresholds').html('<span style="color: cornflowerblue">Easy: ' + easy + ' XP</span><span style="color: lightgreen">Medium: ' + medium + ' XP</span><span style="color: orange">Hard: ' + hard + ' XP</span><span style="color: crimson">Lethal: ' + lethal + ' XP</span>');
 		var output_number = 0,
 			output_xp = 0;
 		[1, 2, 3, 4, 5].forEach(function (id) {
@@ -439,18 +439,19 @@ $('#home-list').on('click', '.list-item', function () {
 			}
 		}
 		var output_xp_multiplier = output_xp * multiplier,
-			output = output_xp + ' XP' + (output_xp_multiplier !== output_xp ? ' (' + output_xp_multiplier + ' XP after multiplier)' : '');
+			output;
 		if (output_xp_multiplier < easy) {
-			output += ' - not even an encounter';
+			output = '<span style="color: cornflowerblue">Not an Encounter</span><br>';
 		} else if (output_xp_multiplier >= easy && output_xp_multiplier < medium) {
-			output += ' - easy encounter';
+			output = '<span style="color: cornflowerblue">Easy Encounter</span><br>';
 		} else if (output_xp_multiplier >= medium && output_xp_multiplier < hard) {
-			output += ' - medium encounter';
+			output = '<span style="color: lightgreen">Medium Encounter</span><br>';
 		} else if (output_xp_multiplier >= hard && output_xp_multiplier < lethal) {
-			output += ' - hard encounter';
+			output = '<span style="color: orange">Hard Encounter</span><br>';
 		} else if (output_xp_multiplier >= lethal) {
-			output += ' - lethal encounter';
+			output = '<span style="color: crimson">Lethal Encounter</span><br>';
 		}
-		$('#dnd5-encounter-output').text(output);
+		output += output_xp + ' XP<br>' + (output_xp_multiplier !== output_xp ? output_xp_multiplier + ' XP after multiplier' : '');
+		$('#dnd5-encounter-output').html(output);
 	});
 })();
