@@ -263,7 +263,7 @@ $('#home-list').on('click', '.list-item', function () {
 	'use strict';
 
 	var challenges = {};
-	MONSTERS.forEach(function (monster) {
+	DND5_MONSTERS.forEach(function (monster) {
 		if (!challenges[monster.challenge]) {
 			challenges[monster.challenge] = monster.xp;
 		}
@@ -275,14 +275,14 @@ $('#home-list').on('click', '.list-item', function () {
 		$challenge.append('<option value="' + item + '">' + item + ' (' + challenges[item] + ' XP)</option>');
 	});
 	var $tbody = $('<tbody></tbody>');
-	MONSTERS.forEach(function (monster) {
+	DND5_MONSTERS.forEach(function (monster) {
 		$tbody.append(
 			'<tr data-search="' + monster.name.en + ' ' + monster.name.it + '" data-challenge="' + monster.challenge + '">' +
 				'<td>' + monster.name.en + '</td>' +
 				'<td>' + monster.name.it + '</td>' +
 				'<td>' + monster.challenge + '</td>' +
 				'<td>' + monster.xp + '</td>' +
-				'<td>' + monster.reference + '</td>' +
+				'<td>' + monster.reference.en + ', ' + monster.reference.it + '</td>' +
 			'</tr>');
 	});
 	$('#dnd5-monsters-table').append($tbody);
@@ -307,61 +307,18 @@ $('#home-list').on('click', '.list-item', function () {
 	});
 })();
 
-// D&D 5 Combat Encounter XP Thresholds
+// D&D 5 Combat Encounter Crafter
 
 (function () {
 	'use strict';
 
+	var $ch_selects = $('#dnd5-encounter-chlevel1, #dnd5-encounter-chlevel2, #dnd5-encounter-chlevel3, #dnd5-encounter-chlevel4, #dnd5-encounter-chlevel5, #dnd5-encounter-chlevel6');
 	for (var i = 0; i <= 20; ++i) {
-		$('#dnd5-xp .control').append('<option value="' + i + '">' + (i === 0 ? '-' : i) + '</option>');
+		$ch_selects.append('<option value="' + i + '">' + (i === 0 ? '-' : i) + '</option>');
 	}
-	$('#dnd5-xp').on('change', '.control', function () {
-		var thresholds = {
-			'1': [25, 50, 75, 100],
-			'2': [50, 100, 150, 200],
-			'3': [75, 150, 225, 400],
-			'4': [125, 250, 375, 500],
-			'5': [250, 500, 750, 1100],
-			'6': [300, 600, 900, 1400],
-			'7': [350, 750, 1100, 1700],
-			'8': [450, 900, 1400, 2100],
-			'9': [550, 1100, 1600, 2400],
-			'10': [600, 1200, 1900, 2800],
-			'11': [800, 1600, 2400, 3600],
-			'12': [1000, 2000, 3000, 4500],
-			'13': [1100, 2200, 3400, 5100],
-			'14': [1250, 2500, 3800, 5700],
-			'15': [1400, 2800, 4300, 6400],
-			'16': [1600, 3200, 4800, 7200],
-			'17': [2000, 3900, 5900, 8800],
-			'18': [2100, 4200, 6300, 9500],
-			'19': [2400, 4900, 7300, 10900],
-			'20': [2800, 5700, 8500, 12700]
-		};
-		var easy = 0,
-			medium = 0,
-			hard = 0,
-			lethal = 0;
-		[1, 2, 3, 4, 5, 6].forEach(function (id) {
-			var level = parseInt($('#dnd5-xp-chlevel' + id).val(), 10);
-			if (level > 0) {
-				easy += thresholds[level.toString()][0];
-				medium += thresholds[level.toString()][1];
-				hard += thresholds[level.toString()][2];
-				lethal += thresholds[level.toString()][3];
-			}
-		});
-		$('#dnd5-xp-output').text('Easy: ' + easy + ' XP - Medium: ' + medium + ' XP - Hard: ' + hard + ' XP - Lethal: ' + lethal + ' XP');
-	});
-})();
-
-// D&D 5 Combat Encounter XP Budget
-
-(function () {
-	'use strict';
 
 	var tmp = {};
-	MONSTERS.forEach(function (monster) {
+	DND5_MONSTERS.forEach(function (monster) {
 		if (!tmp[monster.challenge]) {
 			tmp[monster.challenge] = { label: 'Challenge ' + monster.challenge + ' (' + monster.xp + ' XP)', value: monster.xp, options: [] };
 		}
@@ -388,21 +345,59 @@ $('#home-list').on('click', '.list-item', function () {
 		}
 	});
 
+	var thresholds = {
+		'1': [25, 50, 75, 100],
+		'2': [50, 100, 150, 200],
+		'3': [75, 150, 225, 400],
+		'4': [125, 250, 375, 500],
+		'5': [250, 500, 750, 1100],
+		'6': [300, 600, 900, 1400],
+		'7': [350, 750, 1100, 1700],
+		'8': [450, 900, 1400, 2100],
+		'9': [550, 1100, 1600, 2400],
+		'10': [600, 1200, 1900, 2800],
+		'11': [800, 1600, 2400, 3600],
+		'12': [1000, 2000, 3000, 4500],
+		'13': [1100, 2200, 3400, 5100],
+		'14': [1250, 2500, 3800, 5700],
+		'15': [1400, 2800, 4300, 6400],
+		'16': [1600, 3200, 4800, 7200],
+		'17': [2000, 3900, 5900, 8800],
+		'18': [2100, 4200, 6300, 9500],
+		'19': [2400, 4900, 7300, 10900],
+		'20': [2800, 5700, 8500, 12700]
+	};
+
 	$('#dnd5-encounter').on('change', '.control', function () {
-		var characters = $('#dnd5-encounter-characters').val(),
-			budget = parseInt($('#dnd5-encounter-budget').val(), 10),
-			output_number = 0,
+		var characters = 0,
+			easy = 0,
+			medium = 0,
+			hard = 0,
+			lethal = 0;
+		[1, 2, 3, 4, 5, 6].forEach(function (id) {
+			var level = parseInt($('#dnd5-encounter-chlevel' + id).val(), 10);
+			if (level > 0) {
+				characters++;
+				var tmp = thresholds[level.toString()];
+				easy += tmp[0];
+				medium += tmp[1];
+				hard += tmp[2];
+				lethal += tmp[3];
+			}
+		});
+		$('#dnd5-encounter-thresholds').text('Easy: ' + easy + ' XP - Medium: ' + medium + ' XP - Hard: ' + hard + ' XP - Lethal: ' + lethal + ' XP');
+		var output_number = 0,
 			output_xp = 0;
-		['m1', 'm2', 'm3', 'm4', 'm5'].forEach(function (item) {
-			var number = parseInt($('#dnd5-encounter-' + item + '-number').val(), 10),
-				type = parseInt($('#dnd5-encounter-' + item + '-type').val(), 10);
+		[1, 2, 3, 4, 5].forEach(function (id) {
+			var number = parseInt($('#dnd5-encounter-m' + id + '-number').val(), 10),
+				type = parseInt($('#dnd5-encounter-m' + id + '-type').val(), 10);
 			if (type !== 0) {
 				output_number += number;
 				output_xp += number * type;
 			}
 		});
 		var multiplier = 1;
-		if (characters === '1-2') {
+		if (characters <= 2) {
 			if (output_number === 1) {
 				multiplier = 1.5;
 			} else if (output_number === 2) {
@@ -414,7 +409,7 @@ $('#home-list').on('click', '.list-item', function () {
 			} else if (output_number >= 11) {
 				multiplier = 4;
 			}
-		} else if (characters === '3-4-5') {
+		} else if (characters >= 3 && characters <= 5) {
 			if (output_number === 1) {
 				multiplier = 1;
 			} else if (output_number === 2) {
@@ -428,7 +423,7 @@ $('#home-list').on('click', '.list-item', function () {
 			} else if (output_number >= 15) {
 				multiplier = 4;
 			}
-		} else if (characters === '6+') {
+		} else if (characters >= 6) {
 			if (output_number === 1) {
 				multiplier = 0.5;
 			} else if (output_number === 2) {
@@ -443,7 +438,19 @@ $('#home-list').on('click', '.list-item', function () {
 				multiplier = 3;
 			}
 		}
-		var output_xp_multiplier = output_xp * multiplier;
-		$('#dnd5-encounter-output').text(output_xp + ' XP' + (output_xp_multiplier !== output_xp ? ' (' + output_xp_multiplier + ' XP after multiplier)' : '')).css({ color: output_xp_multiplier > budget ? 'crimson' : '' });
+		var output_xp_multiplier = output_xp * multiplier,
+			output = output_xp + ' XP' + (output_xp_multiplier !== output_xp ? ' (' + output_xp_multiplier + ' XP after multiplier)' : '');
+		if (output_xp_multiplier < easy) {
+			output += ' - not even an encounter';
+		} else if (output_xp_multiplier >= easy && output_xp_multiplier < medium) {
+			output += ' - easy encounter';
+		} else if (output_xp_multiplier >= medium && output_xp_multiplier < hard) {
+			output += ' - medium encounter';
+		} else if (output_xp_multiplier >= hard && output_xp_multiplier < lethal) {
+			output += ' - hard encounter';
+		} else if (output_xp_multiplier >= lethal) {
+			output += ' - lethal encounter';
+		}
+		$('#dnd5-encounter-output').text(output);
 	});
 })();
