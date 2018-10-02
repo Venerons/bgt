@@ -1,4 +1,4 @@
-var MONSTERS = [
+var DND5_MONSTERS = [
 	{
 		"name": {
 			"en": "Awakened Shrub",
@@ -6,7 +6,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -15,7 +18,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -24,7 +30,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -33,7 +42,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -42,7 +54,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -51,7 +66,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -60,7 +78,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -69,7 +90,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -78,7 +102,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -87,7 +114,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -96,7 +126,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -105,7 +138,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -114,7 +150,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -123,7 +162,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -132,7 +174,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -141,7 +186,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -150,7 +198,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -159,7 +210,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -168,7 +222,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -177,7 +234,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -186,7 +246,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -195,7 +258,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -204,7 +270,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -213,7 +282,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -222,7 +294,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -231,7 +306,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -240,7 +318,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -249,7 +330,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -258,7 +342,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -267,7 +354,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -276,7 +366,10 @@ var MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -285,7 +378,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -294,7 +390,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -303,7 +402,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -312,7 +414,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -321,7 +426,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -330,7 +438,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -339,7 +450,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -348,7 +462,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -357,7 +474,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -366,7 +486,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -375,7 +498,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -384,7 +510,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -393,7 +522,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -402,7 +534,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -411,7 +546,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -420,7 +558,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -429,7 +570,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -438,7 +582,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -447,7 +594,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -456,7 +606,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -465,7 +618,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -474,7 +630,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -483,7 +642,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -492,7 +654,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -501,7 +666,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -510,7 +678,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -519,7 +690,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -528,7 +702,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -537,7 +714,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -546,7 +726,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -555,7 +738,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -564,7 +750,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -573,7 +762,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -582,7 +774,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -591,7 +786,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -600,7 +798,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -609,7 +810,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -618,7 +822,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -627,7 +834,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -636,7 +846,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -645,7 +858,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -654,7 +870,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -663,7 +882,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -672,7 +894,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -681,7 +906,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -690,7 +918,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -699,7 +930,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -708,7 +942,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -717,7 +954,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -726,7 +966,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -735,7 +978,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -744,7 +990,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -753,7 +1002,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -762,7 +1014,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -771,7 +1026,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -780,7 +1038,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -789,7 +1050,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -798,7 +1062,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -807,7 +1074,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -816,7 +1086,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -825,7 +1098,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -834,7 +1110,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -843,7 +1122,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -852,7 +1134,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -861,7 +1146,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -870,7 +1158,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -879,7 +1170,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -888,7 +1182,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -897,7 +1194,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -906,7 +1206,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -915,7 +1218,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -924,7 +1230,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -933,7 +1242,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -942,7 +1254,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -951,7 +1266,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -960,7 +1278,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -969,7 +1290,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -978,7 +1302,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -987,7 +1314,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -996,7 +1326,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1005,7 +1338,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1014,7 +1350,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1023,7 +1362,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1032,7 +1374,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1041,7 +1386,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1050,7 +1398,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1059,7 +1410,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1068,7 +1422,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1077,7 +1434,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1086,7 +1446,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1095,7 +1458,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1104,7 +1470,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1113,7 +1482,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1122,7 +1494,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1131,7 +1506,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1140,7 +1518,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1149,7 +1530,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1158,7 +1542,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1167,7 +1554,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1176,7 +1566,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1185,7 +1578,10 @@ var MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1194,7 +1590,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1203,7 +1602,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1212,7 +1614,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1221,7 +1626,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1230,7 +1638,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1239,7 +1650,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1248,7 +1662,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1257,7 +1674,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1266,7 +1686,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1275,7 +1698,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1284,7 +1710,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1293,7 +1722,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1302,7 +1734,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1311,7 +1746,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1320,7 +1758,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1329,7 +1770,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1338,7 +1782,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1347,7 +1794,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1356,7 +1806,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1365,7 +1818,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1374,7 +1830,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1383,7 +1842,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1392,7 +1854,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1401,7 +1866,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1410,7 +1878,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1419,7 +1890,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1428,7 +1902,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1437,7 +1914,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1446,7 +1926,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1455,7 +1938,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1464,7 +1950,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1473,7 +1962,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1482,7 +1974,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1491,7 +1986,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1500,7 +1998,10 @@ var MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1509,7 +2010,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1518,7 +2022,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1527,7 +2034,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1536,7 +2046,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1545,7 +2058,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1554,7 +2070,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1563,7 +2082,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1572,7 +2094,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1581,7 +2106,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1590,7 +2118,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1599,7 +2130,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1608,7 +2142,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1617,7 +2154,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1626,7 +2166,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1635,7 +2178,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1644,7 +2190,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1653,7 +2202,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1662,7 +2214,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1671,7 +2226,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1680,7 +2238,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1689,7 +2250,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1698,7 +2262,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1707,7 +2274,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1716,7 +2286,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1725,7 +2298,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1734,7 +2310,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1743,7 +2322,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1752,7 +2334,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1761,7 +2346,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1770,7 +2358,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1779,7 +2370,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1788,7 +2382,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1797,7 +2394,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1806,7 +2406,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1815,7 +2418,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1824,7 +2430,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1833,7 +2442,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1842,7 +2454,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1851,7 +2466,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1860,7 +2478,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1869,7 +2490,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1878,7 +2502,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1887,7 +2514,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1896,7 +2526,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1905,7 +2538,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1914,7 +2550,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1923,7 +2562,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1932,7 +2574,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1941,7 +2586,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1950,7 +2598,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1959,7 +2610,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1968,7 +2622,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1977,7 +2634,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1986,7 +2646,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -1995,7 +2658,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2004,7 +2670,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2013,7 +2682,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2022,7 +2694,10 @@ var MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2031,7 +2706,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2040,7 +2718,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2049,7 +2730,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2058,7 +2742,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2067,7 +2754,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2076,7 +2766,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2085,7 +2778,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2094,7 +2790,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2103,7 +2802,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2112,7 +2814,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2121,7 +2826,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2130,7 +2838,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2139,7 +2850,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2148,7 +2862,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2157,7 +2874,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2166,7 +2886,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2175,7 +2898,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2184,7 +2910,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2193,7 +2922,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2202,7 +2934,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2211,7 +2946,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2220,7 +2958,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2229,7 +2970,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2238,7 +2982,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2247,7 +2994,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2256,7 +3006,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2265,7 +3018,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2274,7 +3030,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2283,7 +3042,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2292,7 +3054,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2301,7 +3066,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2310,7 +3078,10 @@ var MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2319,7 +3090,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2328,7 +3102,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2337,7 +3114,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2346,7 +3126,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2355,7 +3138,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2364,7 +3150,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2373,7 +3162,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2382,7 +3174,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2391,7 +3186,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2400,7 +3198,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2409,7 +3210,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2418,7 +3222,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2427,7 +3234,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2436,7 +3246,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2445,7 +3258,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2454,7 +3270,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2463,7 +3282,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2472,7 +3294,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2481,7 +3306,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2490,7 +3318,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2499,7 +3330,10 @@ var MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2508,7 +3342,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2517,7 +3354,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2526,7 +3366,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2535,7 +3378,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2544,7 +3390,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2553,7 +3402,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2562,7 +3414,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2571,7 +3426,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2580,7 +3438,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2589,7 +3450,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2598,7 +3462,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2607,7 +3474,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2616,7 +3486,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2625,7 +3498,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2634,7 +3510,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2643,7 +3522,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2652,7 +3534,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2661,7 +3546,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2670,7 +3558,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2679,7 +3570,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2688,7 +3582,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2697,7 +3594,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2706,7 +3606,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2715,7 +3618,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2724,7 +3630,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2733,7 +3642,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2742,7 +3654,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2751,7 +3666,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2760,7 +3678,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2769,7 +3690,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2778,7 +3702,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2787,7 +3714,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2796,7 +3726,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2805,7 +3738,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2814,7 +3750,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2823,7 +3762,10 @@ var MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2832,7 +3774,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2841,7 +3786,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2850,7 +3798,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2859,7 +3810,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2868,7 +3822,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2877,7 +3834,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2886,7 +3846,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2895,7 +3858,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2904,7 +3870,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2913,7 +3882,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2922,7 +3894,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2931,7 +3906,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2940,7 +3918,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2949,7 +3930,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2958,7 +3942,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2967,7 +3954,10 @@ var MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2976,7 +3966,10 @@ var MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2985,7 +3978,10 @@ var MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -2994,7 +3990,10 @@ var MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3003,7 +4002,10 @@ var MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3012,7 +4014,10 @@ var MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3021,7 +4026,10 @@ var MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3030,7 +4038,10 @@ var MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3039,7 +4050,10 @@ var MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3048,7 +4062,10 @@ var MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3057,7 +4074,10 @@ var MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3066,7 +4086,10 @@ var MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3075,7 +4098,10 @@ var MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3084,7 +4110,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3093,7 +4122,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3102,7 +4134,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3111,7 +4146,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3120,7 +4158,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3129,7 +4170,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3138,7 +4182,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3147,7 +4194,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3156,7 +4206,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3165,7 +4218,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3174,7 +4230,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3183,7 +4242,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3192,7 +4254,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3201,7 +4266,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3210,7 +4278,10 @@ var MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3219,7 +4290,10 @@ var MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3228,7 +4302,10 @@ var MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3237,7 +4314,10 @@ var MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3246,7 +4326,10 @@ var MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3255,7 +4338,10 @@ var MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3264,7 +4350,10 @@ var MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3273,7 +4362,10 @@ var MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3282,7 +4374,10 @@ var MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3291,7 +4386,10 @@ var MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3300,7 +4398,10 @@ var MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3309,7 +4410,10 @@ var MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3318,7 +4422,10 @@ var MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3327,7 +4434,10 @@ var MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3336,7 +4446,10 @@ var MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3345,7 +4458,10 @@ var MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3354,7 +4470,10 @@ var MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3363,7 +4482,10 @@ var MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3372,7 +4494,10 @@ var MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3381,7 +4506,10 @@ var MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3390,7 +4518,10 @@ var MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3399,7 +4530,10 @@ var MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3408,7 +4542,10 @@ var MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3417,7 +4554,10 @@ var MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3426,7 +4566,10 @@ var MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3435,7 +4578,10 @@ var MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3444,7 +4590,10 @@ var MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3453,7 +4602,10 @@ var MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3462,7 +4614,10 @@ var MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3471,7 +4626,10 @@ var MONSTERS = [
 		},
 		"challenge": "12",
 		"xp": 8400,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3480,7 +4638,10 @@ var MONSTERS = [
 		},
 		"challenge": "12",
 		"xp": 8400,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3489,7 +4650,10 @@ var MONSTERS = [
 		},
 		"challenge": "12",
 		"xp": 8400,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3498,7 +4662,10 @@ var MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3507,7 +4674,10 @@ var MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3516,7 +4686,10 @@ var MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3525,7 +4698,10 @@ var MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3534,7 +4710,10 @@ var MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3543,7 +4722,10 @@ var MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3552,7 +4734,10 @@ var MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3561,7 +4746,10 @@ var MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3570,7 +4758,10 @@ var MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3579,7 +4770,10 @@ var MONSTERS = [
 		},
 		"challenge": "14",
 		"xp": 11500,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3588,7 +4782,10 @@ var MONSTERS = [
 		},
 		"challenge": "14",
 		"xp": 11500,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3597,7 +4794,10 @@ var MONSTERS = [
 		},
 		"challenge": "14",
 		"xp": 11500,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3606,7 +4806,10 @@ var MONSTERS = [
 		},
 		"challenge": "14",
 		"xp": 11500,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3615,7 +4818,10 @@ var MONSTERS = [
 		},
 		"challenge": "14",
 		"xp": 11500,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3624,7 +4830,10 @@ var MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3633,7 +4842,10 @@ var MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3642,7 +4854,10 @@ var MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3651,7 +4866,10 @@ var MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3660,7 +4878,10 @@ var MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3669,7 +4890,10 @@ var MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3678,7 +4902,10 @@ var MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3687,7 +4914,10 @@ var MONSTERS = [
 		},
 		"challenge": "16",
 		"xp": 15000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3696,7 +4926,10 @@ var MONSTERS = [
 		},
 		"challenge": "16",
 		"xp": 15000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3705,7 +4938,10 @@ var MONSTERS = [
 		},
 		"challenge": "16",
 		"xp": 15000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3714,7 +4950,10 @@ var MONSTERS = [
 		},
 		"challenge": "16",
 		"xp": 15000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3723,7 +4962,10 @@ var MONSTERS = [
 		},
 		"challenge": "16",
 		"xp": 15000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3732,7 +4974,10 @@ var MONSTERS = [
 		},
 		"challenge": "16",
 		"xp": 15000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3741,7 +4986,10 @@ var MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3750,7 +4998,10 @@ var MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3759,7 +5010,10 @@ var MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3768,7 +5022,10 @@ var MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3777,7 +5034,10 @@ var MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3786,7 +5046,10 @@ var MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3795,7 +5058,10 @@ var MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3804,7 +5070,10 @@ var MONSTERS = [
 		},
 		"challenge": "18",
 		"xp": 20000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3813,7 +5082,10 @@ var MONSTERS = [
 		},
 		"challenge": "19",
 		"xp": 22000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3822,7 +5094,10 @@ var MONSTERS = [
 		},
 		"challenge": "20",
 		"xp": 25000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3831,7 +5106,10 @@ var MONSTERS = [
 		},
 		"challenge": "20",
 		"xp": 25000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3840,7 +5118,10 @@ var MONSTERS = [
 		},
 		"challenge": "20",
 		"xp": 25000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3849,7 +5130,10 @@ var MONSTERS = [
 		},
 		"challenge": "20",
 		"xp": 25000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3858,7 +5142,10 @@ var MONSTERS = [
 		},
 		"challenge": "21",
 		"xp": 33000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3867,7 +5154,10 @@ var MONSTERS = [
 		},
 		"challenge": "21",
 		"xp": 33000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3876,7 +5166,10 @@ var MONSTERS = [
 		},
 		"challenge": "21",
 		"xp": 33000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3885,7 +5178,10 @@ var MONSTERS = [
 		},
 		"challenge": "21",
 		"xp": 33000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3894,7 +5190,10 @@ var MONSTERS = [
 		},
 		"challenge": "22",
 		"xp": 41000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3903,7 +5202,10 @@ var MONSTERS = [
 		},
 		"challenge": "22",
 		"xp": 41000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3912,7 +5214,10 @@ var MONSTERS = [
 		},
 		"challenge": "22",
 		"xp": 41000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3921,7 +5226,10 @@ var MONSTERS = [
 		},
 		"challenge": "23",
 		"xp": 50000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3930,7 +5238,10 @@ var MONSTERS = [
 		},
 		"challenge": "23",
 		"xp": 50000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3939,7 +5250,10 @@ var MONSTERS = [
 		},
 		"challenge": "23",
 		"xp": 50000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3948,7 +5262,10 @@ var MONSTERS = [
 		},
 		"challenge": "23",
 		"xp": 50000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3957,7 +5274,10 @@ var MONSTERS = [
 		},
 		"challenge": "24",
 		"xp": 62000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3966,7 +5286,10 @@ var MONSTERS = [
 		},
 		"challenge": "24",
 		"xp": 62000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	},
 	{
 		"name": {
@@ -3975,6 +5298,9 @@ var MONSTERS = [
 		},
 		"challenge": "30",
 		"xp": 155000,
-		"reference": "Monster Manual"
+		"reference": {
+			"en": "Monster Manual",
+			"it": "Manuale dei Mostri"
+		}
 	}
 ];
