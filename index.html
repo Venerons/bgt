@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Boardgame Trove</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header>
@@ -22,6 +22,7 @@
 					<li class="list-group">Generic Tools</li>
 					<li class="list-item" data-page="generic-dice">Dice Simulator</li>
 					<li class="list-item" data-page="generic-name">Random Character Name</li>
+					<li class="list-item" data-page="generic-dungeondesigner">Dungeon Designer</li>
 					<li class="list-group">Dungeons &amp; Dragons 5th Edition</li>
 					<li class="list-item" data-page="dnd5-monsters">Monsters Database</li>
 					<li class="list-item" data-page="dnd5-encounter">Combat Encounter Crafter</li>
@@ -45,13 +46,13 @@
 		<div id="generic-dice" class="page" style="display: none">
 			<div id="generic-dice-classic" class="card">
 				<div class="flex-row flex-row-margins">
-					<button data-dice="4" class="button">1d4</button>
-					<button data-dice="6" class="button">1d6</button>
-					<button data-dice="8" class="button">1d8</button>
-					<button data-dice="10" class="button">1d10</button>
-					<button data-dice="12" class="button">1d12</button>
-					<button data-dice="20" class="button">1d20</button>
-					<button data-dice="100" class="button">1d100</button>
+					<button data-dice="4" class="button" style="flex: 1">1d4</button>
+					<button data-dice="6" class="button" style="flex: 1">1d6</button>
+					<button data-dice="8" class="button" style="flex: 1">1d8</button>
+					<button data-dice="10" class="button" style="flex: 1">1d10</button>
+					<button data-dice="12" class="button" style="flex: 1">1d12</button>
+					<button data-dice="20" class="button" style="flex: 1">1d20</button>
+					<button data-dice="100" class="button" style="flex: 1">1d100</button>
 				</div>
 				<p id="generic-dice-classic-output" style="text-align: center; font-size: 3rem">-</p>
 			</div>
@@ -119,6 +120,31 @@
 			</div>
 			<div class="card">
 				<p id="generic-name-output" style="text-align: center; font-size: 3rem">-</p>
+			</div>
+		</div>
+
+		<div id="generic-dungeondesigner" class="page" style="display: none">
+			<div class="card">
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Width</label>
+					<input id="generic-dungeondesigner-width" type="number" min="1" max="100" step="1" value="20" class="input control" style="flex: 2">
+				</div>
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Height</label>
+					<input id="generic-dungeondesigner-height" type="number" min="1" max="100" step="1" value="20" class="input control" style="flex: 2">
+				</div>
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Tile Size</label>
+					<input id="generic-dungeondesigner-size" type="number" min="10" max="100" step="1" value="50" class="input control" style="flex: 2">
+				</div>
+				<div class="flex-row flex-row-margins">
+					<button id="generic-dungeondesigner-exportpng" class="button">Export PNG</button>
+					<button id="generic-dungeondesigner-exportjpeg" class="button">Export JPEG</button>
+					<button id="generic-dungeondesigner-exportwebp" class="button">Export WEBP</button>
+				</div>
+			</div>
+			<div class="card">
+				<canvas id="generic-dungeondesigner-canvas"></canvas>
 			</div>
 		</div>
 
@@ -204,7 +230,9 @@
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.slim.min.js"></script>
-		<script src="monsters.js"></script>
-		<script src="main.js"></script>
+		<script src="js/saveas.js"></script>
+		<script src="js/palette.min.js"></script>
+		<script src="js/dnd5_monsters.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
