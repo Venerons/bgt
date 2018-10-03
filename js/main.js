@@ -257,6 +257,128 @@ $('#home-list').on('click', '.list-item', function () {
 	});
 })();
 
+// Generic Dungeon Designer
+
+(function () {
+	'use strict';
+
+	var map_tilesize = parseInt($('#generic-dungeondesigner-size').val(), 10),
+		map_tilewidth = parseInt($('#generic-dungeondesigner-width').val(), 10),
+		map_tileheight = parseInt($('#generic-dungeondesigner-height').val(), 10),
+		rows = [];
+	for (var i = 0; i < map_tileheight; ++i) {
+		var row = [];
+		for (var j = 0; j < map_tilewidth; ++j) {
+			row.push(0);
+		}
+		rows.push(row);
+	}
+
+	$('#generic-dungeondesigner').on('input change', '.control', function () {
+		map_tilesize = parseInt($('#generic-dungeondesigner-size').val(), 10);
+		map_tilewidth = parseInt($('#generic-dungeondesigner-width').val(), 10);
+		map_tileheight = parseInt($('#generic-dungeondesigner-height').val(), 10);
+		rows = [];
+		for (var i = 0; i < map_tileheight; ++i) {
+			var row = [];
+			for (var j = 0; j < map_tilewidth; ++j) {
+				row.push(0);
+			}
+			rows.push(row);
+		}
+	});
+
+	var paper = new Palette('generic-dungeondesigner-canvas');
+	var repaint = function (skip_grid) {
+		paper.size(map_tilesize * map_tilewidth, map_tilesize * map_tileheight);
+		paper.clear();
+		paper.rect({ x: 0, y: 0, width: map_tilesize * map_tilewidth, height: map_tilesize * map_tileheight,  fill: '#ebd5b3' }); // #f6daaf
+		rows.forEach(function (row, y) {
+			row.forEach(function (content, x) {
+				if (!skip_grid) {
+					paper.rect({ x: x * map_tilesize, y: y * map_tilesize, width: map_tilesize, height: map_tilesize, stroke: '#000000', thickness: 1 });
+				}
+				if (content === 1) {
+					paper.rect({ x: x * map_tilesize, y: y * map_tilesize, width: map_tilesize, height: map_tilesize, fill: '#ffe7d5', stroke: '#000000', thickness: 1 });
+				}
+			});
+		});
+	};
+	repaint();
+
+	// TODO read https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas
+
+	var canvas = document.getElementById('generic-dungeondesigner-canvas'),
+		canvas_mousedown = false,
+		canvas_button = 0;
+	canvas.addEventListener('contextmenu', function (e) { e.preventDefault() });
+	/*
+	canvas.addEventListener('mouseenter', function (e) {
+		// nothing
+	});
+	canvas.addEventListener('mouseover', function (e) {
+		// nothing
+	});
+	*/
+	canvas.addEventListener('mousedown', function (e) {
+		canvas_mousedown = true;
+		canvas_button = e.button;
+		var x = Math.floor((e.pageX - this.offsetLeft) / map_tilesize),
+			y = Math.floor((e.pageY - this.offsetTop) / map_tilesize);
+		if (canvas_button === 0) {
+			rows[y][x] = 1;
+		} else {
+			rows[y][x] = 0;
+		}
+		repaint();
+	});
+	canvas.addEventListener('mouseup', function (e) {
+		canvas_mousedown = false;
+	});
+	canvas.addEventListener('mousemove', function (e) {
+		if (canvas_mousedown) {
+			var x = Math.floor((e.pageX - this.offsetLeft) / map_tilesize),
+				y = Math.floor((e.pageY - this.offsetTop) / map_tilesize);
+			if (canvas_button === 0) {
+				rows[y][x] = 1;
+			} else {
+				rows[y][x] = 0;
+			}
+			repaint();
+		}
+	});
+	canvas.addEventListener('mouseleave', function () {
+		mousedown = false;
+	});
+	canvas.addEventListener('mouseout', function () {
+		mousedown = false;
+	});
+
+	$('#generic-dungeondesigner-exportpng').on('click', function () {
+		repaint(true);
+		paper.toBlob({ type: 'image/png' }, function (blob) {
+			saveAs(blob, 'dungeon.png');
+			repaint();
+		});
+	});
+
+	$('#generic-dungeondesigner-exportjpeg').on('click', function () {
+		repaint(true);
+		paper.toBlob({ type: 'image/jpeg', quality: 1 }, function (blob) {
+			saveAs(blob, 'dungeon.jpeg');
+			repaint();
+		});
+	});
+
+	$('#generic-dungeondesigner-exportwebp').on('click', function () {
+		repaint(true);
+		paper.toBlob({ type: 'image/webp', quality: 1 }, function (blob) {
+			saveAs(blob, 'dungeon.webp');
+			repaint();
+		});
+	});
+})();
+
 // D&D 5 Monsters Database
 
 (function () {
