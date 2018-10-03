@@ -43,6 +43,11 @@ a {
 	text-decoration: none;
 	cursor: pointer;
 }
+:disabled {
+	opacity: 0.3;
+	pointer-events: none;
+	cursor: default;
+}
 
 .page {
 	flex: 1;
