@@ -262,19 +262,21 @@ $('#home-list').on('click', '.list-item', function () {
 (function () {
 	'use strict';
 
-	var map_tilesize = 0,
-		map_tilewidth = 0,
-		map_tileheight = 0,
-		map = { rows: [] };
+	var map = {
+		tilesize: 0,
+		width: 0,
+		height: 0,
+		rows: []
+	};
 
 	var resize = function () {
-		map_tilesize = parseInt($('#generic-dungeondesigner-size').val(), 10);
-		map_tilewidth = parseInt($('#generic-dungeondesigner-width').val(), 10);
-		map_tileheight = parseInt($('#generic-dungeondesigner-height').val(), 10);
+		map.tilesize = parseInt($('#generic-dungeondesigner-size').val(), 10);
+		map.width = parseInt($('#generic-dungeondesigner-width').val(), 10);
+		map.height = parseInt($('#generic-dungeondesigner-height').val(), 10);
 		map.rows = [];
-		for (var i = 0; i < map_tileheight; ++i) {
+		for (var i = 0; i < map.height; ++i) {
 			var row = [];
-			for (var j = 0; j < map_tilewidth; ++j) {
+			for (var j = 0; j < map.width; ++j) {
 				row.push(0);
 			}
 			map.rows.push(row);
@@ -288,37 +290,37 @@ $('#home-list').on('click', '.list-item', function () {
 		var paper;
 		if (!export_format) {
 			paper = new Palette('generic-dungeondesigner-canvas');
-			paper.size(map_tilesize * map_tilewidth, map_tilesize * map_tileheight);
+			paper.size(map.tilesize * map.width, map.tilesize * map.height);
 		} else {
 			paper = new Palette(document.createElement('canvas'));
 			var dpr = window.devicePixelRatio || 1,
 				rect = paper.canvas.getBoundingClientRect();
-			paper.size(map_tilesize * map_tilewidth * dpr, map_tilesize * map_tileheight * dpr);
+			paper.size(map.tilesize * map.width * dpr, map.tilesize * map.height * dpr);
 			paper.context.scale(dpr, dpr);
 		}
 		paper.clear();
-		paper.rect({ x: 0, y: 0, width: map_tilesize * map_tilewidth, height: map_tilesize * map_tileheight,  fill: '#ebd5b3' }); // #f6daaf
+		paper.rect({ x: 0, y: 0, width: map.tilesize * map.width, height: map.tilesize * map.height,  fill: '#ebd5b3' }); // #f6daaf
 		map.rows.forEach(function (row, y) {
 			row.forEach(function (content, x) {
 				if (!export_format) {
-					paper.rect({ x: x * map_tilesize, y: y * map_tilesize, width: map_tilesize, height: map_tilesize, stroke: '#00000030', thickness: 1 });
+					paper.rect({ x: x * map.tilesize, y: y * map.tilesize, width: map.tilesize, height: map.tilesize, stroke: '#00000030', thickness: 1 });
 				}
 				if (content === 1) {
-					paper.rect({ x: x * map_tilesize, y: y * map_tilesize, width: map_tilesize, height: map_tilesize, fill: '#ffe7d5', stroke: '#00000030', thickness: 1 });
+					paper.rect({ x: x * map.tilesize, y: y * map.tilesize, width: map.tilesize, height: map.tilesize, fill: '#ffe7d5', stroke: '#00000030', thickness: 1 });
 				}
 			});
 		});
 		if (export_format === 'png') {
 			paper.toBlob({ type: 'image/png' }, function (blob) {
-				saveAs(blob, 'dungeon.png');
+				saveAs(blob, 'bgt_dungeon.png');
 			});
 		} else if (export_format === 'jpeg') {
 			paper.toBlob({ type: 'image/jpeg', quality: 1 }, function (blob) {
-				saveAs(blob, 'dungeon.jpeg');
+				saveAs(blob, 'bgt_dungeon.jpeg');
 			});
 		} else if (export_format === 'webp') {
 			paper.toBlob({ type: 'image/webp', quality: 1 }, function (blob) {
-				saveAs(blob, 'dungeon.webp');
+				saveAs(blob, 'bgt_dungeon.webp');
 			});
 		}
 	};
@@ -329,7 +331,45 @@ $('#home-list').on('click', '.list-item', function () {
 		repaint();
 	});
 
-	var canvas = document.getElementById('generic-dungeondesigner-canvas'),
+	$('#generic-dungeondesigner-load').on('click', function () {
+		$('#generic-dungeondesigner-load-input').click();
+	});
+	$('#generic-dungeondesigner-load-input').on('change', function () {
+		var file = this.files[0];
+		this.value = null;
+		var reader = new FileReader();
+		reader.onerror = function (event) {
+			alert('Error while reading file.');
+		};
+		reader.onload = function (event) {
+			map = JSON.parse(event.target.result);
+			$('#generic-dungeondesigner-size').val(map.tilesize);
+			$('#generic-dungeondesigner-width').val(map.width);
+			$('#generic-dungeondesigner-height').val(map.height);
+			repaint();
+		};
+		reader.readAsText(file);
+	});
+
+	$('#generic-dungeondesigner-save').on('click', function () {
+		var blob = new Blob([JSON.stringify(map)], { type: 'application/json;charset=UTF-8', encoding: 'UTF-8' });
+		saveAs(blob, 'bgt_dungeon.json');
+	});
+
+	$('#generic-dungeondesigner-exportpng').on('click', function () {
+		repaint('png');
+	});
+
+	$('#generic-dungeondesigner-exportjpeg').on('click', function () {
+		repaint('jpeg');
+	});
+
+	$('#generic-dungeondesigner-exportwebp').on('click', function () {
+		repaint('webp');
+	});
+
+	var page_element = document.getElementById('generic-dungeondesigner'),
+		canvas = document.getElementById('generic-dungeondesigner-canvas'),
 		canvas_mousedown = false,
 		canvas_button = 0;
 	canvas.addEventListener('contextmenu', function (e) { e.preventDefault(); });
@@ -344,8 +384,8 @@ $('#home-list').on('click', '.list-item', function () {
 	canvas.addEventListener('mousedown', function (e) {
 		canvas_mousedown = true;
 		canvas_button = e.button;
-		var x = Math.floor((e.pageX - this.offsetLeft) / map_tilesize),
-			y = Math.floor((e.pageY - this.offsetTop) / map_tilesize);
+		var x = Math.floor((e.pageX - this.offsetLeft + page_element.scrollLeft) / map.tilesize),
+			y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize);
 		if (canvas_button === 0) {
 			map.rows[y][x] = 1;
 		} else {
@@ -358,8 +398,8 @@ $('#home-list').on('click', '.list-item', function () {
 	});
 	canvas.addEventListener('mousemove', function (e) {
 		if (canvas_mousedown) {
-			var x = Math.floor((e.pageX - this.offsetLeft) / map_tilesize),
-				y = Math.floor((e.pageY - this.offsetTop) / map_tilesize);
+			var x = Math.floor((e.pageX - this.offsetLeft + page_element.scrollLeft) / map.tilesize),
+				y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize);
 			if (canvas_button === 0) {
 				map.rows[y][x] = 1;
 			} else {
@@ -373,18 +413,6 @@ $('#home-list').on('click', '.list-item', function () {
 	});
 	canvas.addEventListener('mouseout', function () {
 		canvas_mousedown = false;
-	});
-
-	$('#generic-dungeondesigner-exportpng').on('click', function () {
-		repaint('png');
-	});
-
-	$('#generic-dungeondesigner-exportjpeg').on('click', function () {
-		repaint('jpeg');
-	});
-
-	$('#generic-dungeondesigner-exportwebp').on('click', function () {
-		repaint('webp');
 	});
 })();
 
@@ -516,7 +544,11 @@ $('#home-list').on('click', '.list-item', function () {
 				lethal += tmp[3];
 			}
 		});
-		$('#dnd5-encounter-thresholds').html('<span style="color: cornflowerblue">Easy: ' + easy + ' XP</span><span style="color: lightgreen">Medium: ' + medium + ' XP</span><span style="color: orange">Hard: ' + hard + ' XP</span><span style="color: crimson">Lethal: ' + lethal + ' XP</span>');
+		$('#dnd5-encounter-thresholds').html(
+			'<span style="background: cornflowerblue; color: white; padding: 0 1rem">Easy: ' + easy + ' XP</span>' +
+			'<span style="background: #39b54a; color: white; padding: 0 1rem">Medium: ' + medium + ' XP</span>' +
+			'<span style="background: #eda745; color: white; padding: 0 1rem">Hard: ' + hard + ' XP</span>' +
+			'<span style="background: #c44230; color: white; padding: 0 1rem">Lethal: ' + lethal + ' XP</span>');
 		var output_number = 0,
 			output_xp = 0;
 		[1, 2, 3, 4, 5].forEach(function (id) {
@@ -572,15 +604,15 @@ $('#home-list').on('click', '.list-item', function () {
 		var output_xp_multiplier = output_xp * multiplier,
 			output;
 		if (output_xp_multiplier < easy) {
-			output = '<span style="color: cornflowerblue">Not an Encounter</span><br>';
+			output = '<span style="background: cornflowerblue; color: white; padding: 0 2rem">Not an Encounter</span><br>';
 		} else if (output_xp_multiplier >= easy && output_xp_multiplier < medium) {
-			output = '<span style="color: cornflowerblue">Easy Encounter</span><br>';
+			output = '<span style="background: cornflowerblue; color: white; padding: 0 2rem">Easy</span><br>';
 		} else if (output_xp_multiplier >= medium && output_xp_multiplier < hard) {
-			output = '<span style="color: lightgreen">Medium Encounter</span><br>';
+			output = '<span style="background: #39b54a; color: white; padding: 0 2rem">Medium</span><br>';
 		} else if (output_xp_multiplier >= hard && output_xp_multiplier < lethal) {
-			output = '<span style="color: orange">Hard Encounter</span><br>';
+			output = '<span style="background: #eda745; color: white; padding: 0 2rem">Hard</span><br>';
 		} else if (output_xp_multiplier >= lethal) {
-			output = '<span style="color: crimson">Lethal Encounter</span><br>';
+			output = '<span style="background: #c44230; color: white; padding: 0 2rem">Lethal</span><br>';
 		}
 		output += output_xp + ' XP<br>' + (output_xp_multiplier !== output_xp ? output_xp_multiplier + ' XP after multiplier' : '');
 		$('#dnd5-encounter-output').html(output);
