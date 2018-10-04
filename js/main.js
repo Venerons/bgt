@@ -278,7 +278,7 @@ $('#home-list').on('click', '.list-item', function () {
 			var row = map.tiles[i] || [];
 			for (var j = 0; j < map.width; ++j) {
 				if (!row[j]) {
-					row.push({ floor: 0 });
+					row.push(Object.create(null));
 				}
 			}
 			map.tiles[i] = row;
@@ -290,23 +290,159 @@ $('#home-list').on('click', '.list-item', function () {
 		var paper;
 		if (!export_format) {
 			paper = new Palette('#generic-dungeondesigner-canvas', { alpha: false });
-			paper.size(map.tilesize * map.width, map.tilesize * map.height);
+			paper.canvas.style.width = (map.width * map.tilesize) + 'px';
+			paper.canvas.style.height = (map.height * map.tilesize) + 'px';
 		} else {
 			paper = new Palette(document.createElement('canvas'), { alpha: false });
-			var dpr = window.devicePixelRatio || 1,
-				rect = paper.canvas.getBoundingClientRect();
-			paper.size(map.tilesize * map.width * dpr, map.tilesize * map.height * dpr);
-			paper.context.scale(dpr, dpr);
 		}
+		var dpr = window.devicePixelRatio || 1;
+		paper.size(map.width * map.tilesize * dpr, map.height * map.tilesize * dpr);
+		paper.context.scale(dpr, dpr);
 		paper.clear();
-		paper.rect({ x: 0, y: 0, width: map.tilesize * map.width, height: map.tilesize * map.height,  fill: '#ebd5b3' }); // #f6daaf
+		paper.rect({
+			x: 0,
+			y: 0,
+			width: map.tilesize * map.width,
+			height: map.tilesize * map.height,
+			fill: '#ebd5b3' // #f6daaf
+		});
 		map.tiles.forEach(function (row, y) {
 			row.forEach(function (tile, x) {
+				var x_base = x * map.tilesize,
+					y_base = y * map.tilesize,
+					size = map.tilesize;
 				if (!export_format) {
-					paper.rect({ x: x * map.tilesize, y: y * map.tilesize, width: map.tilesize, height: map.tilesize, stroke: '#00000030', thickness: 1 });
+					paper.rect({
+						x: x_base,
+						y: y_base,
+						width: size,
+						height: size,
+						stroke: '#00000030',
+						thickness: 1
+					});
 				}
-				if (tile.floor === 1) {
-					paper.rect({ x: x * map.tilesize, y: y * map.tilesize, width: map.tilesize, height: map.tilesize, fill: '#ffe7d5', stroke: '#00000030', thickness: 1 });
+				if (tile.floor) {
+					paper.rect({
+						x: x_base,
+						y: y_base,
+						width: size,
+						height: size,
+						fill: '#ffe7d5',
+						stroke: '#00000030',
+						thickness: 1
+					});
+				}
+				if (tile.door_h) {
+					paper.rect({
+						x: x_base,
+						y: y_base + size * 0.25,
+						width: size,
+						height: size * 0.5,
+						fill: '#a36223',
+						stroke: '#865625',
+						thickness: 1
+					});
+				}
+				if (tile.door_v) {
+					paper.rect({
+						x: x_base + size * 0.25,
+						y: y_base,
+						width: size * 0.5,
+						height: size,
+						fill: '#a36223',
+						stroke: '#865625',
+						thickness: 1
+					});
+				}
+				if (tile.column) {
+					paper.circle({
+						x: x_base + size * 0.5,
+						y: y_base + size * 0.5,
+						r: size * 0.25,
+						fill: '#ebd5b3',
+						stroke: '#00000030',
+						thickness: 1
+					});
+				}
+				if (tile.debris) {
+					paper.circle({
+						x: x_base + size * 0.25,
+						y: y_base + size * 0.25,
+						r: size * 0.12,
+						//fill: '#666666',
+						//stroke: '#5a5753',
+						fill: '#ebd5b3',
+						stroke: '#00000030',
+						thickness: 1
+					});
+					paper.circle({
+						x: x_base + size * 0.75,
+						y: y_base + size * 0.75,
+						r: size * 0.2,
+						//fill: '#666666',
+						//stroke: '#5a5753',
+						fill: '#ebd5b3',
+						stroke: '#00000030',
+						thickness: 1
+					});
+					paper.circle({
+						x: x_base + size * 0.6,
+						y: y_base + size * 0.3,
+						r: size * 0.25,
+						//fill: '#666666',
+						//stroke: '#5a5753',
+						fill: '#ebd5b3',
+						stroke: '#00000030',
+						thickness: 1
+					});
+					paper.circle({
+						x: x_base + size * 0.3,
+						y: y_base + size * 0.6,
+						r: size * 0.12,
+						//fill: '#666666',
+						//stroke: '#5a5753',
+						fill: '#ebd5b3',
+						stroke: '#00000030',
+						thickness: 1
+					});
+				}
+				if (tile.box) {
+					paper.rect({
+						x: x_base + size * 0.25,
+						y: y_base + size * 0.25,
+						width: size * 0.5,
+						height: size * 0.5,
+						fill: '#a36223',
+						stroke: '#865625',
+						thickness: 2
+					});
+					paper.line({
+						x1: x_base + size * 0.25,
+						y1: y_base + size * 0.25,
+						x2: x_base + size * 0.25 + size * 0.5,
+						y2: y_base + size * 0.25 + size * 0.5,
+						stroke: '#865625',
+						thickness: 2
+					});
+					paper.line({
+						x1: x_base + size * 0.25 + size * 0.5,
+						y1: y_base + size * 0.25,
+						x2: x_base + size * 0.25,
+						y2: y_base + size * 0.25 + size * 0.5,
+						stroke: '#865625',
+						thickness: 2
+					});
+				}
+				if (tile.text) {
+					paper.text({
+						text: tile.text,
+						x: x_base + size * 0.5,
+						y: y_base + size * 0.5,
+						font: 'Helvetica',
+						fill: '#000000',
+						align: 'center',
+						baseline: 'middle'
+					});
 				}
 			});
 		});
@@ -368,10 +504,31 @@ $('#home-list').on('click', '.list-item', function () {
 		repaint('webp');
 	});
 
+	$('#generic-dungeondesigner-element').on('change', function () {
+		canvas_element = $(this).val();
+	});
+
 	var page_element = document.getElementById('generic-dungeondesigner'),
 		canvas = document.getElementById('generic-dungeondesigner-canvas'),
+		canvas_element = $('#generic-dungeondesigner-element').val(),
 		canvas_mousedown = false,
 		canvas_button = 0;
+
+	var edit_tile = function (tile) {
+		if (canvas_button === 0) {
+			if (canvas_element === 'text') {
+				var text = prompt('Insert Text:');
+				if (text) {
+					tile.text = text;
+				}
+			} else {
+				tile[canvas_element] = 1;
+			}
+		} else {
+			delete tile[canvas_element];
+		}
+	};
+
 	canvas.addEventListener('contextmenu', function (e) { e.preventDefault(); });
 	/*
 	canvas.addEventListener('mouseenter', function (e) {
@@ -387,28 +544,20 @@ $('#home-list').on('click', '.list-item', function () {
 		var x = Math.floor((e.pageX - this.offsetLeft + page_element.scrollLeft) / map.tilesize),
 			y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize),
 			tile = map.tiles[y][x];
-		if (canvas_button === 0) {
-			tile.floor = 1;
-		} else {
-			tile.floor = 0;
-		}
+		edit_tile(tile);
 		repaint();
-	});
-	canvas.addEventListener('mouseup', function (e) {
-		canvas_mousedown = false;
 	});
 	canvas.addEventListener('mousemove', function (e) {
 		if (canvas_mousedown) {
 			var x = Math.floor((e.pageX - this.offsetLeft + page_element.scrollLeft) / map.tilesize),
 				y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize),
 				tile = map.tiles[y][x];
-			if (canvas_button === 0) {
-				tile.floor = 1;
-			} else {
-				tile.floor = 0;
-			}
+			edit_tile(tile);
 			repaint();
 		}
+	});
+	canvas.addEventListener('mouseup', function (e) {
+		canvas_mousedown = false;
 	});
 	canvas.addEventListener('mouseleave', function () {
 		canvas_mousedown = false;
