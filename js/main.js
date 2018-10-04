@@ -286,15 +286,13 @@ $('#home-list').on('click', '.list-item', function () {
 	};
 	resize();
 
-	// TODO read https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas
-
 	var repaint = function (export_format) {
 		var paper;
 		if (!export_format) {
-			paper = new Palette('generic-dungeondesigner-canvas');
+			paper = new Palette('#generic-dungeondesigner-canvas', { alpha: false });
 			paper.size(map.tilesize * map.width, map.tilesize * map.height);
 		} else {
-			paper = new Palette(document.createElement('canvas'));
+			paper = new Palette(document.createElement('canvas'), { alpha: false });
 			var dpr = window.devicePixelRatio || 1,
 				rect = paper.canvas.getBoundingClientRect();
 			paper.size(map.tilesize * map.width * dpr, map.tilesize * map.height * dpr);
