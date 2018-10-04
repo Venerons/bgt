@@ -235,9 +235,9 @@ $('#home-list').on('click', '.list-item', function () {
 			f: ['Ana', 'Acindina', 'Anacaona', 'Aji', 'Aramana', 'Ayiti', 'Cajaya', 'Casguaya', 'Guama', 'Jadzia', 'Kakata', 'Karaya', 'Liani', 'Mayneri', 'Nimita', 'Tinima', 'Tonina', 'Xiomara', 'Yari', 'Zemi']
 		},
 		'7thsea-jaragua': {
+			n: ['Ayo', 'Baako', 'Chi', 'Dubaku', 'Ekundayo', 'Folami', 'Gameli', 'Hauhouot', 'Ime', 'Kayin', 'Lebene', 'Makafui', 'Ngozi', 'Opeyemi', 'Pereko', 'Quaco', 'Senyo', 'Temitope', 'Uzoma', 'Xoese', 'Yayra'],
 			m: ['Adisa', 'Bamidele', 'Chukwuemeka', 'Dzigbode', 'Emeka', 'Fela', 'Gaddo', 'Hogan', 'Ikenna', 'Jawara', 'Kof', 'Lanre', 'Mamadou', 'Nnamdi', 'Okoro', 'Qwao', 'Senghor', 'Tomi', 'Uzochi', 'Yohance', 'Zebenjo'],
-			f: ['Akosua', 'Bosede', 'Chidimma', 'Dada', 'Ebele', 'Funanya', 'Gbemisola', 'Ige', 'Kunto', 'Lumusi', 'Mojisola', 'Nkiruka', 'Oni', 'Simisola', 'Thema', 'Urbi', 'Zinsa'],
-			neutral: ['Ayo', 'Baako', 'Chi', 'Dubaku', 'Ekundayo', 'Folami', 'Gameli', 'Hauhouot', 'Ime', 'Kayin', 'Lebene', 'Makafui', 'Ngozi', 'Opeyemi', 'Pereko', 'Quaco', 'Senyo', 'Temitope', 'Uzoma', 'Xoese', 'Yayra']
+			f: ['Akosua', 'Bosede', 'Chidimma', 'Dada', 'Ebele', 'Funanya', 'Gbemisola', 'Ige', 'Kunto', 'Lumusi', 'Mojisola', 'Nkiruka', 'Oni', 'Simisola', 'Thema', 'Urbi', 'Zinsa']
 		}
 	};
 
@@ -245,8 +245,9 @@ $('#home-list').on('click', '.list-item', function () {
 		var nameset = $('#generic-name-nameset').val(),
 			gender = $('#generic-name-gender').val(),
 			set = RCN[nameset];
-		if (set && set[gender]) {
-			var output = set[gender][Math.floor(Math.random() * set[gender].length)];
+		if (set) {
+			var array = set.n ? set.n.concat(set[gender]) : set[gender],
+				output = array[Math.floor(Math.random() * array.length)];
 			if (set.c) {
 				output += ' ' + set.c[Math.floor(Math.random() * set.c.length)];
 			}
@@ -266,20 +267,21 @@ $('#home-list').on('click', '.list-item', function () {
 		tilesize: 0,
 		width: 0,
 		height: 0,
-		rows: []
+		tiles: []
 	};
 
 	var resize = function () {
 		map.tilesize = parseInt($('#generic-dungeondesigner-size').val(), 10);
 		map.width = parseInt($('#generic-dungeondesigner-width').val(), 10);
 		map.height = parseInt($('#generic-dungeondesigner-height').val(), 10);
-		map.rows = [];
 		for (var i = 0; i < map.height; ++i) {
-			var row = [];
+			var row = map.tiles[i] || [];
 			for (var j = 0; j < map.width; ++j) {
-				row.push(0);
+				if (!row[j]) {
+					row.push({ floor: 0 });
+				}
 			}
-			map.rows.push(row);
+			map.tiles[i] = row;
 		}
 	};
 	resize();
@@ -300,12 +302,12 @@ $('#home-list').on('click', '.list-item', function () {
 		}
 		paper.clear();
 		paper.rect({ x: 0, y: 0, width: map.tilesize * map.width, height: map.tilesize * map.height,  fill: '#ebd5b3' }); // #f6daaf
-		map.rows.forEach(function (row, y) {
-			row.forEach(function (content, x) {
+		map.tiles.forEach(function (row, y) {
+			row.forEach(function (tile, x) {
 				if (!export_format) {
 					paper.rect({ x: x * map.tilesize, y: y * map.tilesize, width: map.tilesize, height: map.tilesize, stroke: '#00000030', thickness: 1 });
 				}
-				if (content === 1) {
+				if (tile.floor === 1) {
 					paper.rect({ x: x * map.tilesize, y: y * map.tilesize, width: map.tilesize, height: map.tilesize, fill: '#ffe7d5', stroke: '#00000030', thickness: 1 });
 				}
 			});
@@ -385,11 +387,12 @@ $('#home-list').on('click', '.list-item', function () {
 		canvas_mousedown = true;
 		canvas_button = e.button;
 		var x = Math.floor((e.pageX - this.offsetLeft + page_element.scrollLeft) / map.tilesize),
-			y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize);
+			y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize),
+			tile = map.tiles[y][x];
 		if (canvas_button === 0) {
-			map.rows[y][x] = 1;
+			tile.floor = 1;
 		} else {
-			map.rows[y][x] = 0;
+			tile.floor = 0;
 		}
 		repaint();
 	});
@@ -399,11 +402,12 @@ $('#home-list').on('click', '.list-item', function () {
 	canvas.addEventListener('mousemove', function (e) {
 		if (canvas_mousedown) {
 			var x = Math.floor((e.pageX - this.offsetLeft + page_element.scrollLeft) / map.tilesize),
-				y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize);
+				y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize),
+				tile = map.tiles[y][x];
 			if (canvas_button === 0) {
-				map.rows[y][x] = 1;
+				tile.floor = 1;
 			} else {
-				map.rows[y][x] = 0;
+				tile.floor = 0;
 			}
 			repaint();
 		}
