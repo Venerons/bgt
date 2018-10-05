@@ -594,7 +594,7 @@ $('#home-list').on('click', '.list-item', function () {
 	});
 })();
 
-// D&D 5 Monsters Database
+// D&D 5 Monsters
 
 (function () {
 	'use strict';
@@ -644,7 +644,7 @@ $('#home-list').on('click', '.list-item', function () {
 	});
 })();
 
-// D&D 5 Combat Encounter Crafter
+// D&D 5 Combat Encounter
 
 (function () {
 	'use strict';
@@ -794,5 +794,168 @@ $('#home-list').on('click', '.list-item', function () {
 		}
 		output += output_xp + ' XP<br>' + (output_xp_multiplier !== output_xp ? output_xp_multiplier + ' XP after multiplier' : '');
 		$('#dnd5-encounter-output').html(output);
+	});
+})();
+
+// 7th Sea Turn Tracker
+
+(function () {
+	'use strict';
+
+	$('#7thsea-turntracker-toolbar').on('click', 'button', function () {
+		var action = $(this).data('action');
+		if (action === 'sort') {
+			var array = [];
+			$('#7thsea-turntracker-list > li[data-id]').each(function () {
+				array.push($(this));
+			});
+			var $list = $('#7thsea-turntracker-list').empty();
+			array.sort(function (a, b) {
+				var a_type = a.data('type'),
+					a_number = parseInt(a.find('.turn-row-number').text(), 10),
+					b_type = b.data('type'),
+					b_number = parseInt(b.find('.turn-row-number').text(), 10);
+				if (a_number === 0) {
+					return 1;
+				} else if (b_number === 0) {
+					return -1;
+				} else if (a_type === 'squad') {
+					return 1;
+				} else if (b_type === 'squad') {
+					return -1;
+				} else if (a_number > b_number) {
+					return -1;
+				} else if (a_number < b_number) {
+					return 1;
+				} else if (a_type === 'villain') {
+					return -1;
+				} else if (b_type === 'villain') {
+					return 1;
+				} else {
+					return 0;
+				}
+			}).forEach(function ($row) {
+				$list.append($row);
+			});
+		} else {
+			var type, message;
+			if (action === 'add-character') {
+				type = 'character';
+				message = 'Character Name:';
+			} else if (action === 'add-villain') {
+				type = 'villain';
+				message = 'Villain Name:';
+			} else if (action === 'add-squad') {
+				type = 'squad';
+				message = 'Squad Name:';
+			}
+			var label = prompt(message);
+			if (label) {
+				var id = 0;
+				$('#7thsea-turntracker-list > li[data-id]').each(function () {
+					var value = parseInt($(this).data('id'), 10);
+					if (value >= id) {
+						id = value + 1;
+					}
+				});
+				var background;
+				if (type === 'character') {
+					background = '#39b54a';
+				} else if (type === 'villain') {
+					background = '#c44230';
+				} else if (type === 'squad') {
+					background = '#eda745';
+				}
+				var $row = $(
+					'<li data-id="' + id + '" data-type="' + type + '" class="flex-row flex-row-margins" style="margin: 0; padding: 1rem; background: ' + background + '">' +
+						'<button data-action="add" class="button">+</button>' +
+						'<button data-action="remove" class="button">-</button>' +
+						'<button data-action="delete" class="button">Delete</button>' +
+						'<div>' + label + '</div>' +
+						'<div class="turn-row-number">0</div>' +
+						'<div class="turn-row-increments flex-row flex-row-margins"></div>' +
+					'</li>');
+				$('#7thsea-turntracker-list').append($row);
+			}
+		}
+	});
+	$('#7thsea-turntracker-list').on('click', 'button', function () {
+		var action = $(this).data('action'),
+			$row = $('#7thsea-turntracker-list > li[data-id="' + $(this).parent().data('id') + '"]'),
+			number = parseInt($row.find('.turn-row-number').text(), 10);
+		if (action === 'add') {
+			$row.find('.turn-row-number').text(number + 1);
+			$row.find('.turn-row-increments').append('<div class="increment" style="width: 30px; height: 30px; border: 1px solid black; background: grey; border-radius: 4px"></div>');
+		} else if (action === 'remove') {
+			$row.find('.turn-row-number').text(Math.max(0, number - 1));
+			$row.find('.turn-row-increments').find('.increment:first-child').remove();
+		} else if (action === 'delete') {
+			$row.remove();
+		}
+	});
+})();
+
+// Songs of the Winterflame: Eventide Character
+
+(function () {
+	'use strict';
+
+	var SOTW = {
+		races: {
+			human: { pf: 0, pm: 0, pa: 2 },
+			elf: { pf: 1, pm: 1, pa: 0 },
+			irve: { pf: 1, pm: 0, pa: 1 },
+			dwarf: { pf: 2, pm: 0, pa: 0 },
+			goblin: { pf: 1, pm: 1, pa: 0 },
+			orc: { pf: 0, pm: 0, pa: 0 },
+			minotaur: { pf: 0, pm: 0, pa: 0 },
+			centaur: { pf: 0, pm: 0, pa: 0 },
+			dragonborn: { pf: 0, pm: 0, pa: 0 },
+			tiefling: { pf: 0, pm: 0, pa: 0 }
+		},
+		classes: {
+			warrior: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
+			berserker: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
+			rogue: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
+			hunter: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
+			shaman: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
+			bard: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
+			arcanist: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
+			healer: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] }
+		}
+	};
+
+	var render = function () {
+		var output = {
+			name: $('#sotweventide-character-name').val().trim(),
+			race: $('#sotweventide-character-race').val(),
+			class: $('#sotweventide-character-class').val(),
+			initiative: 0,
+			pf: 0,
+			pm: 0,
+			pa: 0,
+			equip: [],
+			actions: []
+		};
+		if (SOTW.races[output.race]) {
+			var r = SOTW.races[output.race];
+			output.pf += r.pf;
+			output.pm += r.pm;
+			output.pa += r.pa;
+		}
+		if (SOTW.classes[output.class]) {
+			var c = SOTW.classes[output.class];
+			output.initiative += c.initiative;
+			output.pf += c.pf;
+			output.pm += c.pm;
+			output.pa += c.pa;
+			output.equip = c.equip;
+		}
+		$('#sotweventide-character-output').text(JSON.stringify(output, null, 4));
+	};
+	render();
+
+	$('#sotweventide-character').on('input change', '.control', function () {
+		render();
 	});
 })();
