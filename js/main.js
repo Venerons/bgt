@@ -161,14 +161,14 @@ $('#home-list').on('click', '.list-item', function () {
 			c: ['Balderk', 'Battlehammer', 'Brawnanvil', 'Dankil', 'Fireforge', 'Frostbeard', 'Gorunn', 'Holderhek', 'Ironfist', 'Loderr', 'Lutgehr', 'Rumnaheim', 'Strakeln', 'Torunn', 'Ungart']
 		},
 		'dnd-halfling': {
-			m: ['Alton', 'Antal', 'Ander', 'Boram', 'Cade', 'Corrin', 'Dannad', 'Evan', 'Eldon', 'Errich', 'Finnan', 'Garret', 'Jamir', 'Kaleb', 'Lazam', 'Lem', 'Lindal', 'Lyle', 'Merric', 'Milo', 'Miro', 'Nebin', 'Ostran', 'Osborn', 'Perrin', 'Reed', 'Roscoe', 'Shardon', 'Sumak', 'Ulmo', 'Wenner', 'Wellby'],
-			f: ['Andry', 'Anafa', 'Bellis', 'Bree', 'Callie', 'Chenna', 'Cora', 'Eida', 'Etune', 'Euphemia', 'Filiu', 'Jillian', 'Kithri', 'Lavinia', 'Lidda', 'Lissa', 'Marra', 'Merla', 'Nedda', 'Paela', 'Portia', 'Rillka', 'Seraphina', 'Shaena', 'Sistra', 'Tryn', 'Vani', 'Verna', 'Wella', 'Yamyra'],
-			c: ['Brushgather', 'Goodbarrel', 'Greenbottle', 'High-hill', 'Hilltopple', 'Leagallow', 'Tealeaf', 'Thorngage', 'Tosscobble', 'Underbough']
+			m: ['Alton', 'Antal', 'Ander', 'Boram', 'Beau', 'Cade', 'Corrin', 'Dannad', 'Evan', 'Eldon', 'Errich', 'Finnan', 'Garret', 'Jamir', 'Kaleb', 'Lazam', 'Lem', 'Lindal', 'Lyle', 'Merric', 'Milo', 'Miro', 'Nebin', 'Ostran', 'Osborn', 'Perrin', 'Reed', 'Roscoe', 'Shardon', 'Sumak', 'Ulmo', 'Wenner', 'Wellby'],
+			f: ['Andry', 'Anafa', 'Amaryllis', 'Bellis', 'Bree', 'Callie', 'Chenna', 'Cora', 'Charmaine', 'Eida', 'Etune', 'Euphemia', 'Filiu', 'Jillian', 'Kithri', 'Lavinia', 'Lidda', 'Lissa', 'Marra', 'Merla', 'Nedda', 'Paela', 'Portia', 'Rillka', 'Seraphina', 'Shaena', 'Sistra', 'Tryn', 'Vani', 'Verna', 'Wella', 'Yamyra'],
+			c: ['Brushgather', 'Goodbarrel', 'Greenbottle', 'Highhill', 'Hilltopple', 'Leagallow', 'Tealeaf', 'Thorngage', 'Tosscobble', 'Underbough']
 		},
 		'dnd-gnome': {
 			nickname: ['Aleslosh', 'Ashhearth', 'Badger', 'Cloak', 'Doublelock', 'Filchbatter', 'Fnipper', 'Ku', 'Nim', 'Oneshoe', 'Pock', 'Sparklegem', 'Stumbleduck'],
-			m: ['Alston', 'Alvyn', 'Boddynock', 'Brocc', 'Burgell', 'Dimble', 'Eldon', 'Erky', 'Fonkin', 'Frug', 'Gerbo', 'Gimble', 'Glim', 'Jebeddo', 'Kellen', 'Namfoodle', 'Orryn', 'Roondar', 'Seebo', 'Sindri', 'Warryn', 'Wrenn', 'Zook'],
-			f: ['Bimpnottin', 'Breena', 'Caramip', 'Carlin', 'Donella', 'Duvamil', 'Ella', 'Ellyjobell', 'Ellywick', 'Lilli', 'Loopmottin', 'Lorilla', 'Mardnab', 'Nissa', 'Nyx', 'Oda', 'Orla', 'Roywyn', 'Shamil', 'Tana', 'Waywocket', 'Zanna'],
+			m: ['Alston', 'Alvyn', 'Abroshtor', 'Boddynock', 'Brocc', 'Bastargre', 'Burgell', 'Dimble', 'Eldon', 'Erky', 'Fonkin', 'Frug', 'Gerbo', 'Gimble', 'Glim', 'Halungalom', 'Jebeddo', 'Kellen', 'Krolmnite', 'Namfoodle', 'Orryn', 'Poshment', 'Roondar', 'Seebo', 'Sindri', 'Warryn', 'Wrenn', 'Zook', 'Zarzuket', '>atqualmie'],
+			f: ['Bimpnottin', 'Breena', 'Besh', 'Caramip', 'Carlin', 'Donella', 'Duvamil', 'Ella', 'Ellyjobell', 'Ellywick', 'Fijit', 'Lini', 'Lilli', 'Loopmottin', 'Lorilla', 'Mardnab', 'Majet', 'Nissa', 'Nyx', 'Neji', 'Oda', 'Orla', 'Pai', 'Queck', 'Roywyn', 'Shamil', 'Tana', 'Trig', 'Waywocket', 'Zanna'],
 			c: ['Beren', 'Daergel', 'Folkor', 'Garrick', 'Nackle', 'Murnig', 'Ningel', 'Raulnor', 'Scheppen', 'Timbers', 'Turen']
 		},
 		'dnd-half-orc': {
