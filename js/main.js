@@ -151,18 +151,18 @@ $('#home-list').on('click', '.list-item', function () {
 		},
 		'dnd-elf': {
 			child: ['Ara', 'Bryn', 'Del', 'Eryn', 'Faen', 'Innil', 'Lael', 'Mella', 'Naill', 'Naeris', 'Phann', 'Rael', 'Rinn', 'Sai', 'Syllin', 'Thia', 'Vall'],
-			m: ['Adran', 'Aelar', 'Aramil', 'Arannis', 'Aus', 'Beiro', 'Berrian', 'Carric', 'Dayereth', 'Enialis', 'Erdan', 'Erevan', 'Galinndan', 'Gennal', 'Hadarai', 'Heian', 'Himo', 'Immeral', 'Ivellios', 'Laucian', 'Mindartis', 'Paelias', 'Peren', 'Quarion', 'Riardon', 'Rolen', 'Soveliss', 'Thamior', 'Tharivol', 'Theren', 'Varis'],
-			f: ['Adrie', 'Althaea', 'Anastrianna', 'Andraste', 'Antinua', 'Bethrynna', 'Birel', 'Caelynn', 'Chaedi', 'Dara', 'Drusilia', 'Enna', 'Faral', 'Felosial', 'Irann', 'Ielenia', 'Jelenneth', 'Keyleth', 'Leshanna', 'Lia', 'Meriele', 'Mialee', 'Naivara', 'Quelenna', 'Quillathe', 'Sariel', 'Shanairra', 'Shava', 'Silaqui', 'Theirastra', 'Thia', 'Vadania', 'Valanthe', 'Valenae', 'Valna', 'Xanaphia'],
+			m: ['Adran', 'Aelar', 'Aramil', 'Arannis', 'Aus', 'Beiro', 'Berrian', 'Caladrel', 'Carric', 'Dayereth', 'Enialis', 'Erdan', 'Erevan', 'Galinndan', 'Gennal', 'Hadarai', 'Heian', 'Himo', 'Heldalel', 'Immeral', 'Ivellios', 'Laucian', 'Lanliss', 'Mindartis', 'Meirdrarel', 'Paelias', 'Peren', 'Quarion', 'Riardon', 'Rolen', 'Soveliss', 'Seldlon', 'Thamior', 'Tharivol', 'Talathel', 'Theren', 'Varis', 'Variel', 'Zordlon'],
+			f: ['Adrie', 'Althaea', 'Anastrianna', 'Andraste', 'Antinua', 'Amrunelara', 'Bethrynna', 'Birel', 'Caelynn', 'Chaedi', 'Dara', 'Drusilia', 'Dardlara', 'Enna', 'Faral', 'Felosial', 'Faunra', 'Irann', 'Ielenia', 'Jelenneth', 'Jathal', 'Keyleth', 'Leshanna', 'Lia', 'Meriele', 'Mialee', 'Merisiel', 'Naivara', 'Oparal', 'Quelenna', 'Quillathe', 'Sariel', 'Shanairra', 'Shava', 'Silaqui', 'Soumral', 'Theirastra', 'Thia', 'Tessara', 'Vadania', 'Valanthe', 'Valenae', 'Valna', 'Xanaphia', 'Yalandlara'],
 			c: ['Amakiir (Gemflower)', 'Amastacia (Starflower)', 'Galanodel (Moonwhisper)', 'Holimion (Diamonddew)', 'Ilphelkiir (Gemblossom)', 'Liadon (Silverfrond)', 'Meliamne (Oakenheel)', 'Nailo (Nightbreeze)', 'Siannodel (Moonbrook)', 'Xiloscient (Goldpetal)']
 		},
 		'dnd-dwarf': {
-			m: ['Adrik', 'Alberich', 'Baern', 'Berend', 'Barendd', 'Brottor', 'Bruenor', 'Dain', 'Darrak', 'Delg', 'Eberk', 'Einkil', 'Fargrim', 'Flint', 'Gardain', 'Harbek', 'Kildrak', 'Morgran', 'Orsik', 'Oskar', 'Rangrim', 'Rurik', 'Taklinn', 'Thoradin', 'Thorfin', 'Thorin', 'Tordek', 'Traubon', 'Travok', 'Ulfgar', 'Veit', 'Vondal'],
-			f: ['Amber', 'Artin', 'Audhil', 'Bardryn', 'Dagnal', 'Diesa', 'Eldeth', 'Falkrunn', 'Finellen', 'Gunnloda', 'Gurdis', 'Helja', 'Hlin', 'Kathra', 'Kristryd', 'Ilde', 'Liftrasa', 'Mardred', 'Riswynn', 'Sannl', 'Torbera', 'Torgga', 'Vistra'],
+			m: ['Adrik', 'Alberich', 'Baern', 'Berend', 'Barendd', 'Brottor', 'Bruenor', 'Dain', 'Darrak', 'Delg', 'Dolgrin', 'Eberk', 'Einkil', 'Fargrim', 'Flint', 'Gardain', 'Grunyar', 'Harbek', 'Harsk', 'Kazmuk', 'Kildrak', 'Morgran', 'Morgrym', 'Orsik', 'Oskar', 'Rangrim', 'Rurik', 'Rogar', 'Taklinn', 'Thoradin', 'Thorfin', 'Thorin', 'Tordek', 'Traubon', 'Travok', 'Ulfgar', 'Veit', 'Vondal'],
+			f: ['Amber', 'Artin', 'Audhil', 'Agna', 'Bardryn', 'Bodill', 'Dagnal', 'Diesa', 'Eldeth', 'Falkrunn', 'Finellen', 'Gunnloda', 'Gurdis', 'Helja', 'Hlin', 'Kathra', 'Kristryd', 'Kotri', 'Ilde', 'Ingra', 'Liftrasa', 'Mardred', 'Riswynn', 'Rusilka', 'Sannl', 'Torbera', 'Torgga', 'Vistra', 'Yangrit'],
 			c: ['Balderk', 'Battlehammer', 'Brawnanvil', 'Dankil', 'Fireforge', 'Frostbeard', 'Gorunn', 'Holderhek', 'Ironfist', 'Loderr', 'Lutgehr', 'Rumnaheim', 'Strakeln', 'Torunn', 'Ungart']
 		},
 		'dnd-halfling': {
-			m: ['Alton', 'Ander', 'Cade', 'Corrin', 'Dannad', 'Eldon', 'Errich', 'Finnan', 'Garret', 'Lazam', 'Lindal', 'Lyle', 'Merric', 'Milo', 'Nebin', 'Ostran', 'Osborn', 'Perrin', 'Reed', 'Roscoe', 'Shardon', 'Ulmo', 'Wenner', 'Wellby'],
-			f: ['Andry', 'Bree', 'Callie', 'Chenna', 'Cora', 'Eida', 'Euphemia', 'Jillian', 'Kithri', 'Lavinia', 'Lidda', 'Merla', 'Nedda', 'Paela', 'Portia', 'Seraphina', 'Shaena', 'Tryn', 'Vani', 'Verna', 'Wella'],
+			m: ['Alton', 'Antal', 'Ander', 'Boram', 'Cade', 'Corrin', 'Dannad', 'Evan', 'Eldon', 'Errich', 'Finnan', 'Garret', 'Jamir', 'Kaleb', 'Lazam', 'Lem', 'Lindal', 'Lyle', 'Merric', 'Milo', 'Miro', 'Nebin', 'Ostran', 'Osborn', 'Perrin', 'Reed', 'Roscoe', 'Shardon', 'Sumak', 'Ulmo', 'Wenner', 'Wellby'],
+			f: ['Andry', 'Anafa', 'Bellis', 'Bree', 'Callie', 'Chenna', 'Cora', 'Eida', 'Etune', 'Euphemia', 'Filiu', 'Jillian', 'Kithri', 'Lavinia', 'Lidda', 'Lissa', 'Marra', 'Merla', 'Nedda', 'Paela', 'Portia', 'Rillka', 'Seraphina', 'Shaena', 'Sistra', 'Tryn', 'Vani', 'Verna', 'Wella', 'Yamyra'],
 			c: ['Brushgather', 'Goodbarrel', 'Greenbottle', 'High-hill', 'Hilltopple', 'Leagallow', 'Tealeaf', 'Thorngage', 'Tosscobble', 'Underbough']
 		},
 		'dnd-gnome': {
@@ -172,8 +172,8 @@ $('#home-list').on('click', '.list-item', function () {
 			c: ['Beren', 'Daergel', 'Folkor', 'Garrick', 'Nackle', 'Murnig', 'Ningel', 'Raulnor', 'Scheppen', 'Timbers', 'Turen']
 		},
 		'dnd-half-orc': {
-			m: ['Dench', 'Feng', 'Gell', 'Henk', 'Holg', 'Imsh', 'Keth', 'Krusk', 'Mhurren', 'Ront', 'Shump', 'Thokk'],
-			f: ['Baggi', 'Emen', 'Engong', 'Kansif', 'Myev', 'Neega', 'Ovak', 'Ownka', 'Shautha', 'Sutha', 'Vola', 'Volen', 'Yevelda']
+			m: ['Ausk', 'Davor', 'Dench', 'Feng', 'Gell', 'Hakak', 'Henk', 'Holg', 'Imsh', 'Keth', 'Kizziar', 'Krusk', 'Makoa', 'Mhurren', 'Nesteruk', 'Ront', 'Shump', 'Thokk', 'Tsadok'],
+			f: ['Baggi', 'Canan', 'Drogheda', 'Emen', 'Engong', 'Goruza', 'Kansif', 'Mazon', 'Myev', 'Neega', 'Ovak', 'Ownka', 'Shautha', 'Shirish', 'Sutha', 'Tevaga', 'Vola', 'Volen', 'Yevelda', 'Zeljka']
 		},
 		'dnd-dragonborn': {
 			child: ['Climber', 'Earbender', 'Leaper', 'Pious', 'Shieldbiter', 'Zealous'],
@@ -264,6 +264,7 @@ $('#home-list').on('click', '.list-item', function () {
 	'use strict';
 
 	var map = {
+		theme: 'parchment',
 		tilesize: 0,
 		width: 0,
 		height: 0,
@@ -271,6 +272,7 @@ $('#home-list').on('click', '.list-item', function () {
 	};
 
 	var resize = function () {
+		map.theme = $('#generic-dungeondesigner-theme').val();
 		map.tilesize = parseInt($('#generic-dungeondesigner-size').val(), 10);
 		map.width = parseInt($('#generic-dungeondesigner-width').val(), 10);
 		map.height = parseInt($('#generic-dungeondesigner-height').val(), 10);
@@ -304,7 +306,7 @@ $('#home-list').on('click', '.list-item', function () {
 			y: 0,
 			width: map.tilesize * map.width,
 			height: map.tilesize * map.height,
-			fill: '#ebd5b3' // #f6daaf
+			fill: map.theme === 'bw' ? '#ffffff' : '#ebd5b3' // #f6daaf
 		});
 		map.tiles.forEach(function (row, y) {
 			row.forEach(function (tile, x) {
@@ -317,7 +319,7 @@ $('#home-list').on('click', '.list-item', function () {
 						y: y_base,
 						width: size,
 						height: size,
-						stroke: '#00000030',
+						stroke: map.theme === 'bw' ? '#000000' : '#c1af93',
 						thickness: 1
 					});
 				}
@@ -327,41 +329,42 @@ $('#home-list').on('click', '.list-item', function () {
 						y: y_base,
 						width: size,
 						height: size,
-						fill: '#ffe7d5',
-						stroke: '#00000030',
+						fill: map.theme === 'bw' ? '#dddddd' : '#ffe7d5',
+						stroke: map.theme === 'bw' ? '#000000' : '#c1af93',
 						thickness: 1
 					});
 				}
-				if (tile.door_h) {
-					paper.rect({
-						x: x_base,
-						y: y_base + size * 0.25,
-						width: size,
-						height: size * 0.5,
-						fill: '#a36223',
-						stroke: '#865625',
-						thickness: 1
-					});
-				}
-				if (tile.door_v) {
-					paper.rect({
-						x: x_base + size * 0.25,
-						y: y_base,
-						width: size * 0.5,
-						height: size,
-						fill: '#a36223',
-						stroke: '#865625',
-						thickness: 1
-					});
+				if (tile.door) {
+					if (tile.door === 1) {
+						paper.rect({
+							x: x_base,
+							y: y_base + size * 0.375,
+							width: size,
+							height: size * 0.25,
+							fill: map.theme === 'bw' ? '#cccccc' : '#a36223',
+							stroke: map.theme === 'bw' ? '#000000' : '#865625',
+							thickness: 2
+						});
+					} else if (tile.door === 2) {
+						paper.rect({
+							x: x_base + size * 0.375,
+							y: y_base,
+							width: size * 0.25,
+							height: size,
+							fill: map.theme === 'bw' ? '#cccccc' : '#a36223',
+							stroke: map.theme === 'bw' ? '#000000' : '#865625',
+							thickness: 2
+						});
+					}
 				}
 				if (tile.column) {
 					paper.circle({
 						x: x_base + size * 0.5,
 						y: y_base + size * 0.5,
 						r: size * 0.25,
-						fill: '#ebd5b3',
-						stroke: '#00000030',
-						thickness: 1
+						fill: map.theme === 'bw' ? '#cccccc' : '#ebd5b3',
+						stroke: map.theme === 'bw' ? '#000000' : '#c1af93',
+						thickness: 2
 					});
 				}
 				if (tile.debris) {
@@ -369,41 +372,33 @@ $('#home-list').on('click', '.list-item', function () {
 						x: x_base + size * 0.25,
 						y: y_base + size * 0.25,
 						r: size * 0.12,
-						//fill: '#666666',
-						//stroke: '#5a5753',
-						fill: '#ebd5b3',
-						stroke: '#00000030',
-						thickness: 1
+						fill: map.theme === 'bw' ? '#cccccc' : '#ebd5b3',
+						stroke: map.theme === 'bw' ? '#000000' : '#c1af93',
+						thickness: 2
 					});
 					paper.circle({
 						x: x_base + size * 0.75,
 						y: y_base + size * 0.75,
 						r: size * 0.2,
-						//fill: '#666666',
-						//stroke: '#5a5753',
-						fill: '#ebd5b3',
-						stroke: '#00000030',
-						thickness: 1
+						fill: map.theme === 'bw' ? '#cccccc' : '#ebd5b3',
+						stroke: map.theme === 'bw' ? '#000000' : '#c1af93',
+						thickness: 2
 					});
 					paper.circle({
 						x: x_base + size * 0.6,
 						y: y_base + size * 0.3,
 						r: size * 0.25,
-						//fill: '#666666',
-						//stroke: '#5a5753',
-						fill: '#ebd5b3',
-						stroke: '#00000030',
-						thickness: 1
+						fill: map.theme === 'bw' ? '#cccccc' : '#ebd5b3',
+						stroke: map.theme === 'bw' ? '#000000' : '#c1af93',
+						thickness: 2
 					});
 					paper.circle({
 						x: x_base + size * 0.3,
 						y: y_base + size * 0.6,
 						r: size * 0.12,
-						//fill: '#666666',
-						//stroke: '#5a5753',
-						fill: '#ebd5b3',
-						stroke: '#00000030',
-						thickness: 1
+						fill: map.theme === 'bw' ? '#cccccc' : '#ebd5b3',
+						stroke: map.theme === 'bw' ? '#000000' : '#c1af93',
+						thickness: 2
 					});
 				}
 				if (tile.box) {
@@ -412,8 +407,8 @@ $('#home-list').on('click', '.list-item', function () {
 						y: y_base + size * 0.25,
 						width: size * 0.5,
 						height: size * 0.5,
-						fill: '#a36223',
-						stroke: '#865625',
+						fill: map.theme === 'bw' ? '#cccccc' : '#a36223',
+						stroke: map.theme === 'bw' ? '#000000' : '#865625',
 						thickness: 2
 					});
 					paper.line({
@@ -421,7 +416,7 @@ $('#home-list').on('click', '.list-item', function () {
 						y1: y_base + size * 0.25,
 						x2: x_base + size * 0.25 + size * 0.5,
 						y2: y_base + size * 0.25 + size * 0.5,
-						stroke: '#865625',
+						stroke: map.theme === 'bw' ? '#000000' : '#865625',
 						thickness: 2
 					});
 					paper.line({
@@ -429,19 +424,37 @@ $('#home-list').on('click', '.list-item', function () {
 						y1: y_base + size * 0.25,
 						x2: x_base + size * 0.25,
 						y2: y_base + size * 0.25 + size * 0.5,
-						stroke: '#865625',
+						stroke: map.theme === 'bw' ? '#000000' : '#865625',
 						thickness: 2
 					});
 				}
+			});
+		});
+		map.tiles.forEach(function (row, y) {
+			row.forEach(function (tile, x) {
+				var x_base = x * map.tilesize,
+					y_base = y * map.tilesize,
+					size = map.tilesize;
 				if (tile.text) {
 					paper.text({
 						text: tile.text,
 						x: x_base + size * 0.5,
 						y: y_base + size * 0.5,
-						font: 'Helvetica',
+						font: (size * 0.3) + 'px Helvetica',
 						fill: '#000000',
 						align: 'center',
 						baseline: 'middle'
+					});
+				}
+				if (!export_format && canvas_tile_x === x && canvas_tile_y === y) {
+					paper.rect({
+						x: x_base,
+						y: y_base,
+						width: size,
+						height: size,
+						stroke: '#ff0000',
+						thickness: 2,
+						alpha: 0.5
 					});
 				}
 			});
@@ -511,6 +524,8 @@ $('#home-list').on('click', '.list-item', function () {
 	var page_element = document.getElementById('generic-dungeondesigner'),
 		canvas = document.getElementById('generic-dungeondesigner-canvas'),
 		canvas_element = $('#generic-dungeondesigner-element').val(),
+		canvas_tile_x = null,
+		canvas_tile_y = null,
 		canvas_mousedown = false,
 		canvas_button = 0;
 
@@ -521,49 +536,61 @@ $('#home-list').on('click', '.list-item', function () {
 				if (text) {
 					tile.text = text;
 				}
+			} else if (canvas_element === 'door_h') {
+				tile.door = 1;
+			} else if (canvas_element === 'door_v') {
+				tile.door = 2;
 			} else {
 				tile[canvas_element] = 1;
 			}
 		} else {
-			delete tile[canvas_element];
+			delete tile[canvas_element.split('_')[0]];
 		}
 	};
 
 	canvas.addEventListener('contextmenu', function (e) { e.preventDefault(); });
 	/*
 	canvas.addEventListener('mouseenter', function (e) {
-		// nothing
+		canvas_tile_x = Math.floor((e.pageX - this.offsetLeft + page_element.scrollLeft) / map.tilesize);
+		canvas_tile_y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize);
 	});
 	canvas.addEventListener('mouseover', function (e) {
-		// nothing
+		canvas_tile_x = Math.floor((e.pageX - this.offsetLeft + page_element.scrollLeft) / map.tilesize);
+		canvas_tile_y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize);
 	});
 	*/
 	canvas.addEventListener('mousedown', function (e) {
 		canvas_mousedown = true;
 		canvas_button = e.button;
-		var x = Math.floor((e.pageX - this.offsetLeft + page_element.scrollLeft) / map.tilesize),
-			y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize),
-			tile = map.tiles[y][x];
-		edit_tile(tile);
+		canvas_tile_x = Math.floor((e.pageX - this.offsetLeft + page_element.scrollLeft) / map.tilesize);
+		canvas_tile_y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize);
+		edit_tile(map.tiles[canvas_tile_y][canvas_tile_x]);
 		repaint();
 	});
 	canvas.addEventListener('mousemove', function (e) {
+		canvas_tile_x = Math.floor((e.pageX - this.offsetLeft + page_element.scrollLeft) / map.tilesize);
+		canvas_tile_y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize);
 		if (canvas_mousedown) {
-			var x = Math.floor((e.pageX - this.offsetLeft + page_element.scrollLeft) / map.tilesize),
-				y = Math.floor((e.pageY - this.offsetTop + page_element.scrollTop) / map.tilesize),
-				tile = map.tiles[y][x];
-			edit_tile(tile);
-			repaint();
+			edit_tile(map.tiles[canvas_tile_y][canvas_tile_x]);
 		}
+		repaint();
 	});
 	canvas.addEventListener('mouseup', function (e) {
 		canvas_mousedown = false;
 	});
+	/*
 	canvas.addEventListener('mouseleave', function () {
 		canvas_mousedown = false;
+		canvas_tile_x = null;
+		canvas_tile_y = null;
+		repaint();
 	});
+	*/
 	canvas.addEventListener('mouseout', function () {
 		canvas_mousedown = false;
+		canvas_tile_x = null;
+		canvas_tile_y = null;
+		repaint();
 	});
 })();
 
