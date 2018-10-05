@@ -24,8 +24,12 @@
 					<li class="list-item" data-page="generic-name">Random Character Name</li>
 					<li class="list-item" data-page="generic-dungeondesigner">Dungeon Designer</li>
 					<li class="list-group">Dungeons &amp; Dragons 5th Edition</li>
-					<li class="list-item" data-page="dnd5-monsters">Monsters Database</li>
-					<li class="list-item" data-page="dnd5-encounter">Combat Encounter Crafter</li>
+					<li class="list-item" data-page="dnd5-monsters">Monsters</li>
+					<li class="list-item" data-page="dnd5-encounter">Combat Encounter</li>
+					<li class="list-group">7th Sea</li>
+					<li class="list-item" data-page="7thsea-turntracker">Turn Tracker</li>
+					<li class="list-group">Songs of the Winterflame: Eventide</li>
+					<li class="list-item" data-page="sotweventide-character">Character</li>
 				</ul>
 			</div>
 		</div>
@@ -248,6 +252,59 @@
 			</div>
 			<div class="card">
 				<p id="dnd5-encounter-output" style="text-align: center; font-size: 3rem">-</p>
+			</div>
+		</div>
+
+		<div id="7thsea-turntracker" class="page" style="display: none">
+			<div id="7thsea-turntracker-toolbar" class="card">
+				<button data-action="sort" class="button">Sort</button>
+				<button data-action="add-character" class="button">+ Character</button>
+				<button data-action="add-villain" class="button">+ Villain</button>
+				<button data-action="add-squad" class="button">+ Squad</button>
+			</div>
+			<div class="card">
+				<ol id="7thsea-turntracker-list"></ol>
+			</div>
+		</div>
+
+		<div id="sotweventide-character" class="page" style="display: none">
+			<div class="card">
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Name</label>
+					<input id="sotweventide-character-name" type="text" class="input control" style="flex: 2">
+				</div>
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Race</label>
+					<select id="sotweventide-character-race" class="input control" style="flex: 2">
+						<option value="human">Human</option>
+						<option value="elf">Elf</option>
+						<option value="irve">Irve</option>
+						<option value="dwarf">Dwarf</option>
+						<option value="goblin">Goblin</option>
+						<option value="orc">Orc</option>
+						<option value="minotaur">Minotaur</option>
+						<option value="centaur">Centaur</option>
+						<option value="dragonborn">Dragonborn</option>
+						<option value="tiefling">Tiefling</option>
+					</select>
+				</div>
+				<div class="flex-row flex-row-margins">
+					<label style="flex: 1">Class</label>
+					<select id="sotweventide-character-class" class="input control" style="flex: 2">
+						<option value="none">None</option>
+						<option value="warrior">Warrior</option>
+						<option value="berserker">Berserker</option>
+						<option value="rogue">Rogue</option>
+						<option value="hunter">Hunter</option>
+						<option value="shaman">Shaman</option>
+						<option value="bard">Bard</option>
+						<option value="arcanist">Arcanist</option>
+						<option value="healer">Healer</option>
+					</select>
+				</div>
+			</div>
+			<div class="card">
+				<pre id="sotweventide-character-output"></pre>
 			</div>
 		</div>
 
