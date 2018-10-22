@@ -1861,8 +1861,8 @@ var DND5_MONSTERS = [
 	},
 	{
 		"name": {
-			"en": "Huo-Toa Whip",
-			"it": "Huo-Toa Whip"
+			"en": "Kuo-Toa Whip",
+			"it": "Kuo-Toa Whip"
 		},
 		"challenge": "1",
 		"xp": 200,
