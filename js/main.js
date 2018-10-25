@@ -53,41 +53,43 @@ $('#home-list').on('click', '.list-item', function () {
 	goToPage($(this).data('page'));
 });
 
+// Functions
+
+// example: 1d6 = dice(6)
+// example: 1rps = dice(['rock', 'paper', 'scissors'])
+var dice = function (values) {
+	if (values instanceof Array) {
+		return values[Math.floor(Math.random() * values.length)];
+	} else {
+		return Math.floor(Math.random() * values) + 1;
+	}
+};
+
+// example: dice_expression('3d6+2+45d2')
+var dice_expression = function (expression) {
+	var result = 'Evaluation Error';
+	try {
+		result = eval(expression.replace(/[0-9]+d[0-9]+/g, function (a) {
+			var tokens = a.split('d'),
+				q = parseInt(tokens[0], 10),
+				f = parseInt(tokens[1], 10),
+				sum = 0;
+			for (var i = 0; i < q; ++i) {
+				sum += dice(f);
+			}
+			//console.log(a, q, f, sum);
+			return sum;
+		}));
+	} catch (e) {
+		console.error(e);
+	}
+	return result;
+};
+
 // Generic Dice Simulator
 
 (function () {
 	'use strict';
-
-	// example: 1d6 = dice(6)
-	// example: 1rps = dice(['rock', 'paper', 'scissors'])
-	var dice = function (values) {
-		if (values instanceof Array) {
-			return values[Math.floor(Math.random() * values.length)];
-		} else {
-			return Math.floor(Math.random() * values) + 1;
-		}
-	};
-
-	// example: dice_expression('3d6+2+45d2')
-	var dice_expression = function (expression) {
-		var result = 'Evaluation Error';
-		try {
-			result = eval(expression.replace(/[0-9]+d[0-9]+/g, function (a) {
-				var tokens = a.split('d'),
-					q = parseInt(tokens[0], 10),
-					f = parseInt(tokens[1], 10),
-					sum = 0;
-				for (var i = 0; i < q; ++i) {
-					sum += dice(f);
-				}
-				//console.log(a, q, f, sum);
-				return sum;
-			}));
-		} catch (e) {
-			console.error(e);
-		}
-		return result;
-	};
 
 	$('#generic-dice-classic').on('click', '.button', function () {
 		var $this = $(this),
@@ -993,6 +995,87 @@ $('#home-list').on('click', '.list-item', function () {
 		}
 	});
 })();
+
+// Fate Dice Simulator
+
+(function () {
+	'use strict';
+
+	var ratings = {
+		'8': {
+			en: 'Legendary',
+			it: 'Leggendario'
+		},
+		'7': {
+			en: 'Epic',
+			it: 'Epico'
+		},
+		'6': {
+			en: 'Fantastic',
+			it: 'Fantastico'
+		},
+		'5': {
+			en: 'Superb',
+			it: 'Superbo'
+		},
+		'4': {
+			en: 'Great',
+			it: 'Ottimo'
+		},
+		'3': {
+			en: 'Good',
+			it: 'Buono'
+		},
+		'2': {
+			en: 'Fair',
+			it: 'Giusto'
+		},
+		'1': {
+			en: 'Average',
+			it: 'Medio'
+		},
+		'0': {
+			en: 'Mediocre',
+			it: 'Mediocre'
+		},
+		'-1': {
+			en: 'Poor',
+			it: 'Scarso'
+		},
+		'-2': {
+			en: 'Terrible',
+			it: 'Terribile'
+		},
+		'-3': {
+			en: 'Terrible',
+			it: 'Terribile'
+		},
+		'-4': {
+			en: 'Terrible',
+			it: 'Terribile'
+		}
+	};
+
+	$('#fate-dice-toolbar').on('click', '.button', function () {
+		var array = ['+', '+', '&nbsp;', '&nbsp;', '-', '-'],
+			rolls = [dice(array), dice(array), dice(array), dice(array)],
+			result = 0,
+			output = '';
+		rolls.forEach(function (roll) {
+			if (roll === '+') {
+				result++;
+			} else if (roll === '-') {
+				result--;
+			}
+			output += '<div style="display: inline-block; width: 3rem; height: 3rem; margin: 0.5rem; border-radius: 4px; text-align: center; line-height: 3rem; color: grey; background: whitesmoke">' + roll + '</div>';
+		});
+		console.log(result);
+		var rating = ratings[result.toString()].en;
+		output += '<br>' + rating + ' (' + (result > 0 ? '+' : '') + result + ')';
+		$('#fate-dice-output').html(output);
+	});
+})();
+
 
 // Songs of the Winterflame: Eventide Character
 
