@@ -1084,26 +1084,74 @@ var dice_expression = function (expression) {
 
 	var SOTW = {
 		races: {
-			human: { pf: 0, pm: 0, pa: 2 },
-			elf: { pf: 1, pm: 1, pa: 0 },
-			irve: { pf: 1, pm: 0, pa: 1 },
-			dwarf: { pf: 2, pm: 0, pa: 0 },
-			goblin: { pf: 1, pm: 1, pa: 0 },
-			orc: { pf: 0, pm: 0, pa: 0 },
-			minotaur: { pf: 0, pm: 0, pa: 0 },
-			centaur: { pf: 0, pm: 0, pa: 0 },
-			dragonborn: { pf: 0, pm: 0, pa: 0 },
-			tiefling: { pf: 0, pm: 0, pa: 0 }
+			human: { initiative: 0, hp: 0, mp: 0, ap: 3 },
+			elf: { initiative: 0, hp: 0, mp: 2, ap: 1 },
+			irve: { initiative: 0, hp: 0, mp: 1, ap: 2 },
+			dwarf: { initiative: 0, hp: 2, mp: 0, ap: 1 },
+			goblin: { initiative: 0, hp: 2, mp: 1, ap: 0 },
+			orc: { initiative: 0, hp: 3, mp: 0, ap: 0 },
+			minotaur: { initiative: 0, hp: 3, mp: 0, ap: 0 },
+			centaur: { initiative: 0, hp: 1, mp: 2, ap: 0 },
+			dragonborn: { initiative: 0, hp: 2, mp: 0, ap: 1 },
+			tiefling: { initiative: 0, hp: 1, mp: 1, ap: 1 }
 		},
 		classes: {
-			warrior: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
-			berserker: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
-			rogue: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
-			hunter: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
-			shaman: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
-			bard: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
-			arcanist: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] },
-			healer: { initiative: 0, pf: 0, pm: 0, pa: 0, equip: [] }
+			warrior: {
+				'1': { initiative: 2, hp: 8, mp: 1, ap: 1, weapon: ['light', 'medium', 'heavy'], armor: ['light', 'medium', 'heavy'], equip: [] },
+				'2': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'3': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'4': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'5': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] }
+			},
+			berserker: {
+				'1': { initiative: 5, hp: 8, mp: 2, ap: 1, weapon: ['light', 'medium', 'heavy'], armor: ['light', 'medium'], equip: [] },
+				'2': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'3': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'4': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'5': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] }
+			},
+			rogue: {
+				'1': { initiative: 4, hp: 6, mp: 2, ap: 1, weapon: ['light'], armor: ['light'], equip: [] },
+				'2': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'3': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'4': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'5': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] }
+			},
+			hunter: {
+				'1': { initiative: 3, hp: 6, mp: 2, ap: 1, weapon: ['light', 'medium'], armor: ['light', 'medium'], equip: [] },
+				'2': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'3': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'4': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'5': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] }
+			},
+			shaman: {
+				'1': { initiative: 2, hp: 4, mp: 1, ap: 1, weapon: ['light'], armor: ['light'], equip: [] },
+				'2': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'3': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'4': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'5': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] }
+			},
+			bard: {
+				'1': { initiative: 2, hp: 4, mp: 1, ap: 1, weapon: ['light'], armor: ['light'], equip: [] },
+				'2': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'3': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'4': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'5': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] }
+			},
+			arcanist: {
+				'1': { initiative: 1, hp: 2, mp: 1, ap: 1, weapon: ['light'], armor: ['light'], equip: [] },
+				'2': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'3': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'4': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'5': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] }
+			},
+			healer: {
+				'1': { initiative: 1, hp: 2, mp: 1, ap: 1, weapon: ['light'], armor: ['light'], equip: [] },
+				'2': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'3': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'4': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] },
+				'5': { initiative: 0, hp: 0, mp: 0, ap: 0, weapon: [], armor: [], equip: [] }
+			}
 		}
 	};
 
@@ -1112,26 +1160,31 @@ var dice_expression = function (expression) {
 			name: $('#sotweventide-character-name').val().trim(),
 			race: $('#sotweventide-character-race').val(),
 			class: $('#sotweventide-character-class').val(),
+			level: parseInt($('#sotweventide-character-level').val(), 10),
 			initiative: 0,
-			pf: 0,
-			pm: 0,
-			pa: 0,
+			hp: 0,
+			mp: 0,
+			ap: 0,
+			weapon: $('#sotweventide-character-weapon').val(),
+			armor: $('#sotweventide-character-armor').val(),
 			equip: [],
 			actions: []
 		};
+
 		if (SOTW.races[output.race]) {
 			var r = SOTW.races[output.race];
-			output.pf += r.pf;
-			output.pm += r.pm;
-			output.pa += r.pa;
+			output.hp += r.hp;
+			output.mp += r.mp;
+			output.ap += r.ap;
 		}
 		if (SOTW.classes[output.class]) {
-			var c = SOTW.classes[output.class];
-			output.initiative += c.initiative;
-			output.pf += c.pf;
-			output.pm += c.pm;
-			output.pa += c.pa;
-			output.equip = c.equip;
+			if (SOTW.classes[output.class][output.level.toString()]) {
+				var c = SOTW.classes[output.class][output.level.toString()];
+				output.initiative += c.initiative;
+				output.hp += c.hp;
+				output.mp += c.mp;
+				output.ap += c.ap;
+			}
 		}
 		$('#sotweventide-character-output').text(JSON.stringify(output, null, 4));
 	};
