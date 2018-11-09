@@ -695,6 +695,25 @@ var dice_expression = function (expression) {
 	});
 })();
 
+// D&D 5 Ability Scores
+
+(function () {
+	'use strict';
+
+	$('#dnd5-abilityscores').on('input change', '.control', function () {
+		var points = 0,
+			max_points = 27,
+			points_cost = { '8': 0, '9': 1, '10': 2, '11': 3, '12': 4, '13': 5, '14': 7, '15': 9 };
+		['str', 'dex', 'con', 'int', 'wis', 'cha'].forEach(function (char) {
+			var char_points = parseInt($('#dnd5-abilityscores-' + char).val(), 10),
+				char_mod = Math.floor((char_points - 10) / 2);
+			points += points_cost[char_points.toString()];
+			$('#dnd5-abilityscores-' + char + '-mod').text(char_mod < 0 ? char_mod : '+' + char_mod);
+		});
+		$('#dnd5-abilityscores-resume').text('Points: ' + points + ' / ' + max_points).css({ color: points > max_points ? 'crimson' : '' });
+	});
+})();
+
 // D&D 5 Monsters
 
 (function () {
