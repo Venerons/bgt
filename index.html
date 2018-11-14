@@ -24,7 +24,7 @@
 					<li class="list-item" data-page="generic-name">Random Character Name</li>
 					<li class="list-item" data-page="generic-dungeondesigner">Dungeon Designer</li>
 					<li class="list-group">Dungeons &amp; Dragons 5th Edition</li>
-					<li class="list-item" data-page="dnd5-abilityscores">Ability Scores</li>
+					<li class="list-item" data-page="dnd5-abilityscores">Ability Scores Point Buy</li>
 					<li class="list-item" data-page="dnd5-monsters">Monsters</li>
 					<li class="list-item" data-page="dnd5-encounter">Combat Encounter</li>
 					<li class="list-group">7th Sea</li>
@@ -186,7 +186,7 @@
 			<div class="card">
 				<div class="flex-row flex-row-margins">
 					<label style="flex: 1">Strength</label>
-					<select id="dnd5-abilityscores-str" class="input control" style="flex: 1">
+					<select id="dnd5-abilityscores-str-base" class="input control" style="flex: 1">
 						<option value="8">8</option>
 						<option value="9">9</option>
 						<option value="10">10</option>
@@ -196,11 +196,18 @@
 						<option value="14">14</option>
 						<option value="15">15</option>
 					</select>
-					<span id="dnd5-abilityscores-str-mod" style="flex: 1"></span>
+					<select id="dnd5-abilityscores-str-bonus" class="input control" style="flex: 1">
+						<option value="0">0</option>
+						<option value="1">+1</option>
+						<option value="2">+2</option>
+						<option value="3">+3</option>
+					</select>
+					<span id="dnd5-abilityscores-str-output" style="flex: 1; text-align: center"></span>
+					<span id="dnd5-abilityscores-str-mod" style="flex: 1; text-align: center"></span>
 				</div>
 				<div class="flex-row flex-row-margins">
 					<label style="flex: 1">Dexterity</label>
-					<select id="dnd5-abilityscores-dex" class="input control" style="flex: 1">
+					<select id="dnd5-abilityscores-dex-base" class="input control" style="flex: 1">
 						<option value="8">8</option>
 						<option value="9">9</option>
 						<option value="10">10</option>
@@ -210,11 +217,18 @@
 						<option value="14">14</option>
 						<option value="15">15</option>
 					</select>
-					<span id="dnd5-abilityscores-dex-mod" style="flex: 1"></span>
+					<select id="dnd5-abilityscores-dex-bonus" class="input control" style="flex: 1">
+						<option value="0">0</option>
+						<option value="1">+1</option>
+						<option value="2">+2</option>
+						<option value="3">+3</option>
+					</select>
+					<span id="dnd5-abilityscores-dex-output" style="flex: 1; text-align: center"></span>
+					<span id="dnd5-abilityscores-dex-mod" style="flex: 1; text-align: center"></span>
 				</div>
 				<div class="flex-row flex-row-margins">
 					<label style="flex: 1">Constitution</label>
-					<select id="dnd5-abilityscores-con" class="input control" style="flex: 1">
+					<select id="dnd5-abilityscores-con-base" class="input control" style="flex: 1">
 						<option value="8">8</option>
 						<option value="9">9</option>
 						<option value="10">10</option>
@@ -224,11 +238,18 @@
 						<option value="14">14</option>
 						<option value="15">15</option>
 					</select>
-					<span id="dnd5-abilityscores-con-mod" style="flex: 1"></span>
+					<select id="dnd5-abilityscores-con-bonus" class="input control" style="flex: 1">
+						<option value="0">0</option>
+						<option value="1">+1</option>
+						<option value="2">+2</option>
+						<option value="3">+3</option>
+					</select>
+					<span id="dnd5-abilityscores-con-output" style="flex: 1; text-align: center"></span>
+					<span id="dnd5-abilityscores-con-mod" style="flex: 1; text-align: center"></span>
 				</div>
 				<div class="flex-row flex-row-margins">
 					<label style="flex: 1">Intelligence</label>
-					<select id="dnd5-abilityscores-int" class="input control" style="flex: 1">
+					<select id="dnd5-abilityscores-int-base" class="input control" style="flex: 1">
 						<option value="8">8</option>
 						<option value="9">9</option>
 						<option value="10">10</option>
@@ -238,11 +259,18 @@
 						<option value="14">14</option>
 						<option value="15">15</option>
 					</select>
-					<span id="dnd5-abilityscores-int-mod" style="flex: 1"></span>
+					<select id="dnd5-abilityscores-int-bonus" class="input control" style="flex: 1">
+						<option value="0">0</option>
+						<option value="1">+1</option>
+						<option value="2">+2</option>
+						<option value="3">+3</option>
+					</select>
+					<span id="dnd5-abilityscores-int-output" style="flex: 1; text-align: center"></span>
+					<span id="dnd5-abilityscores-int-mod" style="flex: 1; text-align: center"></span>
 				</div>
 				<div class="flex-row flex-row-margins">
 					<label style="flex: 1">Wisdom</label>
-					<select id="dnd5-abilityscores-wis" class="input control" style="flex: 1">
+					<select id="dnd5-abilityscores-wis-base" class="input control" style="flex: 1">
 						<option value="8">8</option>
 						<option value="9">9</option>
 						<option value="10">10</option>
@@ -252,11 +280,18 @@
 						<option value="14">14</option>
 						<option value="15">15</option>
 					</select>
-					<span id="dnd5-abilityscores-wis-mod" style="flex: 1"></span>
+					<select id="dnd5-abilityscores-wis-bonus" class="input control" style="flex: 1">
+						<option value="0">0</option>
+						<option value="1">+1</option>
+						<option value="2">+2</option>
+						<option value="3">+3</option>
+					</select>
+					<span id="dnd5-abilityscores-wis-output" style="flex: 1; text-align: center"></span>
+					<span id="dnd5-abilityscores-wis-mod" style="flex: 1; text-align: center"></span>
 				</div>
 				<div class="flex-row flex-row-margins">
 					<label style="flex: 1">Charisma</label>
-					<select id="dnd5-abilityscores-cha" class="input control" style="flex: 1">
+					<select id="dnd5-abilityscores-cha-base" class="input control" style="flex: 1">
 						<option value="8">8</option>
 						<option value="9">9</option>
 						<option value="10">10</option>
@@ -266,7 +301,14 @@
 						<option value="14">14</option>
 						<option value="15">15</option>
 					</select>
-					<span id="dnd5-abilityscores-cha-mod" style="flex: 1"></span>
+					<select id="dnd5-abilityscores-cha-bonus" class="input control" style="flex: 1">
+						<option value="0">0</option>
+						<option value="1">+1</option>
+						<option value="2">+2</option>
+						<option value="3">+3</option>
+					</select>
+					<span id="dnd5-abilityscores-cha-output" style="flex: 1; text-align: center"></span>
+					<span id="dnd5-abilityscores-cha-mod" style="flex: 1; text-align: center"></span>
 				</div>
 			</div>
 		</div>
