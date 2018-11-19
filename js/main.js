@@ -920,6 +920,90 @@ var dice_expression = function (expression) {
 	});
 })();
 
+// D&D 5 Initiative Tracker
+
+(function () {
+	'use strict';
+
+	var renderData = function (data) {
+		var $tbody = $('#dnd5-initiativetracker-table"').empty();
+		data.sort(function (a, b) {
+			if (a.initiative > b.initiative) {
+				return -1;
+			} else if (a.initiative < b.initiative) {
+				return 1;
+			} else if (a.type === 'character') {
+				return -1
+			} else if (b.type === 'character') {
+				return 1;
+			} else {
+				return 0;
+			}
+		}).forEach(function (item) {
+			$tbody.append(
+				'<tr style="background: ' + (item.type === 'character' ? '#39b54a' : '#c44230') + '">' +
+					'<td><input  data-id="' + item.id + '" data-field="initiative" type="number" value="' + item.initiative + '" class="input control" style="width: 100%"></td>' +
+					'<td>' + item.label + '</td>' +
+					'<td><input  data-id="' + item.id + '" data-field="ac" type="number" value="' + item.ac + '" class="input control" style="width: 100%"></td>' +
+					'<td><input  data-id="' + item.id + '" data-field="perception" type="number" value="' + item.perception + '" class="input control" style="width: 100%"></td>' +
+					'<td><input  data-id="' + item.id + '" data-field="hp" type="number" value="' + item.hp + '" class="input control" style="width: 100%"></td>' +
+					'<td><input  data-id="' + item.id + '" data-field="maxhp" type="number" value="' + item.maxhp + '" class="input control" style="width: 100%"></td>' +
+				'</tr>');
+		});
+	};
+
+	$('#dnd5-initiativetracker-toolbar').on('click', 'button', function () {
+		var action = $(this).data('action');
+		if (action === 'sort') {
+			var data = $('#dnd5-initiativetracker').data('data') || [];
+			renderData(data);
+		} else {
+			var type, message;
+			if (action === 'add-character') {
+				type = 'character';
+				message = 'Character Name:';
+			} else if (action === 'add-monster') {
+				type = 'monster';
+				message = 'Monster Name:';
+			}
+			var label = prompt(message);
+			if (label) {
+				var data = $('#dnd5-initiativetracker').data('data') || [];
+				var id = 0;
+				data.forEach(function (item) {
+					if (item.id >= id) {
+						id = item.id + 1;
+					}
+				});
+				data.push({
+					id: id,
+					type: type,
+					label: label,
+					initiative: 0,
+					ac: 0,
+					perception: 10,
+					hp: 0,
+					maxhp: 0
+				});
+				$('#dnd5-initiativetracker').data('data', data);
+				renderData(data);
+			}
+		}
+	});
+
+	$('#dnd5-initiativetracker-table').on('change', '.control', function () {
+		var id = parseInt($(this).data('id'), 10),
+			field = $(this).data('field'),
+			value = parseFloat($(this).val()),
+			data = $('#dnd5-initiativetracker').data('data') || [];
+		data.forEach(function (item) {
+			if (item.id === id) {
+				item[field] = value;
+			}
+		});
+	});
+})();
+
 // 7th Sea Turn Tracker
 
 (function () {
