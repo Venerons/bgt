@@ -926,7 +926,7 @@ var dice_expression = function (expression) {
 	'use strict';
 
 	var renderData = function (data) {
-		var $tbody = $('#dnd5-initiativetracker-table"').empty();
+		var $tbody = $('#dnd5-initiativetracker-table').empty();
 		data.sort(function (a, b) {
 			if (a.initiative > b.initiative) {
 				return -1;
