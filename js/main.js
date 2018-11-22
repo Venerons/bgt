@@ -732,7 +732,7 @@ var dice_expression = function (expression) {
 	Object.keys(challenges).sort(function (a, b) {
 		return challenges[a] < challenges[b] ? -1 : 1;
 	}).forEach(function (item) {
-		$challenge.append('<option value="' + item + '">' + item + ' (' + challenges[item] + ' XP)</option>');
+		$challenge.append('<option value="' + item + '">' + item + '</option>');
 	});
 	var $tbody = $('<tbody></tbody>');
 	DND5_MONSTERS.forEach(function (monster) {
@@ -741,7 +741,6 @@ var dice_expression = function (expression) {
 				'<td>' + monster.name.en + '</td>' +
 				'<td>' + monster.name.it + '</td>' +
 				'<td>' + monster.challenge + '</td>' +
-				'<td>' + monster.xp + '</td>' +
 				'<td>' + monster.reference.en + ', ' + monster.reference.it + '</td>' +
 			'</tr>');
 	});
@@ -780,29 +779,20 @@ var dice_expression = function (expression) {
 	var tmp = {};
 	DND5_MONSTERS.forEach(function (monster) {
 		if (!tmp[monster.challenge]) {
-			tmp[monster.challenge] = { label: 'Challenge ' + monster.challenge + ' (' + monster.xp + ' XP)', value: monster.xp, options: [] };
+			tmp[monster.challenge] = monster.xp;
 		}
-		tmp[monster.challenge].options.push(monster.name.en + (monster.name.it !== monster.name.en ? ' (' + monster.name.it + ')' : ''));
 	});
 	var array = [
 		{ label: 'None', value: 0 }
 	];
 	Object.keys(tmp).sort(function (a, b) {
-		return tmp[a].value < tmp[b].value ? -1 : 1;
+		return tmp[a] < tmp[b] ? -1 : 1;
 	}).forEach(function (item) {
-		array.push(tmp[item]);
+		array.push({ label: 'Challenge ' + item + ' (' + tmp[item] + ' XP)', value: tmp[item] });
 	});
 	var $m_selects = $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-encounter-m3-type, #dnd5-encounter-m4-type, #dnd5-encounter-m5-type');
 	array.forEach(function (item) {
-		if (!item.options) {
-			$m_selects.append('<option value="' + item.value + '">' + item.label + '</option>');
-		} else {
-			var $optgroup = $('<optgroup label="' + item.label + '"></optgroup>');
-			item.options.sort().forEach(function (option) {
-				$optgroup.append('<option value="' + item.value + '">' + option + '</option>');
-			});
-			$m_selects.append($optgroup);
-		}
+		$m_selects.append('<option value="' + item.value + '">' + item.label + '</option>');
 	});
 
 	var thresholds = {
