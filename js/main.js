@@ -741,7 +741,7 @@ var dice_expression = function (expression) {
 				'<td>' + monster.name.en + '</td>' +
 				'<td>' + monster.name.it + '</td>' +
 				'<td>' + monster.challenge + '</td>' +
-				'<td>' + monster.reference.en + ', ' + monster.reference.it + '</td>' +
+				'<td>' + monster.reference + '</td>' +
 			'</tr>');
 	});
 	$('#dnd5-monsters-table').append($tbody);
@@ -771,11 +771,6 @@ var dice_expression = function (expression) {
 (function () {
 	'use strict';
 
-	var $ch_selects = $('#dnd5-encounter-chlevel1, #dnd5-encounter-chlevel2, #dnd5-encounter-chlevel3, #dnd5-encounter-chlevel4, #dnd5-encounter-chlevel5, #dnd5-encounter-chlevel6');
-	for (var i = 0; i <= 20; ++i) {
-		$ch_selects.append('<option value="' + i + '">' + (i === 0 ? '-' : i) + '</option>');
-	}
-
 	var tmp = {};
 	DND5_MONSTERS.forEach(function (monster) {
 		if (!tmp[monster.challenge]) {
@@ -790,7 +785,7 @@ var dice_expression = function (expression) {
 	}).forEach(function (item) {
 		array.push({ label: 'Challenge ' + item + ' (' + tmp[item] + ' XP)', value: tmp[item] });
 	});
-	var $m_selects = $('#dnd5-encounter-m1-type, #dnd5-encounter-m2-type, #dnd5-encounter-m3-type, #dnd5-encounter-m4-type, #dnd5-encounter-m5-type');
+	var $m_selects = $('#dnd5-encounter-m1-cr, #dnd5-encounter-m2-cr, #dnd5-encounter-m3-cr');
 	array.forEach(function (item) {
 		$m_selects.append('<option value="' + item.value + '">' + item.label + '</option>');
 	});
@@ -819,22 +814,13 @@ var dice_expression = function (expression) {
 	};
 
 	$('#dnd5-encounter').on('change', '.control', function () {
-		var characters = 0,
-			easy = 0,
-			medium = 0,
-			hard = 0,
-			lethal = 0;
-		[1, 2, 3, 4, 5, 6].forEach(function (id) {
-			var level = parseInt($('#dnd5-encounter-chlevel' + id).val(), 10);
-			if (level > 0) {
-				characters++;
-				var tmp = thresholds[level.toString()];
-				easy += tmp[0];
-				medium += tmp[1];
-				hard += tmp[2];
-				lethal += tmp[3];
-			}
-		});
+		var players = parseInt($('#dnd5-encounter-players').val(), 10),
+			level = parseInt($('#dnd5-encounter-level').val(), 10),
+			th = thresholds[level.toString()],
+			easy = tmp[0] * players,
+			medium = tmp[1] * players,
+			hard = tmp[2] * players,
+			lethal = tmp[3] * players;
 		$('#dnd5-encounter-thresholds').html(
 			'<span style="background: cornflowerblue; color: white; padding: 0 1rem">Easy: ' + easy + ' XP</span>' +
 			'<span style="background: #39b54a; color: white; padding: 0 1rem">Medium: ' + medium + ' XP</span>' +
@@ -842,16 +828,16 @@ var dice_expression = function (expression) {
 			'<span style="background: #c44230; color: white; padding: 0 1rem">Lethal: ' + lethal + ' XP</span>');
 		var output_number = 0,
 			output_xp = 0;
-		[1, 2, 3, 4, 5].forEach(function (id) {
+		[1, 2, 3].forEach(function (id) {
 			var number = parseInt($('#dnd5-encounter-m' + id + '-number').val(), 10),
-				type = parseInt($('#dnd5-encounter-m' + id + '-type').val(), 10);
+				type = parseInt($('#dnd5-encounter-m' + id + '-cr').val(), 10);
 			if (type !== 0) {
 				output_number += number;
 				output_xp += number * type;
 			}
 		});
 		var multiplier = 1;
-		if (characters <= 2) {
+		if (players <= 2) {
 			if (output_number === 1) {
 				multiplier = 1.5;
 			} else if (output_number === 2) {
@@ -863,7 +849,7 @@ var dice_expression = function (expression) {
 			} else if (output_number >= 11) {
 				multiplier = 4;
 			}
-		} else if (characters >= 3 && characters <= 5) {
+		} else if (players >= 3 && players <= 5) {
 			if (output_number === 1) {
 				multiplier = 1;
 			} else if (output_number === 2) {
@@ -877,7 +863,7 @@ var dice_expression = function (expression) {
 			} else if (output_number >= 15) {
 				multiplier = 4;
 			}
-		} else if (characters >= 6) {
+		} else if (players >= 6) {
 			if (output_number === 1) {
 				multiplier = 0.5;
 			} else if (output_number === 2) {
@@ -1174,7 +1160,7 @@ var dice_expression = function (expression) {
 
 
 // Songs of the Winterflame: Eventide Character
-
+/*
 (function () {
 	'use strict';
 
@@ -1290,3 +1276,4 @@ var dice_expression = function (expression) {
 		render();
 	});
 })();
+*/
