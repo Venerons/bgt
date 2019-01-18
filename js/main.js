@@ -783,7 +783,7 @@ var dice_expression = function (expression) {
 	Object.keys(tmp).sort(function (a, b) {
 		return tmp[a] < tmp[b] ? -1 : 1;
 	}).forEach(function (item) {
-		array.push({ label: 'Challenge ' + item + ' (' + tmp[item] + ' XP)', value: tmp[item] });
+		array.push({ label: 'CR ' + item + ' (' + tmp[item] + ' XP)', value: tmp[item] });
 	});
 	var $m_selects = $('#dnd5-encounter-m1-cr, #dnd5-encounter-m2-cr, #dnd5-encounter-m3-cr');
 	array.forEach(function (item) {
@@ -813,19 +813,44 @@ var dice_expression = function (expression) {
 		'20': [2800, 5700, 8500, 12700]
 	};
 
+	var daily_threshold = {
+		'1': 300,
+		'2': 600,
+		'3': 1200,
+		'4': 1700,
+		'5': 3500,
+		'6': 4000,
+		'7': 5000,
+		'8': 6000,
+		'9': 7500,
+		'10': 9000,
+		'11': 10500,
+		'12': 11500,
+		'13': 13500,
+		'14': 15000,
+		'15': 18000,
+		'16': 20000,
+		'17': 25000,
+		'18': 27000,
+		'19': 30000,
+		'20': 40000
+	};
+
 	$('#dnd5-encounter').on('change', '.control', function () {
 		var players = parseInt($('#dnd5-encounter-players').val(), 10),
 			level = parseInt($('#dnd5-encounter-level').val(), 10),
 			th = thresholds[level.toString()],
-			easy = tmp[0] * players,
-			medium = tmp[1] * players,
-			hard = tmp[2] * players,
-			lethal = tmp[3] * players;
+			easy = th[0] * players,
+			medium = th[1] * players,
+			hard = th[2] * players,
+			deadly = th[3] * players,
+			daily_budget = daily_threshold[level.toString()] * players;
 		$('#dnd5-encounter-thresholds').html(
 			'<span style="background: cornflowerblue; color: white; padding: 0 1rem">Easy: ' + easy + ' XP</span>' +
 			'<span style="background: #39b54a; color: white; padding: 0 1rem">Medium: ' + medium + ' XP</span>' +
 			'<span style="background: #eda745; color: white; padding: 0 1rem">Hard: ' + hard + ' XP</span>' +
-			'<span style="background: #c44230; color: white; padding: 0 1rem">Lethal: ' + lethal + ' XP</span>');
+			'<span style="background: #c44230; color: white; padding: 0 1rem">Deadly: ' + deadly + ' XP</span>' +
+			'<span style="background: whitesmoke; color: black; padding: 0 1rem">Daily Budget: ' + daily_budget + ' XP</span>');
 		var output_number = 0,
 			output_xp = 0;
 		[1, 2, 3].forEach(function (id) {
@@ -878,20 +903,20 @@ var dice_expression = function (expression) {
 				multiplier = 3;
 			}
 		}
-		var output_xp_multiplier = output_xp * multiplier,
+		var output_xp_adjusted = output_xp * multiplier,
 			output;
-		if (output_xp_multiplier < easy) {
+		if (output_xp_adjusted < easy) {
 			output = '<span style="background: cornflowerblue; color: white; padding: 0 2rem">Not an Encounter</span><br>';
-		} else if (output_xp_multiplier >= easy && output_xp_multiplier < medium) {
+		} else if (output_xp_adjusted >= easy && output_xp_adjusted < medium) {
 			output = '<span style="background: cornflowerblue; color: white; padding: 0 2rem">Easy</span><br>';
-		} else if (output_xp_multiplier >= medium && output_xp_multiplier < hard) {
+		} else if (output_xp_adjusted >= medium && output_xp_adjusted < hard) {
 			output = '<span style="background: #39b54a; color: white; padding: 0 2rem">Medium</span><br>';
-		} else if (output_xp_multiplier >= hard && output_xp_multiplier < lethal) {
+		} else if (output_xp_adjusted >= hard && output_xp_adjusted < deadly) {
 			output = '<span style="background: #eda745; color: white; padding: 0 2rem">Hard</span><br>';
-		} else if (output_xp_multiplier >= lethal) {
-			output = '<span style="background: #c44230; color: white; padding: 0 2rem">Lethal</span><br>';
+		} else if (output_xp_adjusted >= deadly) {
+			output = '<span style="background: #c44230; color: white; padding: 0 2rem">Deadly</span><br>';
 		}
-		output += output_xp + ' XP<br>' + (output_xp_multiplier !== output_xp ? output_xp_multiplier + ' XP after multiplier' : '');
+		output += 'Total XP: ' + output_xp + (output_xp_adjusted !== output_xp ? '<br>Adjusted XP: ' + output_xp_adjusted : '');
 		$('#dnd5-encounter-output').html(output);
 	});
 })();
@@ -918,12 +943,12 @@ var dice_expression = function (expression) {
 		}).forEach(function (item) {
 			$tbody.append(
 				'<tr style="background: ' + (item.type === 'character' ? '#39b54a' : '#c44230') + '">' +
-					'<td><input  data-id="' + item.id + '" data-field="initiative" type="number" value="' + item.initiative + '" class="input control" style="width: 100%"></td>' +
+					'<td><input  data-id="' + item.id + '" data-field="initiative" type="number" value="' + item.initiative + '" class="input control" style="width: 100%; background: rgba(255, 255, 255, 0.5)"></td>' +
 					'<td>' + item.label + '</td>' +
-					'<td><input  data-id="' + item.id + '" data-field="ac" type="number" value="' + item.ac + '" class="input control" style="width: 100%"></td>' +
-					'<td><input  data-id="' + item.id + '" data-field="perception" type="number" value="' + item.perception + '" class="input control" style="width: 100%"></td>' +
-					'<td><input  data-id="' + item.id + '" data-field="hp" type="number" value="' + item.hp + '" class="input control" style="width: 100%"></td>' +
-					'<td><input  data-id="' + item.id + '" data-field="maxhp" type="number" value="' + item.maxhp + '" class="input control" style="width: 100%"></td>' +
+					'<td><input  data-id="' + item.id + '" data-field="ac" type="number" value="' + item.ac + '" class="input control" style="width: 100%; background: rgba(255, 255, 255, 0.5)"></td>' +
+					'<td><input  data-id="' + item.id + '" data-field="perception" type="number" value="' + item.perception + '" class="input control" style="width: 100%; background: rgba(255, 255, 255, 0.5)"></td>' +
+					'<td><input  data-id="' + item.id + '" data-field="hp" type="number" value="' + item.hp + '" class="input control" style="width: 100%; background: rgba(255, 255, 255, 0.5)"></td>' +
+					'<td><input  data-id="' + item.id + '" data-field="maxhp" type="number" value="' + item.maxhp + '" class="input control" style="width: 100%; background: rgba(255, 255, 255, 0.5)"></td>' +
 				'</tr>');
 		});
 	};
