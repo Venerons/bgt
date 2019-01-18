@@ -6,10 +6,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -18,10 +15,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -30,10 +24,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -42,10 +33,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -54,10 +42,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -66,10 +51,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -78,10 +60,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -90,10 +69,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -102,10 +78,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -114,10 +87,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -126,10 +96,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -138,10 +105,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -150,10 +114,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -162,10 +123,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -174,10 +132,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -186,10 +141,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -198,10 +150,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -210,10 +159,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -222,10 +168,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -234,10 +177,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -246,10 +186,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -258,10 +195,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -270,10 +204,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -282,10 +213,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -294,10 +222,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -306,10 +231,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -318,10 +240,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -330,10 +249,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -342,10 +258,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -354,10 +267,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -366,10 +276,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "0",
 		"xp": 10,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -378,10 +285,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -390,10 +294,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -402,10 +303,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -414,10 +312,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -426,10 +321,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -438,10 +330,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -450,10 +339,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -462,10 +348,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -474,10 +357,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -486,10 +366,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -498,10 +375,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -510,10 +384,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -522,10 +393,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -534,10 +402,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -546,10 +411,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -558,10 +420,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -570,10 +429,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -582,10 +438,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -594,10 +447,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -606,10 +456,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -618,10 +465,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -630,10 +474,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/8",
 		"xp": 25,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -642,10 +483,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -654,10 +492,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -666,10 +501,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -678,10 +510,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -690,10 +519,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -702,10 +528,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -714,10 +537,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -726,10 +546,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -738,10 +555,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -750,10 +564,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -762,10 +573,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -774,10 +582,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -786,10 +591,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -798,10 +600,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -810,10 +609,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -822,10 +618,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -834,10 +627,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -846,10 +636,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -858,10 +645,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -870,10 +654,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -882,10 +663,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -894,10 +672,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -906,10 +681,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -918,10 +690,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -930,10 +699,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -942,10 +708,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -954,10 +717,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -966,10 +726,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -978,10 +735,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -990,10 +744,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1002,10 +753,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1014,10 +762,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1026,10 +771,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1038,10 +780,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1050,10 +789,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1062,10 +798,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1074,10 +807,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1086,10 +816,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1098,10 +825,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1110,10 +834,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1122,10 +843,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1134,10 +852,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1146,10 +861,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1158,10 +870,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/4",
 		"xp": 50,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1170,10 +879,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1182,10 +888,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1194,10 +897,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1206,10 +906,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1218,10 +915,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1230,10 +924,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1242,10 +933,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1254,10 +942,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1266,10 +951,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1278,10 +960,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1290,10 +969,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1302,10 +978,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1314,10 +987,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1326,10 +996,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1338,10 +1005,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1350,10 +1014,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1362,10 +1023,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1374,10 +1032,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1386,10 +1041,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1398,10 +1050,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1410,10 +1059,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1422,10 +1068,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1434,10 +1077,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1446,10 +1086,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1458,10 +1095,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1470,10 +1104,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1482,10 +1113,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1494,10 +1122,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1506,10 +1131,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1518,10 +1140,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1530,10 +1149,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1542,10 +1158,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1554,10 +1167,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1566,10 +1176,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1578,10 +1185,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1/2",
 		"xp": 100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1590,10 +1194,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1602,10 +1203,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1614,10 +1212,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1626,10 +1221,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1638,10 +1230,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1650,10 +1239,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1662,10 +1248,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1674,10 +1257,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1686,10 +1266,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1698,10 +1275,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1710,10 +1284,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1722,10 +1293,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1734,10 +1302,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1746,10 +1311,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1758,10 +1320,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1770,10 +1329,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1782,10 +1338,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1794,10 +1347,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1806,10 +1356,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1818,10 +1365,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1830,10 +1374,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1842,10 +1383,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1854,10 +1392,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1866,10 +1401,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1878,10 +1410,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1890,10 +1419,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1902,10 +1428,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1914,10 +1437,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1926,10 +1446,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1938,10 +1455,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1950,10 +1464,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1962,10 +1473,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1974,10 +1482,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1986,10 +1491,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -1998,10 +1500,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "1",
 		"xp": 200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2010,10 +1509,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2022,10 +1518,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2034,10 +1527,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2046,10 +1536,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2058,10 +1545,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2070,10 +1554,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2082,10 +1563,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2094,10 +1572,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2106,10 +1581,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2118,10 +1590,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2130,10 +1599,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2142,10 +1608,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2154,10 +1617,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2166,10 +1626,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2178,10 +1635,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2190,10 +1644,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2202,10 +1653,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2214,10 +1662,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2226,10 +1671,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2238,10 +1680,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2250,10 +1689,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2262,10 +1698,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2274,10 +1707,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2286,10 +1716,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2298,10 +1725,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2310,10 +1734,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2322,10 +1743,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2334,10 +1752,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2346,10 +1761,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2358,10 +1770,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2370,10 +1779,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2382,10 +1788,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2394,10 +1797,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2406,10 +1806,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2418,10 +1815,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2430,10 +1824,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2442,10 +1833,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2454,10 +1842,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2466,10 +1851,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2478,10 +1860,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2490,10 +1869,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2502,10 +1878,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2514,10 +1887,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2526,10 +1896,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2538,10 +1905,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2550,10 +1914,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2562,10 +1923,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2574,10 +1932,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2586,10 +1941,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2598,10 +1950,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2610,10 +1959,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2622,10 +1968,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2634,10 +1977,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2646,10 +1986,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2658,10 +1995,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2670,10 +2004,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2682,10 +2013,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2694,10 +2022,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "2",
 		"xp": 450,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2706,10 +2031,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2718,10 +2040,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2730,10 +2049,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2742,10 +2058,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2754,10 +2067,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2766,10 +2076,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2778,10 +2085,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2790,10 +2094,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2802,10 +2103,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2814,10 +2112,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2826,10 +2121,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2838,10 +2130,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2850,10 +2139,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2862,10 +2148,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2874,10 +2157,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2886,10 +2166,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2898,10 +2175,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2910,10 +2184,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2922,10 +2193,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2934,10 +2202,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2946,10 +2211,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2958,10 +2220,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2970,10 +2229,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2982,10 +2238,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -2994,10 +2247,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3006,10 +2256,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3018,10 +2265,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3030,10 +2274,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3042,10 +2283,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3054,10 +2292,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3066,10 +2301,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3078,10 +2310,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "3",
 		"xp": 700,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3090,10 +2319,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3102,10 +2328,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3114,10 +2337,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3126,10 +2346,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3138,10 +2355,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3150,10 +2364,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3162,10 +2373,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3174,10 +2382,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3186,10 +2391,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3198,10 +2400,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3210,10 +2409,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3222,10 +2418,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3234,10 +2427,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3246,10 +2436,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3258,10 +2445,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3270,10 +2454,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3282,10 +2463,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3294,10 +2472,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3306,10 +2481,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3318,10 +2490,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3330,10 +2499,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "4",
 		"xp": 1100,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3342,10 +2508,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3354,10 +2517,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3366,10 +2526,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3378,10 +2535,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3390,10 +2544,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3402,10 +2553,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3414,10 +2562,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3426,10 +2571,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3438,10 +2580,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3450,10 +2589,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3462,10 +2598,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3474,10 +2607,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3486,10 +2616,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3498,10 +2625,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3510,10 +2634,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3522,10 +2643,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3534,10 +2652,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3546,10 +2661,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3558,10 +2670,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3570,10 +2679,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3582,10 +2688,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3594,10 +2697,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3606,10 +2706,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3618,10 +2715,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3630,10 +2724,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3642,10 +2733,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3654,10 +2742,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3666,10 +2751,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3678,10 +2760,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3690,10 +2769,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3702,10 +2778,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3714,10 +2787,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3726,10 +2796,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3738,10 +2805,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3750,10 +2814,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3762,10 +2823,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "5",
 		"xp": 1800,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3774,10 +2832,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3786,10 +2841,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3798,10 +2850,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3810,10 +2859,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3822,10 +2868,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3834,10 +2877,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3846,10 +2886,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3858,10 +2895,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3870,10 +2904,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3882,10 +2913,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3894,10 +2922,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3906,10 +2931,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3918,10 +2940,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3930,10 +2949,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3942,10 +2958,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3954,10 +2967,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "6",
 		"xp": 2300,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3966,10 +2976,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3978,10 +2985,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -3990,10 +2994,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4002,10 +3003,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4014,10 +3012,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4026,10 +3021,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4038,10 +3030,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4050,10 +3039,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4062,10 +3048,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4074,10 +3057,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4086,10 +3066,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4098,10 +3075,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "7",
 		"xp": 2900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4110,10 +3084,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4122,10 +3093,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4134,10 +3102,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4146,10 +3111,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4158,10 +3120,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4170,10 +3129,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4182,10 +3138,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4194,10 +3147,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4206,10 +3156,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4218,10 +3165,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4230,10 +3174,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4242,10 +3183,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4254,10 +3192,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4266,10 +3201,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4278,10 +3210,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "8",
 		"xp": 3900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4290,10 +3219,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4302,10 +3228,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4314,10 +3237,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4326,10 +3246,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4338,10 +3255,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4350,10 +3264,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4362,10 +3273,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4374,10 +3282,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4386,10 +3291,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4398,10 +3300,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4410,10 +3309,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "9",
 		"xp": 5000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4422,10 +3318,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4434,10 +3327,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4446,10 +3336,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4458,10 +3345,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4470,10 +3354,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4482,10 +3363,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4494,10 +3372,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4506,10 +3381,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "10",
 		"xp": 5900,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4518,10 +3390,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4530,10 +3399,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4542,10 +3408,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4554,10 +3417,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4566,10 +3426,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4578,10 +3435,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4590,10 +3444,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4602,10 +3453,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4614,10 +3462,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "11",
 		"xp": 7200,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4626,10 +3471,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "12",
 		"xp": 8400,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4638,10 +3480,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "12",
 		"xp": 8400,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4650,10 +3489,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "12",
 		"xp": 8400,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4662,10 +3498,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4674,10 +3507,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4686,10 +3516,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4698,10 +3525,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4710,10 +3534,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4722,10 +3543,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4734,10 +3552,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4746,10 +3561,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4758,10 +3570,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "13",
 		"xp": 10000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4770,10 +3579,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "14",
 		"xp": 11500,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4782,10 +3588,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "14",
 		"xp": 11500,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4794,10 +3597,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "14",
 		"xp": 11500,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4806,10 +3606,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "14",
 		"xp": 11500,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4818,10 +3615,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "14",
 		"xp": 11500,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4830,10 +3624,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4842,10 +3633,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4854,10 +3642,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4866,10 +3651,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4878,10 +3660,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4890,10 +3669,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4902,10 +3678,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "15",
 		"xp": 13000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4914,10 +3687,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "16",
 		"xp": 15000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4926,10 +3696,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "16",
 		"xp": 15000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4938,10 +3705,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "16",
 		"xp": 15000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4950,10 +3714,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "16",
 		"xp": 15000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4962,10 +3723,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "16",
 		"xp": 15000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4974,10 +3732,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "16",
 		"xp": 15000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4986,10 +3741,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -4998,10 +3750,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5010,10 +3759,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5022,10 +3768,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5034,10 +3777,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5046,10 +3786,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5058,10 +3795,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "17",
 		"xp": 18000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5070,10 +3804,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "18",
 		"xp": 20000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5082,10 +3813,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "19",
 		"xp": 22000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5094,10 +3822,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "20",
 		"xp": 25000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5106,10 +3831,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "20",
 		"xp": 25000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5118,10 +3840,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "20",
 		"xp": 25000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5130,10 +3849,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "20",
 		"xp": 25000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5142,10 +3858,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "21",
 		"xp": 33000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5154,10 +3867,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "21",
 		"xp": 33000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5166,10 +3876,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "21",
 		"xp": 33000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5178,10 +3885,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "21",
 		"xp": 33000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5190,10 +3894,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "22",
 		"xp": 41000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5202,10 +3903,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "22",
 		"xp": 41000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5214,10 +3912,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "22",
 		"xp": 41000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5226,10 +3921,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "23",
 		"xp": 50000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5238,10 +3930,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "23",
 		"xp": 50000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5250,10 +3939,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "23",
 		"xp": 50000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5262,10 +3948,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "23",
 		"xp": 50000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5274,10 +3957,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "24",
 		"xp": 62000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5286,10 +3966,7 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "24",
 		"xp": 62000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	},
 	{
 		"name": {
@@ -5298,9 +3975,6 @@ var DND5_MONSTERS = [
 		},
 		"challenge": "30",
 		"xp": 155000,
-		"reference": {
-			"en": "Monster Manual",
-			"it": "Manuale dei Mostri"
-		}
+		"reference": "Monster Manual"
 	}
 ];
