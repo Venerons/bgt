@@ -941,67 +941,83 @@ var dice_expression = function (expression) {
 				return 0;
 			}
 		}).forEach(function (item) {
+			var input_style = 'width: 100%; color: whitesmoke; border: none; background: rgba(255, 255, 255, 0.1)';
 			$tbody.append(
-				'<tr style="background: ' + (item.type === 'character' ? '#39b54a' : '#c44230') + '">' +
-					'<td><input  data-id="' + item.id + '" data-field="initiative" type="number" value="' + item.initiative + '" class="input control" style="width: 100%; background: rgba(255, 255, 255, 0.5)"></td>' +
-					'<td>' + item.label + '</td>' +
-					'<td><input  data-id="' + item.id + '" data-field="ac" type="number" value="' + item.ac + '" class="input control" style="width: 100%; background: rgba(255, 255, 255, 0.5)"></td>' +
-					'<td><input  data-id="' + item.id + '" data-field="perception" type="number" value="' + item.perception + '" class="input control" style="width: 100%; background: rgba(255, 255, 255, 0.5)"></td>' +
-					'<td><input  data-id="' + item.id + '" data-field="hp" type="number" value="' + item.hp + '" class="input control" style="width: 100%; background: rgba(255, 255, 255, 0.5)"></td>' +
-					'<td><input  data-id="' + item.id + '" data-field="maxhp" type="number" value="' + item.maxhp + '" class="input control" style="width: 100%; background: rgba(255, 255, 255, 0.5)"></td>' +
+				'<tr style="background: ' + (item.type === 'character' ? '#39b54a75' : '#c4423075') + '">' +
+					'<td><input  data-id="' + item.id + '" data-field="initiative" type="number" value="' + item.initiative + '" class="input control" style="' + input_style + '"></td>' +
+					'<td><input  data-id="' + item.id + '" data-field="label" type="text" value="' + item.label + '" class="input control" style="' + input_style + '"></td>' +
+					'<td><input  data-id="' + item.id + '" data-field="ac" type="number" value="' + item.ac + '" class="input control" style="' + input_style + '"></td>' +
+					'<td><input  data-id="' + item.id + '" data-field="perception" type="number" value="' + item.perception + '" class="input control" style="' + input_style + '"></td>' +
+					'<td><input  data-id="' + item.id + '" data-field="hp" type="number" value="' + item.hp + '" class="input control" style="' + input_style + '"></td>' +
+					'<td><input  data-id="' + item.id + '" data-field="maxhp" type="number" value="' + item.maxhp + '" class="input control" style="' + input_style + '"></td>' +
+					'<td><button  data-id="' + item.id + '" data-action="delete" class="button" style="width: 100%">Delete</button></td>' +
 				'</tr>');
 		});
 	};
 
 	$('#dnd5-initiativetracker-toolbar').on('click', 'button', function () {
-		var action = $(this).data('action');
+		var action = $(this).data('action'),
+			data = $('#dnd5-initiativetracker').data('data') || [];
 		if (action === 'sort') {
-			var data = $('#dnd5-initiativetracker').data('data') || [];
 			renderData(data);
 		} else {
 			var type, message;
 			if (action === 'add-character') {
 				type = 'character';
-				message = 'Character Name:';
 			} else if (action === 'add-monster') {
 				type = 'monster';
-				message = 'Monster Name:';
 			}
-			var label = prompt(message);
-			if (label) {
-				var data = $('#dnd5-initiativetracker').data('data') || [];
-				var id = 0;
-				data.forEach(function (item) {
-					if (item.id >= id) {
-						id = item.id + 1;
-					}
-				});
-				data.push({
-					id: id,
-					type: type,
-					label: label,
-					initiative: 0,
-					ac: 0,
-					perception: 10,
-					hp: 0,
-					maxhp: 0
-				});
-				$('#dnd5-initiativetracker').data('data', data);
-				renderData(data);
-			}
+			var id = 0;
+			data.forEach(function (item) {
+				if (item.id >= id) {
+					id = item.id + 1;
+				}
+			});
+			data.push({
+				id: id,
+				type: type,
+				label: type.toUpperCase(),
+				initiative: 0,
+				ac: 10,
+				perception: 10,
+				hp: 0,
+				maxhp: 0
+			});
+			$('#dnd5-initiativetracker').data('data', data);
+			renderData(data);
 		}
 	});
 
 	$('#dnd5-initiativetracker-table').on('change', '.control', function () {
-		var id = parseInt($(this).data('id'), 10),
-			field = $(this).data('field'),
-			value = parseFloat($(this).val()),
+		var $this = $(this),
+			id = parseInt($this.data('id'), 10),
+			field = $this.data('field'),
+			value = field === 'label' ? $this.val() : parseFloat($this.val()),
 			data = $('#dnd5-initiativetracker').data('data') || [];
 		data.forEach(function (item) {
 			if (item.id === id) {
 				item[field] = value;
 			}
 		});
+	});
+
+	$('#dnd5-initiativetracker-table').on('click', '[data-action]', function () {
+		var $this = $(this),
+			action = $this.data('action'),
+			id = parseInt($this.data('id'), 10),
+			data = $('#dnd5-initiativetracker').data('data') || [];
+		if (action === 'delete') {
+			var index = null;
+			data.forEach(function (item, data_index) {
+				if (item.id === id) {
+					index = data_index;
+				}
+			});
+			if (index !== null) {
+				data.splice(index, 1);
+				renderData(data);
+			}
+		}
 	});
 })();
 
