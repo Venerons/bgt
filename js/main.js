@@ -1021,6 +1021,113 @@ var dice_expression = function (expression) {
 	});
 })();
 
+// D&D 5 Individual Treasure
+
+(function () {
+	'use strict';
+
+	$('#dnd5-individualtreasure-generate').on('click', function () {
+		var cr = $('#dnd5-individualtreasure-cr').val(),
+			d100 = dice(100),
+			cp = 0,
+			sp = 0,
+			ep = 0,
+			gp = 0,
+			pp = 0;
+
+		if (cr === '0-4') {
+			if (d100 >= 1 && d100 <= 30) {
+				// 5d6 (17) CP
+				cp = dice(6) + dice(6) + dice(6) + dice(6) + dice(6) + dice(6);
+			} else if (d100 >= 31 && d100 <= 60) {
+				// 4d6 (14) SP
+				sp = dice(6) + dice(6) + dice(6) + dice(6);
+			} else if (d100 >= 61 && d100 <= 70) {
+				// 3d6 (10) EP
+				ep = dice(6) + dice(6) + dice(6);
+			} else if (d100 >= 71 && d100 <= 95) {
+				// 3d6 (10) GP
+				gp = dice(6) + dice(6) + dice(6);
+			} else if (d100 >= 96 && d100 <= 100) {
+				// 1d6 (3) PP
+				pp = dice(6);
+			}
+		} else if (cr === '5-10') {
+			if (d100 >= 1 && d100 <= 30) {
+				// 4d6 * 100 (1400) CP + 1d6 * 10 (35) EP
+				cp = (dice(6) + dice(6) + dice(6) + dice(6)) * 100;
+				ep = dice(6) * 10;
+			} else if (d100 >= 31 && d100 <= 60) {
+				// 6d6 * 10 (210) SP + 2d6 * 10 (70) GP
+				sp = (dice(6) + dice(6) + dice(6) + dice(6) + dice(6) + dice(6)) * 10;
+				gp = (dice(6) + dice(6)) * 10;
+			} else if (d100 >= 61 && d100 <= 70) {
+				// 3d6 * 10 (105) EP + 2d6 * 10 (70) GP
+				ep = (dice(6) + dice(6) + dice(6)) * 10;
+				gp = (dice(6) + dice(6)) * 10;
+			} else if (d100 >= 71 && d100 <= 95) {
+				// 4d6 * 10 (140) GP
+				gp = (dice(6) + dice(6) + dice(6) + dice(6)) * 10;
+			} else if (d100 >= 96 && d100 <= 100) {
+				// 2d6 * 10 (70) GP + 3d6 (10) PP
+				gp = (dice(6) + dice(6)) * 10;
+				pp = dice(6) + dice(6) + dice(6);
+			}
+		} else if (cr === '11-16') {
+			if (d100 >= 1 && d100 <= 20) {
+				// 4d6 * 100 (1400) SP + 1d6 * 100 (350) GP
+				sp = (dice(6) + dice(6) + dice(6) + dice(6)) * 100;
+				gp = dice(6) * 100;
+			} else if (d100 >= 21 && d100 <= 35) {
+				// 1d6 * 100 (350) EP + 1d6 * 100 (350) GP
+				ep = dice(6) * 100;
+				gp = dice(6) * 100;
+			} else if (d100 >= 36 && d100 <= 75) {
+				// 2d6 * 100 (700) GP + 1d6 * 10 (35) PP
+				gp = (dice(6) + dice(6)) * 100;
+				pp = dice(6) * 10;
+			} else if (d100 >= 76 && d100 <= 100) {
+				// 2d6 * 100 (700) GP + 2d6 * 10 (70) PP
+				gp = (dice(6) + dice(6)) * 100;
+				pp = (dice(6) + dice(6)) * 10;
+			}
+		} else if (cr === '17+') {
+			if (d100 >= 1 && d100 <= 15) {
+				// 2d6 * 1000 (7000) EP + 8d6 * 100 (2800) GP
+				ep = (dice(6) + dice(6)) * 1000;
+				gp = (dice(6) + dice(6) + dice(6) + dice(6) + dice(6) + dice(6) + dice(6) + dice(6)) * 100;
+			} else if (d100 >= 16 && d100 <= 55) {
+				// 1d6 * 1000 (3500) GP + 1d6 * 100 (350) PP
+				gp = dice(6) * 1000;
+				pp = dice(6) * 100;
+			} else if (d100 >= 56 && d100 <= 100) {
+				// 1d6 * 1000 (3500) GP + 2d6 * 100 (700) PP
+				gp = dice(6) * 1000;
+				pp = (dice(6) + dice(6)) * 100;
+			}
+		}
+		var output = [];
+		if (cp > 0) {
+			output.push('<span style="color: #b87333">' + cp + ' CP</span>');
+		}
+		if (sp > 0) {
+			output.push('<span style="color: silver">' + sp + ' SP</span>');
+		}
+		if (ep > 0) {
+			output.push('<span style="color: grey">' + ep + ' EP</span>');
+		}
+		if (gp > 0) {
+			output.push('<span style="color: gold">' + gp + ' GP</span>');
+		}
+		if (pp > 0) {
+			output.push('<span style="color: #7f7679">' + pp + ' PP</span>');
+		}
+		output = output.join(', ');
+		var normalized = cp * 0.01 + sp * 0.1 + ep * 0.5 + gp + pp * 10;
+		$('#dnd5-individualtreasure-output').html(output + '<br>Normalized: <span style="color: gold">' + normalized + ' GP</span>');
+	});
+})();
+
 // 7th Sea Turn Tracker
 
 (function () {
