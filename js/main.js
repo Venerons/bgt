@@ -55,14 +55,29 @@ $('#home-list').on('click', '.list-item', function () {
 
 // Functions
 
-// example: 1d6 = dice(6)
-// example: 1rps = dice(['rock', 'paper', 'scissors'])
-var dice = function (values) {
-	if (values instanceof Array) {
-		return values[Math.floor(Math.random() * values.length)];
-	} else {
-		return Math.floor(Math.random() * values) + 1;
+// example: 1d6 = dice(1, 6)
+// example: 1rps = dice(1, ['rock', 'paper', 'scissors'])
+var dice = function (num, values) {
+	var result = [];
+	for (var i = 0; i < num; ++i) {
+		if (values instanceof Array) {
+			result.push(values[Math.floor(Math.random() * values.length)]);
+		} else {
+			result.push(Math.floor(Math.random() * values) + 1);
+		}
 	}
+	if (values instanceof Array) {
+		if (result.length === 1) {
+			result = result[0];
+		}
+	} else  {
+		var sum = 0;
+		result.forEach(function (value) {
+			sum += value;
+		});
+		result = sum;
+	}
+	return result;
 };
 
 // example: dice_expression('3d6+2+45d2')
@@ -72,13 +87,8 @@ var dice_expression = function (expression) {
 		result = eval(expression.replace(/[0-9]+d[0-9]+/g, function (a) {
 			var tokens = a.split('d'),
 				q = parseInt(tokens[0], 10),
-				f = parseInt(tokens[1], 10),
-				sum = 0;
-			for (var i = 0; i < q; ++i) {
-				sum += dice(f);
-			}
-			//console.log(a, q, f, sum);
-			return sum;
+				f = parseInt(tokens[1], 10);
+			return dice(q, f);
 		}));
 	} catch (e) {
 		console.error(e);
@@ -94,7 +104,7 @@ var dice_expression = function (expression) {
 	$('#generic-dice-classic').on('click', '.button', function () {
 		var $this = $(this),
 			n = parseInt($this.data('dice'), 10);
-		$('#generic-dice-classic-output').text(dice(n));
+		$('#generic-dice-classic-output').text(dice(1, n));
 	});
 	$('#generic-dice-custom-execute').on('click', function () {
 		$('#generic-dice-custom-output').text(dice_expression($('#generic-dice-custom-expression').val()));
@@ -790,67 +800,16 @@ var dice_expression = function (expression) {
 		$m_selects.append('<option value="' + item.value + '">' + item.label + '</option>');
 	});
 
-	var thresholds = {
-		'1': [25, 50, 75, 100],
-		'2': [50, 100, 150, 200],
-		'3': [75, 150, 225, 400],
-		'4': [125, 250, 375, 500],
-		'5': [250, 500, 750, 1100],
-		'6': [300, 600, 900, 1400],
-		'7': [350, 750, 1100, 1700],
-		'8': [450, 900, 1400, 2100],
-		'9': [550, 1100, 1600, 2400],
-		'10': [600, 1200, 1900, 2800],
-		'11': [800, 1600, 2400, 3600],
-		'12': [1000, 2000, 3000, 4500],
-		'13': [1100, 2200, 3400, 5100],
-		'14': [1250, 2500, 3800, 5700],
-		'15': [1400, 2800, 4300, 6400],
-		'16': [1600, 3200, 4800, 7200],
-		'17': [2000, 3900, 5900, 8800],
-		'18': [2100, 4200, 6300, 9500],
-		'19': [2400, 4900, 7300, 10900],
-		'20': [2800, 5700, 8500, 12700]
-	};
-
-	var daily_threshold = {
-		'1': 300,
-		'2': 600,
-		'3': 1200,
-		'4': 1700,
-		'5': 3500,
-		'6': 4000,
-		'7': 5000,
-		'8': 6000,
-		'9': 7500,
-		'10': 9000,
-		'11': 10500,
-		'12': 11500,
-		'13': 13500,
-		'14': 15000,
-		'15': 18000,
-		'16': 20000,
-		'17': 25000,
-		'18': 27000,
-		'19': 30000,
-		'20': 40000
-	};
-
 	$('#dnd5-encounter').on('change', '.control', function () {
 		var players = parseInt($('#dnd5-encounter-players').val(), 10),
-			level = parseInt($('#dnd5-encounter-level').val(), 10),
-			th = thresholds[level.toString()],
-			easy = th[0] * players,
-			medium = th[1] * players,
-			hard = th[2] * players,
-			deadly = th[3] * players,
-			daily_budget = daily_threshold[level.toString()] * players;
+			level = parseInt($('#dnd5-encounter-level').val(), 10);
+		var thresholds = DND5.party_xp_thresholds(players, level);
 		$('#dnd5-encounter-thresholds').html(
-			'<span style="background: cornflowerblue; color: white; padding: 0 1rem">Easy: ' + easy + ' XP</span>' +
-			'<span style="background: #39b54a; color: white; padding: 0 1rem">Medium: ' + medium + ' XP</span>' +
-			'<span style="background: #eda745; color: white; padding: 0 1rem">Hard: ' + hard + ' XP</span>' +
-			'<span style="background: #c44230; color: white; padding: 0 1rem">Deadly: ' + deadly + ' XP</span>' +
-			'<span style="background: whitesmoke; color: black; padding: 0 1rem">Daily Budget: ' + daily_budget + ' XP</span>');
+			'<span style="background: cornflowerblue; color: white; padding: 0 1rem">Easy: ' + thresholds.easy + ' XP</span>' +
+			'<span style="background: #39b54a; color: white; padding: 0 1rem">Medium: ' + thresholds.medium + ' XP</span>' +
+			'<span style="background: #eda745; color: white; padding: 0 1rem">Hard: ' + thresholds.hard + ' XP</span>' +
+			'<span style="background: #c44230; color: white; padding: 0 1rem">Deadly: ' + thresholds.deadly + ' XP</span>' +
+			'<span style="background: whitesmoke; color: black; padding: 0 1rem">Daily Budget: ' + thresholds.daily_budget + ' XP</span>');
 		var output_number = 0,
 			output_xp = 0;
 		[1, 2, 3].forEach(function (id) {
@@ -905,15 +864,15 @@ var dice_expression = function (expression) {
 		}
 		var output_xp_adjusted = output_xp * multiplier,
 			output;
-		if (output_xp_adjusted < easy) {
+		if (output_xp_adjusted < thresholds.easy) {
 			output = '<span style="background: cornflowerblue; color: white; padding: 0 2rem">Not an Encounter</span><br>';
-		} else if (output_xp_adjusted >= easy && output_xp_adjusted < medium) {
+		} else if (output_xp_adjusted >= thresholds.easy && output_xp_adjusted < thresholds.medium) {
 			output = '<span style="background: cornflowerblue; color: white; padding: 0 2rem">Easy</span><br>';
-		} else if (output_xp_adjusted >= medium && output_xp_adjusted < hard) {
+		} else if (output_xp_adjusted >= thresholds.medium && output_xp_adjusted < thresholds.hard) {
 			output = '<span style="background: #39b54a; color: white; padding: 0 2rem">Medium</span><br>';
-		} else if (output_xp_adjusted >= hard && output_xp_adjusted < deadly) {
+		} else if (output_xp_adjusted >= thresholds.hard && output_xp_adjusted < thresholds.deadly) {
 			output = '<span style="background: #eda745; color: white; padding: 0 2rem">Hard</span><br>';
-		} else if (output_xp_adjusted >= deadly) {
+		} else if (output_xp_adjusted >= thresholds.deadly) {
 			output = '<span style="background: #c44230; color: white; padding: 0 2rem">Deadly</span><br>';
 		}
 		output += 'Total XP: ' + output_xp + (output_xp_adjusted !== output_xp ? '<br>Adjusted XP: ' + output_xp_adjusted : '');
@@ -1027,104 +986,65 @@ var dice_expression = function (expression) {
 	'use strict';
 
 	$('#dnd5-individualtreasure-generate').on('click', function () {
-		var cr = $('#dnd5-individualtreasure-cr').val(),
-			d100 = dice(100),
-			cp = 0,
-			sp = 0,
-			ep = 0,
-			gp = 0,
-			pp = 0;
-
-		if (cr === '0-4') {
-			if (d100 >= 1 && d100 <= 30) {
-				// 5d6 (17) CP
-				cp = dice(6) + dice(6) + dice(6) + dice(6) + dice(6) + dice(6);
-			} else if (d100 >= 31 && d100 <= 60) {
-				// 4d6 (14) SP
-				sp = dice(6) + dice(6) + dice(6) + dice(6);
-			} else if (d100 >= 61 && d100 <= 70) {
-				// 3d6 (10) EP
-				ep = dice(6) + dice(6) + dice(6);
-			} else if (d100 >= 71 && d100 <= 95) {
-				// 3d6 (10) GP
-				gp = dice(6) + dice(6) + dice(6);
-			} else if (d100 >= 96 && d100 <= 100) {
-				// 1d6 (3) PP
-				pp = dice(6);
-			}
-		} else if (cr === '5-10') {
-			if (d100 >= 1 && d100 <= 30) {
-				// 4d6 * 100 (1400) CP + 1d6 * 10 (35) EP
-				cp = (dice(6) + dice(6) + dice(6) + dice(6)) * 100;
-				ep = dice(6) * 10;
-			} else if (d100 >= 31 && d100 <= 60) {
-				// 6d6 * 10 (210) SP + 2d6 * 10 (70) GP
-				sp = (dice(6) + dice(6) + dice(6) + dice(6) + dice(6) + dice(6)) * 10;
-				gp = (dice(6) + dice(6)) * 10;
-			} else if (d100 >= 61 && d100 <= 70) {
-				// 3d6 * 10 (105) EP + 2d6 * 10 (70) GP
-				ep = (dice(6) + dice(6) + dice(6)) * 10;
-				gp = (dice(6) + dice(6)) * 10;
-			} else if (d100 >= 71 && d100 <= 95) {
-				// 4d6 * 10 (140) GP
-				gp = (dice(6) + dice(6) + dice(6) + dice(6)) * 10;
-			} else if (d100 >= 96 && d100 <= 100) {
-				// 2d6 * 10 (70) GP + 3d6 (10) PP
-				gp = (dice(6) + dice(6)) * 10;
-				pp = dice(6) + dice(6) + dice(6);
-			}
-		} else if (cr === '11-16') {
-			if (d100 >= 1 && d100 <= 20) {
-				// 4d6 * 100 (1400) SP + 1d6 * 100 (350) GP
-				sp = (dice(6) + dice(6) + dice(6) + dice(6)) * 100;
-				gp = dice(6) * 100;
-			} else if (d100 >= 21 && d100 <= 35) {
-				// 1d6 * 100 (350) EP + 1d6 * 100 (350) GP
-				ep = dice(6) * 100;
-				gp = dice(6) * 100;
-			} else if (d100 >= 36 && d100 <= 75) {
-				// 2d6 * 100 (700) GP + 1d6 * 10 (35) PP
-				gp = (dice(6) + dice(6)) * 100;
-				pp = dice(6) * 10;
-			} else if (d100 >= 76 && d100 <= 100) {
-				// 2d6 * 100 (700) GP + 2d6 * 10 (70) PP
-				gp = (dice(6) + dice(6)) * 100;
-				pp = (dice(6) + dice(6)) * 10;
-			}
-		} else if (cr === '17+') {
-			if (d100 >= 1 && d100 <= 15) {
-				// 2d6 * 1000 (7000) EP + 8d6 * 100 (2800) GP
-				ep = (dice(6) + dice(6)) * 1000;
-				gp = (dice(6) + dice(6) + dice(6) + dice(6) + dice(6) + dice(6) + dice(6) + dice(6)) * 100;
-			} else if (d100 >= 16 && d100 <= 55) {
-				// 1d6 * 1000 (3500) GP + 1d6 * 100 (350) PP
-				gp = dice(6) * 1000;
-				pp = dice(6) * 100;
-			} else if (d100 >= 56 && d100 <= 100) {
-				// 1d6 * 1000 (3500) GP + 2d6 * 100 (700) PP
-				gp = dice(6) * 1000;
-				pp = (dice(6) + dice(6)) * 100;
-			}
-		}
+		var treasure = DND5.individual_treasure($('#dnd5-individualtreasure-cr').val());
 		var output = [];
-		if (cp > 0) {
-			output.push('<span style="color: #b87333">' + cp + ' CP</span>');
+		if (treasure.cp > 0) {
+			output.push('<span style="color: #b87333">' + treasure.cp + ' CP</span>');
 		}
-		if (sp > 0) {
-			output.push('<span style="color: silver">' + sp + ' SP</span>');
+		if (treasure.sp > 0) {
+			output.push('<span style="color: silver">' + treasure.sp + ' SP</span>');
 		}
-		if (ep > 0) {
-			output.push('<span style="color: grey">' + ep + ' EP</span>');
+		if (treasure.ep > 0) {
+			output.push('<span style="color: grey">' + treasure.ep + ' EP</span>');
 		}
-		if (gp > 0) {
-			output.push('<span style="color: gold">' + gp + ' GP</span>');
+		if (treasure.gp > 0) {
+			output.push('<span style="color: gold">' + treasure.gp + ' GP</span>');
 		}
-		if (pp > 0) {
-			output.push('<span style="color: #7f7679">' + pp + ' PP</span>');
+		if (treasure.pp > 0) {
+			output.push('<span style="color: #7f7679">' + treasure.pp + ' PP</span>');
 		}
-		output = output.join(', ');
-		var normalized = cp * 0.01 + sp * 0.1 + ep * 0.5 + gp + pp * 10;
-		$('#dnd5-individualtreasure-output').html(output + '<br>Normalized: <span style="color: gold">' + normalized + ' GP</span>');
+		var normalized = treasure.cp * 0.01 + treasure.sp * 0.1 + treasure.ep * 0.5 + treasure.gp + treasure.pp * 10;
+		output.push('<hr>Normalized: <span style="color: gold">' + normalized + ' GP</span>');
+		$('#dnd5-individualtreasure-output').html(output.join('<br>'));
+	});
+})();
+
+
+// D&D 5 Treasure Hoard
+
+(function () {
+	'use strict';
+
+	$('#dnd5-treasurehoard-generate').on('click', function () {
+		var treasure = DND5.treasure_hoard($('#dnd5-treasurehoard-cr').val());
+		var output = [];
+		if (treasure.cp > 0) {
+			output.push('<span style="color: #b87333">' + treasure.cp + ' CP</span>');
+		}
+		if (treasure.sp > 0) {
+			output.push('<span style="color: silver">' + treasure.sp + ' SP</span>');
+		}
+		if (treasure.ep > 0) {
+			output.push('<span style="color: grey">' + treasure.ep + ' EP</span>');
+		}
+		if (treasure.gp > 0) {
+			output.push('<span style="color: gold">' + treasure.gp + ' GP</span>');
+		}
+		if (treasure.pp > 0) {
+			output.push('<span style="color: #7f7679">' + treasure.pp + ' PP</span>');
+		}
+		treasure.gems.forEach(function (gem) {
+			output.push(gem);
+		});
+		treasure.art_objects.forEach(function (art_object) {
+			output.push(art_object);
+		});
+		treasure.magic_items.forEach(function (magic_item) {
+			output.push(magic_item);
+		});
+		//var normalized = treasure.cp * 0.01 + treasure.sp * 0.1 + treasure.ep * 0.5 + treasure.gp + treasure.pp * 10;
+		//output.push('<hr>Normalized: <span style="color: gold">' + normalized + ' GP</span>');
+		$('#dnd5-treasurehoard-output').html(output.join('<br>'));
 	});
 })();
 
@@ -1288,7 +1208,7 @@ var dice_expression = function (expression) {
 
 	$('#fate-dice-toolbar').on('click', '.button', function () {
 		var array = ['+', '+', '&nbsp;', '&nbsp;', '-', '-'],
-			rolls = [dice(array), dice(array), dice(array), dice(array)],
+			rolls = [dice(1, array), dice(1, array), dice(1, array), dice(1, array)],
 			result = 0,
 			output = '';
 		rolls.forEach(function (roll) {
