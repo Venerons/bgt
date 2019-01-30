@@ -734,8 +734,8 @@ var dice_expression = function (expression) {
 
 	var challenges = {};
 	DND5_MONSTERS.forEach(function (monster) {
-		if (!challenges[monster.challenge]) {
-			challenges[monster.challenge] = monster.xp;
+		if (!challenges[monster.cr]) {
+			challenges[monster.cr] = monster.xp;
 		}
 	});
 	var $challenge = $('#dnd5-monsters-challenge').empty().append('<option value="">-</option>');
@@ -747,11 +747,11 @@ var dice_expression = function (expression) {
 	var $tbody = $('<tbody></tbody>');
 	DND5_MONSTERS.forEach(function (monster) {
 		$tbody.append(
-			'<tr data-search="' + monster.name.en + ' ' + monster.name.it + '" data-challenge="' + monster.challenge + '">' +
+			'<tr data-search="' + monster.name.en + ' ' + monster.name.it + '" data-challenge="' + monster.cr + '">' +
 				'<td>' + monster.name.en + '</td>' +
 				'<td>' + monster.name.it + '</td>' +
-				'<td>' + monster.challenge + '</td>' +
-				'<td>' + monster.reference + '</td>' +
+				'<td>' + monster.cr + '</td>' +
+				'<td>' + monster.source + '</td>' +
 			'</tr>');
 	});
 	$('#dnd5-monsters-table').append($tbody);
@@ -783,8 +783,8 @@ var dice_expression = function (expression) {
 
 	var tmp = {};
 	DND5_MONSTERS.forEach(function (monster) {
-		if (!tmp[monster.challenge]) {
-			tmp[monster.challenge] = monster.xp;
+		if (!tmp[monster.cr]) {
+			tmp[monster.cr] = monster.xp;
 		}
 	});
 	var array = [
