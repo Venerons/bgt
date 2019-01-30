@@ -29,6 +29,7 @@
 					<li class="list-item" data-page="dnd5-monsters">Monsters</li>
 					<li class="list-item" data-page="dnd5-encounter">Encounter Builder</li>
 					<li class="list-item" data-page="dnd5-individualtreasure">Individual Treasure</li>
+					<li class="list-item" data-page="dnd5-treasurehoard">Treasure Hoard</li>
 					<li class="list-group">7th Sea</li>
 					<li class="list-item" data-page="7thsea-turntracker">Turn Tracker</li>
 					<li class="list-group">Fate</li>
@@ -465,7 +466,7 @@
 			<div class="card">
 				<div class="flex-row">
 					<label style="flex: 1">Monster Challenge</label>
-					<select id="dnd5-individualtreasure-cr" class="input control" style="flex: 1">
+					<select id="dnd5-individualtreasure-cr" class="input" style="flex: 1">
 						<option value="0-4">0-4</option>
 						<option value="5-10">5-10</option>
 						<option value="11-16">11-16</option>
@@ -478,6 +479,26 @@
 			</div>
 			<div class="card">
 				<p id="dnd5-individualtreasure-output" style="text-align: center; font-size: 3rem">-</p>
+			</div>
+		</div>
+
+		<div id="dnd5-treasurehoard" class="page" style="display: none">
+			<div class="card">
+				<div class="flex-row">
+					<label style="flex: 1">Monster Challenge</label>
+					<select id="dnd5-treasurehoard-cr" class="input" style="flex: 1">
+						<option value="0-4">0-4</option>
+						<option value="5-10">5-10</option>
+						<option value="11-16">11-16</option>
+						<option value="17+">17+</option>
+					</select>
+				</div>
+				<div class="flex-row">
+					<button id="dnd5-treasurehoard-generate" class="button" style="flex: 1">Generate</button>
+				</div>
+			</div>
+			<div class="card">
+				<p id="dnd5-treasurehoard-output" style="text-align: center; font-size: 3rem">-</p>
 			</div>
 		</div>
 
@@ -507,6 +528,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.slim.min.js"></script>
 		<script src="js/saveas.js"></script>
 		<script src="js/palette.min.js"></script>
+		<script src="js/dnd5.js"></script>
 		<script src="js/dnd5_monsters.js"></script>
 		<script src="js/main.js"></script>
 	</body>
