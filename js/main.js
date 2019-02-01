@@ -1019,32 +1019,38 @@ var dice_expression = function (expression) {
 		var treasure = DND5.treasure_hoard($('#dnd5-treasurehoard-cr').val());
 		var output = [];
 		if (treasure.cp > 0) {
-			output.push('<span style="color: #b87333">' + treasure.cp + ' CP</span>');
+			output.push({ q: treasure.cp, l: '<span style="color: #b87333">CP</span>' });
 		}
 		if (treasure.sp > 0) {
-			output.push('<span style="color: silver">' + treasure.sp + ' SP</span>');
+			output.push({ q: treasure.sp, l: '<span style="color: silver">SP</span>' });
 		}
 		if (treasure.ep > 0) {
-			output.push('<span style="color: grey">' + treasure.ep + ' EP</span>');
+			output.push({ q: treasure.ep, l: '<span style="color: grey">EP</span>' });
 		}
 		if (treasure.gp > 0) {
-			output.push('<span style="color: gold">' + treasure.gp + ' GP</span>');
+			output.push({ q: treasure.gp, l: '<span style="color: gold">GP</span>' });
 		}
 		if (treasure.pp > 0) {
-			output.push('<span style="color: #7f7679">' + treasure.pp + ' PP</span>');
+			output.push({ q: treasure.pp, l: '<span style="color: #7f7679">PP</span>' });
 		}
-		treasure.gems.forEach(function (gem) {
-			output.push(gem);
+		treasure.gems.concat(treasure.art_objects).concat(treasure.magic_items).forEach(function (item) {
+			var found = false;
+			for (var i = 0; i < output.length; ++i) {
+				if (output[i].l === item) {
+					output[i].q++;
+					found = true;
+					break;
+				}
+			}
+			if (!found) {
+				output.push({ q: 1, l: item });
+			}
 		});
-		treasure.art_objects.forEach(function (art_object) {
-			output.push(art_object);
+		var tbody_html = '';
+		output.forEach(function (item) {
+			tbody_html += '<tr><td style="width: 5rem; text-align: right">' + item.q + '</td><td>' + item.l + '</td></tr>';
 		});
-		treasure.magic_items.forEach(function (magic_item) {
-			output.push(magic_item);
-		});
-		//var normalized = treasure.cp * 0.01 + treasure.sp * 0.1 + treasure.ep * 0.5 + treasure.gp + treasure.pp * 10;
-		//output.push('<hr>Normalized: <span style="color: gold">' + normalized + ' GP</span>');
-		$('#dnd5-treasurehoard-output').html(output.join('<br>'));
+		$('#dnd5-treasurehoard-output').html(tbody_html);
 	});
 })();
 
