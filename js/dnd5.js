@@ -420,9 +420,9 @@
 			'48': 'Horn of Valhalla (silver or brass)',
 			'49': 'Instrument of the bards (Canaith mandolin)',
 			'50': 'Instrument of the bards (Ciilyre)',
-			'51': 'loun stone (awareness)',
-			'52': 'loun stone (protection)',
-			'53': 'loun stone (reserve)',
+			'51': 'Ioun stone (awareness)',
+			'52': 'Ioun stone (protection)',
+			'53': 'Ioun stone (reserve)',
 			'54': 'Ioun stone (sustenance)',
 			'55': 'Iron bands of Bilarro',
 			'56': 'Armor, + 1 leather',
@@ -581,9 +581,9 @@
 			'83': 'Armor of resistance (half plate)',
 			'84': 'Horn ofValhalla (iron)',
 			'85': 'Instrument of the bards (OIIamh harp)',
-			'86': 'loun stone (greater absorption)',
-			'87': 'loun stone (mastery)',
-			'88': 'loun stone (regeneration)',
+			'86': 'Ioun stone (greater absorption)',
+			'87': 'Ioun stone (mastery)',
+			'88': 'Ioun stone (regeneration)',
 			'89': 'Plate armor of etherealness',
 			'90': 'Plate armor of resistance',
 			'91': 'Ring of air elemental command',
@@ -911,12 +911,236 @@
 			// 4d6 * 1000 (14000) GP + 5d6 * 100 (1750) PP
 			output.gp = dice(4, 6) * 1000;
 			output.pp = dice(5, 6) * 100;
-			// TODO
+			if (d100 >= 1 && d100 <= 3) {
+				// nothing
+			} else if (d100 >= 4 && d100 <= 6) {
+				// 2d4 (5) 250 GP art objects
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 250);
+			} else if (d100 >= 7 && d100 <= 9) {
+				// 2d4 (5) 750 GP art objects
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 750);
+			} else if (d100 >= 11 && d100 <= 12) {
+				// 3d6 (10) 500 GP gems
+				output.gems = DND5.random_gems(dice(3, 6), 500);
+			} else if (d100 >= 13 && d100 <= 15) {
+				// 3d6 (10) 1000 GP gems
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+			} else if (d100 >= 16 && d100 <= 19) {
+				// 2d4 (5) 250 GP art objects + Roll 1d4 times on Magic Item Table A and 1d6 times on Magic Item Table B
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 250);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'A').concat(DND5.random_magic_items(dice(1, 6), 'B'));
+			} else if (d100 >= 20 && d100 <= 23) {
+				// 2d4 (5) 750 GP art objects + Roll 1d4 times on Magic Item Table A and 1d6 times on Magic Item Table B
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 750);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'A').concat(DND5.random_magic_items(dice(1, 6), 'B'));
+			} else if (d100 >= 24 && d100 <= 26) {
+				// 3d6 (10) 500 GP gems + Roll 1d4 times on Magic Item Table A and 1d6 times on Magic Item Table B
+				output.gems = DND5.random_gems(dice(3, 6), 500);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'A').concat(DND5.random_magic_items(dice(1, 6), 'B'));
+			} else if (d100 >= 27 && d100 <= 29) {
+				// 3d6 (10) 1000 GP gems + Roll 1d4 times on Magic Item Table A and 1d6 times on Magic Item Table B
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'A').concat(DND5.random_magic_items(dice(1, 6), 'B'));
+			} else if (d100 >= 30 && d100 <= 35) {
+				// 2d4 (5) 250 GP art objects + Roll 1d6 times on Magic Item Table C
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 250);
+				output.magic_items = DND5.random_magic_items(dice(1, 6), 'C');
+			} else if (d100 >= 36 && d100 <= 40) {
+				// 2d4 (5) 750 GP art objects + Roll 1d6 times on Magic Item Table C
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 750);
+				output.magic_items = DND5.random_magic_items(dice(1, 6), 'C');
+			} else if (d100 >= 41 && d100 <= 45) {
+				// 3d6 (10) 500 GP gems + Roll 1d6 times on Magic Item Table C
+				output.gems = DND5.random_gems(dice(3, 6), 500);
+				output.magic_items = DND5.random_magic_items(dice(1, 6), 'C');
+			} else if (d100 >= 46 && d100 <= 50) {
+				// 3d6 (10) 1000 GP gems + Roll 1d6 times on Magic Item Table C
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+				output.magic_items = DND5.random_magic_items(dice(1, 6), 'C');
+			} else if (d100 >= 51 && d100 <= 54) {
+				// 2d4 (5) 250 GP art objects + Roll 1d4 times on Magic Item Table D
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 250);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'D');
+			} else if (d100 >= 55 && d100 <= 58) {
+				// 2d4 (5) 750 GP art objects + Roll 1d4 times on Magic Item Table D
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 750);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'D');
+			} else if (d100 >= 59 && d100 <= 62) {
+				// 3d6 (10) 500 GP gems + Roll 1d4 times on Magic Item Table D
+				output.gems = DND5.random_gems(dice(3, 6), 500);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'D');
+			} else if (d100 >= 63 && d100 <= 66) {
+				// 3d6 (10) 1000 GP gems + Roll 1d4 times on Magic Item Table D
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'D');
+			} else if (d100 >= 67 && d100 <= 68) {
+				// 2d4 (5) 250 GP art objects + Roll once on Magic Item Table E
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 250);
+				output.magic_items = DND5.random_magic_items(1, 'E');
+			} else if (d100 >= 69 && d100 <= 70) {
+				// 2d4 (5) 750 GP art objects + Roll once on Magic Item Table E
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 750);
+				output.magic_items = DND5.random_magic_items(1, 'E');
+			} else if (d100 >= 71 && d100 <= 72) {
+				// 3d6 (10) 500 GP gems + Roll once on Magic Item Table E
+				output.gems = DND5.random_gems(dice(3, 6), 500);
+				output.magic_items = DND5.random_magic_items(1, 'E');
+			} else if (d100 >= 73 && d100 <= 74) {
+				// 3d6 (10) 1000 GP gems + Roll once on Magic Item Table E
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+				output.magic_items = DND5.random_magic_items(1, 'E');
+			} else if (d100 >= 75 && d100 <= 76) {
+				// 2d4 (5) 250 GP art objects + Roll once on Magic Item Table F and 1d4 times on Magic Item Table G
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 250);
+				output.magic_items = DND5.random_magic_items(1, 'F').concat(DND5.random_magic_items(dice(1, 4), 'G'));
+			} else if (d100 >= 77 && d100 <= 78) {
+				// 2d4 (5) 750 GP art objects + Roll once on Magic Item Table F and 1d4 times on Magic Item Table G
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 750);
+				output.magic_items = DND5.random_magic_items(1, 'F').concat(DND5.random_magic_items(dice(1, 4), 'G'));
+			} else if (d100 >= 79 && d100 <= 80) {
+				// 3d6 (10) 500 GP gems + Roll once on Magic Item Table F and 1d4 times on Magic Item Table G
+				output.gems = DND5.random_gems(dice(3, 6), 500);
+				output.magic_items = DND5.random_magic_items(1, 'F').concat(DND5.random_magic_items(dice(1, 4), 'G'));
+			} else if (d100 >= 81 && d100 <= 82) {
+				// 3d6 (1 0) 1000 GP gems + Roll once on Magic Item Table F and 1d4 times on Magic Item Table G
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+				output.magic_items = DND5.random_magic_items(1, 'F').concat(DND5.random_magic_items(dice(1, 4), 'G'));
+			} else if (d100 >= 83 && d100 <= 85) {
+				// 2d4 (5) 250 GP art objects + Roll 1d4 times on Magic Item Table H
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 250);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'H');
+			} else if (d100 >= 86 && d100 <= 88) {
+				// 2d4 (5) 750 GP art objects + Roll 1d4 times on Magic Item Table H
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 750);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'H');
+			} else if (d100 >= 89 && d100 <= 90) {
+				// 3d6 (10) 500 GP gems + Roll 1d4 times on Magic Item Table H
+				output.gems = DND5.random_gems(dice(3, 6), 500);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'H');
+			} else if (d100 >= 91 && d100 <= 92) {
+				// 3d6 (10) 1000 GP gems + Roll 1d4 times on Magic Item Table H
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'H');
+			} else if (d100 >= 93 && d100 <= 94) {
+				// 2d4 (5) 250 GP art objects + Roll once on Magic Item Table I
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 250);
+				output.magic_items = DND5.random_magic_items(1, 'I');
+			} else if (d100 >= 95 && d100 <= 96) {
+				// 2d4 (5) 750 GP art objects + Roll once on Magic Item Table I
+				output.art_objects = DND5.random_art_objects(dice(2, 4), 750);
+				output.magic_items = DND5.random_magic_items(1, 'I');
+			} else if (d100 >= 97 && d100 <= 98) {
+				// 3d6 (10) 500 GP gems + Roll once on Magic Item Table I
+				output.gems = DND5.random_gems(dice(3, 6), 500);
+				output.magic_items = DND5.random_magic_items(1, 'I');
+			} else if (d100 >= 99 && d100 <= 100) {
+				// 3d6 (10) 1000 GP gems + Roll once on Magic Item Table I
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+				output.magic_items = DND5.random_magic_items(1, 'I');
+			}
 		} else if (cr === '17+') {
 			// 12d6 * 1000 (42000) GP + 8d6 * 1000 (28000) PP
 			output.gp = dice(12, 6) * 1000;
 			output.pp = dice(8, 6) * 1000;
-			// TODO
+			if (d100 >= 1 && d100 <= 2) {
+				// nothing
+			} else if (d100 >= 3 && d100 <= 5) {
+				// 3d6 (10) 1000 GP gems + Roll 1d8 times on Magic Item Table C
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+				output.magic_items = DND5.random_magic_items(dice(1, 8), 'C');
+			} else if (d100 >= 6 && d100 <= 8) {
+				// 1d10 (5) 2500 GP art objects + Roll 1d8 times on Magic Item Table C
+				output.art_objects = DND5.random_art_objects(dice(1, 10), 2500);
+				output.magic_items = DND5.random_magic_items(dice(1, 8), 'C');
+			} else if (d100 >= 9 && d100 <= 11) {
+				// 1d4 (2) 7500 GP art objects + Roll 1d8 times on Magic Item Table C
+				output.art_objects = DND5.random_art_objects(dice(1, 4), 7500);
+				output.magic_items = DND5.random_magic_items(dice(1, 8), 'C');
+			} else if (d100 >= 12 && d100 <= 14) {
+				// 1d8 (4) 5000 GP gems + Roll 1d8 times on Magic Item Table C
+				output.gems = DND5.random_gems(dice(1, 8), 5000);
+				output.magic_items = DND5.random_magic_items(dice(1, 8), 'C');
+			} else if (d100 >= 15 && d100 <= 22) {
+				// 3d6 (10) 1000 GP gems + Roll 1d6 times on Magic Item Table D
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+				output.magic_items = DND5.random_magic_items(dice(1, 6), 'D');
+			} else if (d100 >= 23 && d100 <= 30) {
+				// 1d10 (5) 2500 GP art objects + Roll 1d6 times on Magic Item Table D
+				output.art_objects = DND5.random_art_objects(dice(1, 10), 2500);
+				output.magic_items = DND5.random_magic_items(dice(1, 6), 'D');
+			} else if (d100 >= 31 && d100 <= 38) {
+				// 1d4 (2) 7500 GP art objects + Roll 1d6 times on Magic Item Table D
+				output.art_objects = DND5.random_art_objects(dice(1, 4), 7500);
+				output.magic_items = DND5.random_magic_items(dice(1, 6), 'D');
+			} else if (d100 >= 39 && d100 <= 46) {
+				// 1d8 (4) 5000 GP gems + Roll 1d6 times on Magic Item Table D
+				output.gems = DND5.random_gems(dice(1, 8), 5000);
+				output.magic_items = DND5.random_magic_items(dice(1, 6), 'D');
+			} else if (d100 >= 47 && d100 <= 52) {
+				// 3d6 (10) 1000 GP gems + Roll 1d6 times on Magic Item Table E
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+				output.magic_items = DND5.random_magic_items(dice(1, 6), 'E');
+			} else if (d100 >= 53 && d100 <= 58) {
+				// 1d10 (5) 2500 GP art objects + Roll 1d6 times on Magic Item Table E
+				output.art_objects = DND5.random_art_objects(dice(1, 10), 2500);
+				output.magic_items = DND5.random_magic_items(dice(1, 6), 'E');
+			} else if (d100 >= 59 && d100 <= 63) {
+				// 1d4 (2) 7500 GP art objects + Roll 1d6 times on Magic Item Table E
+				output.art_objects = DND5.random_art_objects(dice(1, 4), 7500);
+				output.magic_items = DND5.random_magic_items(dice(1, 6), 'E');
+			} else if (d100 >= 64 && d100 <= 68) {
+				// 1d8 (4) 5000 GP gems + Roll 1d6 times on Magic Item Table E
+				output.gems = DND5.random_gems(dice(1, 8), 5000);
+				output.magic_items = DND5.random_magic_items(dice(1, 6), 'E');
+			} else if (d100 === 69) {
+				// 3d6 (10) 1000 GP gems + Roll 1d4 times on Magic Item Table G
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'G');
+			} else if (d100 === 70) {
+				// 1d10 (5) 2500 GP art objects + Roll 1d4 times on Magic Item Table G
+				output.art_objects = DND5.random_art_objects(dice(1, 10), 2500);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'G');
+			} else if (d100 === 71) {
+				// 1d4 (2) 7500 GP art objects + Roll 1d4 times on Magic Item Table G
+				output.art_objects = DND5.random_art_objects(dice(1, 4), 7500);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'G');
+			} else if (d100 === 72) {
+				// 1d8 (4) 5000 GP gems + Roll 1d4 times on Magic Item Table G
+				output.gems = DND5.random_gems(dice(1, 8), 5000);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'G');
+			} else if (d100 >= 73 && d100 <= 74) {
+				// 3d6 (10) 1000 GP gems + Roll 1d4 times on Magic Item Table H
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'H');
+			} else if (d100 >= 75 && d100 <= 76) {
+				// 1d10 (5) 2500 GP art objects + Roll 1d4 times on Magic Item Table H
+				output.art_objects = DND5.random_art_objects(dice(1, 10), 2500);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'H');
+			} else if (d100 >= 77 && d100 <= 78) {
+				// 1d4 (2) 7500 GP art objects + Roll 1d4 times on Magic Item Table H
+				output.art_objects = DND5.random_art_objects(dice(1, 4), 7500);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'H');
+			} else if (d100 >= 79 && d100 <= 80) {
+				// 1d8 (4) 5000 GP gems + Roll 1d4 times on Magic Item Table H
+				output.gems = DND5.random_gems(dice(1, 8), 5000);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'H');
+			} else if (d100 >= 81 && d100 <= 85) {
+				// 3d6 (10) 1000 GP gems + Roll 1d4 times on Magic Item Table I
+				output.gems = DND5.random_gems(dice(3, 6), 1000);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'I');
+			} else if (d100 >= 86 && d100 <= 90) {
+				// 1d10 (5) 2500 GP art objects + Roll 1d4 times on Magic Item Table I
+				output.art_objects = DND5.random_art_objects(dice(1, 10), 2500);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'I');
+			} else if (d100 >= 91 && d100 <= 95) {
+				// ld4 (2) 7500 GP art objects + Roll 1d4 times on Magic Item Table I
+				output.art_objects = DND5.random_art_objects(dice(1, 4), 7500);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'I');
+			} else if (d100 >= 96 && d100 <= 100) {
+				// 1d8 (4) 5000 GP gems + Roll 1d4 times on Magic Item Table I
+				output.gems = DND5.random_gems(dice(1, 8), 5000);
+				output.magic_items = DND5.random_magic_items(dice(1, 4), 'I');
+			}
 		}
 		return output;
 	};
