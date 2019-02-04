@@ -732,26 +732,62 @@ var dice_expression = function (expression) {
 (function () {
 	'use strict';
 
-	var challenges = {};
-	DND5_MONSTERS.forEach(function (monster) {
-		if (!challenges[monster.cr]) {
-			challenges[monster.cr] = monster.xp;
+	var cr_list = [];
+	Object.keys(DND5_MONSTERS).forEach(function (monsterID) {
+		var monster = DND5_MONSTERS[monsterID];
+		if (cr_list.indexOf(monster.challenge_rating) === -1) {
+			cr_list.push(monster.challenge_rating);
 		}
 	});
 	var $challenge = $('#dnd5-monsters-challenge').empty().append('<option value="">-</option>');
-	Object.keys(challenges).sort(function (a, b) {
-		return challenges[a] < challenges[b] ? -1 : 1;
+	cr_list.sort(function (a, b) {
+		return a < b ? -1 : 1;
 	}).forEach(function (item) {
-		$challenge.append('<option value="' + item + '">' + item + '</option>');
+		var cr;
+		if (item === 0.125) {
+			cr = '1/8';
+		} else if (item === 0.25) {
+			cr = '1/4';
+		} else if (item === 0.5) {
+			cr = '1/2';
+		} else {
+			cr = item.toString();
+		}
+		$challenge.append('<option value="' + cr + '">' + cr + '</option>');
 	});
 	var $tbody = $('<tbody></tbody>');
-	DND5_MONSTERS.forEach(function (monster) {
+	Object.keys(DND5_MONSTERS).sort(function (a, b) {
+		var monster_a = DND5_MONSTERS[a],
+			monster_b = DND5_MONSTERS[b];
+		if (monster_a.challenge_rating < monster_b.challenge_rating) {
+			return -1;
+		} else if (monster_a.challenge_rating > monster_b.challenge_rating) {
+			return 1;
+		} else if (monster_a.name < monster_b.name) {
+			return -1;
+		} else if (monster_a.name < monster_b.name) {
+			return -1;
+		} else {
+			return 0;
+		}
+	}).forEach(function (monsterID) {
+		var monster = DND5_MONSTERS[monsterID],
+			cr = monster.challenge_rating;
+		if (cr === 0.125) {
+			cr = '1/8';
+		} else if (cr === 0.25) {
+			cr = '1/4';
+		} else if (cr === 0.5) {
+			cr = '1/2';
+		} else {
+			cr = cr.toString();
+		}
 		$tbody.append(
-			'<tr data-search="' + monster.name.en + ' ' + monster.name.it + '" data-challenge="' + monster.cr + '">' +
-				'<td>' + monster.name.en + '</td>' +
-				'<td>' + monster.name.it + '</td>' +
-				'<td>' + monster.cr + '</td>' +
-				'<td>' + monster.source + '</td>' +
+			'<tr data-search="' + monster.name + (monster.name_it ? ' ' + monster.name_it : '') + '" data-challenge="' + cr + '">' +
+				'<td>' + monster.name + '</td>' +
+				'<td>' + (monster.name_it ? monster.name_it : '-') + '</td>' +
+				'<td>' + cr + '</td>' +
+				'<td>' + monster.source.join(', ') + '</td>' +
 			'</tr>');
 	});
 	$('#dnd5-monsters-table').append($tbody);
@@ -781,19 +817,13 @@ var dice_expression = function (expression) {
 (function () {
 	'use strict';
 
-	var tmp = {};
-	DND5_MONSTERS.forEach(function (monster) {
-		if (!tmp[monster.cr]) {
-			tmp[monster.cr] = monster.xp;
-		}
-	});
 	var array = [
 		{ label: 'None', value: 0 }
 	];
-	Object.keys(tmp).sort(function (a, b) {
-		return tmp[a] < tmp[b] ? -1 : 1;
+	Object.keys(DND5.challenge_rating_xp).sort(function (a, b) {
+		return DND5.challenge_rating_xp[a] < DND5.challenge_rating_xp[b] ? -1 : 1;
 	}).forEach(function (item) {
-		array.push({ label: 'CR ' + item + ' (' + tmp[item] + ' XP)', value: tmp[item] });
+		array.push({ label: 'CR ' + item + ' (' + DND5.challenge_rating_xp[item] + ' XP)', value: DND5.challenge_rating_xp[item] });
 	});
 	var $m_selects = $('#dnd5-encounter-m1-cr, #dnd5-encounter-m2-cr, #dnd5-encounter-m3-cr');
 	array.forEach(function (item) {
