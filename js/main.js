@@ -25,19 +25,13 @@ window.onerror = function (message, filename, lineno, colno, error) {
 var goToPage = function (pageID) {
 	$('.page').hide();
 	$('#' + pageID).show();
-	if (pageID !== 'home') {
-		$('#header-back').show();
-	} else {
-		$('#header-back').hide();
-	}
 };
 
-$('#header-back').on('click', function () {
-	goToPage('home');
+
+$('body').on('click', '[data-page]', function () {
+	goToPage($(this).data('page'));
 });
-$('#header-info').on('click', function () {
-	goToPage('info');
-});
+
 $('#home-search').on('input', function () {
 	var input = $(this).val().trim().toLowerCase();
 	$('#home-list').find('.list-item').each(function () {
@@ -48,9 +42,6 @@ $('#home-search').on('input', function () {
 			$this.show();
 		}
 	});
-});
-$('#home-list').on('click', '.list-item', function () {
-	goToPage($(this).data('page'));
 });
 
 // Functions
@@ -783,14 +774,18 @@ var dice_expression = function (expression) {
 			cr = cr.toString();
 		}
 		$tbody.append(
-			'<tr data-search="' + monster.name + (monster.name_it ? ' ' + monster.name_it : '') + '" data-challenge="' + cr + '">' +
+			'<tr data-monster="' + monsterID + '" data-search="' + monster.name + (monster.name_it ? ' ' + monster.name_it : '') + '" data-challenge="' + cr + '">' +
 				'<td>' + monster.name + '</td>' +
 				'<td>' + (monster.name_it ? monster.name_it : '-') + '</td>' +
 				'<td>' + cr + '</td>' +
 				'<td>' + monster.source.join(', ') + '</td>' +
 			'</tr>');
 	});
-	$('#dnd5-monsters-table').append($tbody);
+	$('#dnd5-monsters-table').append($tbody).on('click', '[data-monster]', function () {
+		var monsterID = $(this).data('monster');
+		render_monster_stats(monsterID);
+		goToPage('dnd5-monster-stats');
+	});
 	$('#dnd5-monsters').on('input change', '.control', function () {
 		var search = $('#dnd5-monsters-search').val().trim().toLowerCase(),
 			challenge = $('#dnd5-monsters-challenge').val();
@@ -810,6 +805,31 @@ var dice_expression = function (expression) {
 			}
 		});
 	});
+})();
+
+// D&D 5 Monster Stats
+
+(function () {
+	'use strict';
+
+	var render_monster_stats = function (monsterID) {
+		var $table = $('#dnd5-monster-stats-table').empty(),
+			monster = DND5_MONSTERS[monsterID];
+		console.log(monsterID, monster);
+		if (monster) {
+			var $tbody = $('<tbody></tbody>');
+			Object.keys(monster).forEach(function (key) {
+				$tbody.append(
+					'<tr>' +
+						'<td>' + key + '</td>' +
+						'<td>' + monster[key] + '</td>' +
+					'</tr>');
+			});
+			$table.append($tbody);
+		}
+	};
+
+	window.render_monster_stats = render_monster_stats;
 })();
 
 // D&D 5 Combat Encounter
