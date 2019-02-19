@@ -7,13 +7,11 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header>
-			<a id="header-back" style="display: none; margin-left: 1rem">Back</a>
-			<h1 id="header-title" style="flex: 1; text-align: center; margin: 0">Boardgame Trove</h1>
-			<a id="header-info" style="margin-right: 1rem">Info</a>
-		</header>
-
 		<div id="home" class="page">
+			<header>
+				<h1 style="flex: 1; text-align: center; margin: 0">Boardgame Trove</h1>
+				<a data-page="info" style="margin-right: 1rem">Info</a>
+			</header>
 			<div class="card">
 				<div class="flex-row flex-row-margins">
 					<input id="home-search" type="search" placeholder="Search..." class="input" style="flex: 1">
@@ -39,12 +37,20 @@
 		</div>
 
 		<div id="wip" class="page" style="display: none">
+			<header>
+				<a data-page="home" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">WIP</h1>
+			</header>
 			<div class="card">
 				<p>Work in progress</p>
 			</div>
 		</div>
 
 		<div id="info" class="page" style="display: none">
+			<header>
+				<a data-page="home" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">Info</h1>
+			</header>
 			<div class="card">
 				<p><span style="font-weight: bold">Boardgame Trove</span> is a collection of boardgame tools created and maintained by <a href="https://venerons.github.io">Daniele Veneroni</a>.</p>
 				<p style="margin-top: 1rem">Want to contribute? Check the Github repository: <a href="https://github.com/Venerons/bgt" target="_blank">https://github.com/Venerons/bgt</a>!</p>
@@ -52,6 +58,10 @@
 		</div>
 
 		<div id="generic-dice" class="page" style="display: none">
+			<header>
+				<a data-page="home" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">Dice Simulator</h1>
+			</header>
 			<div id="generic-dice-classic" class="card">
 				<div class="flex-row flex-row-margins">
 					<button data-dice="4" class="button" style="flex: 1">1d4</button>
@@ -76,6 +86,10 @@
 		</div>
 
 		<div id="generic-name" class="page" style="display: none">
+			<header>
+				<a data-page="home" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">Random Character Name</h1>
+			</header>
 			<div class="card">
 				<div class="flex-row flex-row-margins">
 					<label for="generic-name-nameset" style="flex: 1">Name Set</label>
@@ -132,6 +146,10 @@
 		</div>
 
 		<div id="generic-dungeondesigner" class="page" style="display: none">
+			<header>
+				<a data-page="home" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">Dungeon Designer</h1>
+			</header>
 			<div class="card">
 				<div class="flex-row flex-row-margins">
 					<label style="flex: 1">Theme</label>
@@ -179,6 +197,10 @@
 		</div>
 
 		<div id="dnd5-abilityscores" class="page" style="display: none">
+			<header>
+				<a data-page="home" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">Ability Scores Point Buy</h1>
+			</header>
 			<div class="card">
 				<div class="flex-row flex-row-margins">
 					<p id="dnd5-abilityscores-resume" style="text-align: center; font-size: 3rem">-</p>
@@ -350,6 +372,10 @@
 		</div>
 
 		<div id="dnd5-initiativetracker" class="page" style="display: none">
+			<header>
+				<a data-page="home" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">Initiative Tracker</h1>
+			</header>
 			<div id="dnd5-initiativetracker-toolbar" class="card">
 				<button data-action="sort" class="button">Sort</button>
 				<button data-action="add-character" class="button">+ Character</button>
@@ -372,6 +398,10 @@
 		</div>
 
 		<div id="dnd5-monsters" class="page" style="display: none">
+			<header>
+				<a data-page="home" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">Monsters</h1>
+			</header>
 			<div class="card">
 				<div class="flex-row flex-row-margins">
 					<input id="dnd5-monsters-search" type="search" placeholder="Search..." class="input control" style="flex: 1">
@@ -393,7 +423,21 @@
 			</div>
 		</div>
 
+		<div id="dnd5-monster-stats" class="page" style="display: none">
+			<header>
+				<a data-page="dnd5-monsters" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">Monster Stats</h1>
+			</header>
+			<div class="card">
+				<table id="dnd5-monster-stats-table" class="table table-bordered table-striped" style="width: 100%"></table>
+			</div>
+		</div>
+
 		<div id="dnd5-encounter" class="page" style="display: none">
+			<header>
+				<a data-page="home" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">Encounter Builder</h1>
+			</header>
 			<div class="card">
 				<div class="flex-row">
 					<label style="flex: 1">Players</label>
@@ -463,6 +507,10 @@
 		</div>
 
 		<div id="dnd5-individualtreasure" class="page" style="display: none">
+			<header>
+				<a data-page="home" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">Individual Treasure</h1>
+			</header>
 			<div class="card">
 				<div class="flex-row">
 					<label style="flex: 1">Monster Challenge</label>
@@ -483,6 +531,10 @@
 		</div>
 
 		<div id="dnd5-treasurehoard" class="page" style="display: none">
+			<header>
+				<a data-page="home" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">Treasure Hoard</h1>
+			</header>
 			<div class="card">
 				<div class="flex-row">
 					<label style="flex: 1">Monster Challenge</label>
@@ -505,6 +557,10 @@
 		</div>
 
 		<div id="7thsea-turntracker" class="page" style="display: none">
+			<header>
+				<a data-page="home" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">Turn Tracker</h1>
+			</header>
 			<div id="7thsea-turntracker-toolbar" class="card">
 				<button data-action="sort" class="button">Sort</button>
 				<button data-action="add-character" class="button">+ Character</button>
@@ -517,6 +573,10 @@
 		</div>
 
 		<div id="fate-dice" class="page" style="display: none">
+			<header>
+				<a data-page="home" style="margin-left: 1rem">Back</a>
+				<h1 style="flex: 1; text-align: center; margin: 0">Dice Simulator</h1>
+			</header>
 			<div class="card">
 				<div id="fate-dice-toolbar" class="flex-row flex-row-margins">
 					<button data-action="roll" class="button" style="flex: 1">Roll</button>
