@@ -429,7 +429,52 @@
 				<h1 style="flex: 1; text-align: center; margin: 0">Monster Stats</h1>
 			</header>
 			<div class="card">
-				<table id="dnd5-monster-stats-table" class="table table-bordered table-striped" style="width: 100%"></table>
+				<h2 data-field="name">-</h2>
+				<p><em><span data-field="size">-</span> <span data-field="type">-</span>, <span data-field="alignment">-</span></em></p>
+				<hr>
+				<ul>
+					<li><strong>Armor Class</strong> <span data-field="armor_class">-</span></li>
+					<li><strong>Hit Points</strong> <span data-field="hit_points">-</span></li>
+					<li><strong>Speed</strong> <span data-field="speed">-</span></li>
+				</ul>
+				<hr>
+				<table>
+					<thead>
+						<tr>
+							<th style="text-align: center">STR</th>
+							<th style="text-align: center">DEX</th>
+							<th style="text-align: center">CON</th>
+							<th style="text-align: center">INT</th>
+							<th style="text-align: center">WIS</th>
+							<th style="text-align: center">CHA</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-field="strength" style="text-align: center">-</td>
+							<td data-field="dexterity" style="text-align: center">-</td>
+							<td data-field="constitution" style="text-align: center">-</td>
+							<td data-field="intelligence" style="text-align: center">-</td>
+							<td data-field="wisdom" style="text-align: center">-</td>
+							<td data-field="charisma" style="text-align: center">-</td>
+						</tr>
+					</tbody>
+				</table>
+				<hr>
+				<ul>
+					<li><strong>Damage Resistances</strong> <span data-field="damage_resistances">-</span></li>
+					<li><strong>Damage Immunities</strong> <span data-field="damage_immunities">-</span></li>
+					<li><strong>Condition Immunities</strong> <span data-field="condition_immunities">-</span></li>
+					<li><strong>Senses</strong> <span data-field="senses">-</span></li>
+					<li><strong>Languages</strong> <span data-field="languages">-</span></li>
+					<li><strong>Challenge</strong> <span data-field="challenge_rating">-</span></li>
+				</ul>
+				<hr>
+				<div data-field="special_abilities"></div>
+				<h3 data-header="actions">Actions</h3>
+				<div data-field="actions"></div>
+				<h3 data-header="legendary_actions">Legendary Actions</h3>
+				<div data-field="legendary_actions"></div>
 			</div>
 		</div>
 
