@@ -813,19 +813,56 @@ var dice_expression = function (expression) {
 	'use strict';
 
 	var render_monster_stats = function (monsterID) {
-		var $table = $('#dnd5-monster-stats-table').empty(),
-			monster = DND5_MONSTERS[monsterID];
-		console.log(monsterID, monster);
+		var monster = DND5_MONSTERS[monsterID];
 		if (monster) {
-			var $tbody = $('<tbody></tbody>');
-			Object.keys(monster).forEach(function (key) {
-				$tbody.append(
-					'<tr>' +
-						'<td>' + key + '</td>' +
-						'<td>' + monster[key] + '</td>' +
-					'</tr>');
-			});
-			$table.append($tbody);
+			var $page = $('#dnd5-monster-stats');
+			$page.find('[data-field="name"]').text(monster.name || '-');
+			$page.find('[data-field="size"]').text(monster.size || '-');
+			$page.find('[data-field="type"]').text(monster.type || '-');
+			$page.find('[data-field="alignment"]').text(monster.alignment || '-');
+			$page.find('[data-field="armor_class"]').text(monster.armor_class || '-');
+			$page.find('[data-field="hit_points"]').text(monster.hit_points || '-');
+			$page.find('[data-field="speed"]').text(monster.speed || '-');
+			$page.find('[data-field="strength"]').text(monster.strength || '-');
+			$page.find('[data-field="dexterity"]').text(monster.dexterity || '-');
+			$page.find('[data-field="constitution"]').text(monster.constitution || '-');
+			$page.find('[data-field="intelligence"]').text(monster.intelligence || '-');
+			$page.find('[data-field="wisdom"]').text(monster.wisdom || '-');
+			$page.find('[data-field="charisma"]').text(monster.charisma || '-');
+			$page.find('[data-field="damage_resistances"]').text(monster.damage_resistances || '-');
+			$page.find('[data-field="damage_immunities"]').text(monster.damage_immunities || '-');
+			$page.find('[data-field="condition_immunities"]').text(monster.condition_immunities || '-');
+			$page.find('[data-field="senses"]').text(monster.senses || '-');
+			$page.find('[data-field="languages"]').text(monster.languages || '-');
+			$page.find('[data-field="challenge_rating"]').text(monster.challenge_rating || '-');
+			if (!monster.special_abilities) {
+				$page.find('[data-field="special_abilities"]').empty().hide();
+			} else {
+				var $div = $page.find('[data-field="special_abilities"]').empty().show();
+				monster.special_abilities.forEach(function (item) {
+					$div.append('<p><strong><em>' + item.name + '.</em></strong> ' + item.desc + '</p>');
+				});
+			}
+			if (!monster.actions) {
+				$page.find('[data-header="actions"]').hide();
+				$page.find('[data-field="actions"]').empty().hide();
+			} else {
+				$page.find('[data-header="actions"]').show();
+				var $div = $page.find('[data-field="actions"]').empty().show();
+				monster.actions.forEach(function (item) {
+					$div.append('<p><strong><em>' + item.name + '.</em></strong> ' + item.desc + '</p>');
+				});
+			}
+			if (!monster.legendary_actions) {
+				$page.find('[data-header="legendary_actions"]').hide();
+				$page.find('[data-field="legendary_actions"]').empty().hide();
+			} else {
+				$page.find('[data-header="legendary_actions"]').show();
+				var $div = $page.find('[data-field="legendary_actions"]').empty().show();
+				monster.legendary_actions.forEach(function (item) {
+					$div.append('<p><strong><em>' + item.name + '.</em></strong> ' + item.desc + '</p>');
+				});
+			}
 		}
 	};
 
