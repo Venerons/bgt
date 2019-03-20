@@ -7,8 +7,8 @@ html,
 body {
 	width: 100%;
 	height: 100%;
-	background: #3B3126;
-	color: #FFFEFB;
+	background: #3b3126;
+	color: #fffefb;
 	font: 400 normal 14px/1.42857143 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body {
@@ -23,7 +23,7 @@ header {
 	top: 0;
 	z-index: 1;
 	min-height: 50px;
-	background: #3B3126;
+	background: #3b3126;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 	display: flex;
 	flex-flow: row nowrap;
@@ -32,8 +32,8 @@ header {
 	align-content: center;
 }
 h1, h2, h3, h4, h5, h6 {
-	margin: 20px 1rem 10px 1rem;
-	color: #EDD9B4;
+	margin: 1rem 0;
+	color: #edd9b4;
 	font-family: inherit;
 	font-weight: 500;
 	line-height: 1.1;
@@ -59,8 +59,8 @@ a {
 	padding: 1rem;
 	border: 1px solid #635747;
 	border-radius: 4px;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-	background: #473D32;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	background: #473d32;
 }
 
 .flex-row {
@@ -95,7 +95,14 @@ a {
 	background-color: #fff;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.input-quiet {
+	color: whitesmoke;
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
 }
 
 .button {
@@ -129,7 +136,7 @@ a {
 }
 .list-group {
 	font-size: 24px;
-	color: #EDD9B4;
+	color: #edd9b4;
 	font-weight: 500;
 	padding: 0.5rem;
 }
@@ -150,32 +157,30 @@ a {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.table caption {
-	text-align: center;
-	font-weight: bold;
-	color: #EDD9B4;
-	background: #3B3126;
-	padding: 0.25rem;
-}
-.table th {
+.table caption,
+.table th,
+.table td[data-quantum-group] {
 	padding: 0.5rem;
 	text-align: left;
 	font-weight: bold;
 	vertical-align: middle;
-	color: #EDD9B4;
-	background: #3B3126;
+	color: #edd9b4;
+	background: #3b3126;
 }
+/*
+.table td[data-quantum-group] {
+	font-style: italic;
+}
+*/
 .table td {
 	word-break: break-all;
 	padding: 0.5rem;
 	vertical-align: middle;
 }
-.table td[data-quantum-group],
-.table td.table-colspan-separator {
-	font-weight: bold;
-	font-style: italic;
-	color: #EDD9B4;
-	background: #3B3126;
+.table.table-sticky th {
+	position: sticky;
+	top: 50px;
+	z-index: 1;
 }
 .table.table-bordered td:not([data-quantum-group]) {
 	border: 1px solid rgba(255, 255, 255, 0.2);
@@ -186,8 +191,12 @@ a {
 .table.table-hover tbody tr:hover {
 	background: rgba(0, 0, 0, 0.2);
 }
-.table.table-sticky th {
-	position: sticky;
-	top: 0;
-	z-index: 1;
+
+.hr-dnd {
+	margin: 0.5rem 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 0 5px 300px;
+	border-color: transparent transparent transparent crimson;
 }
