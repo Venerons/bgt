@@ -972,31 +972,39 @@ var dice_expression = function (expression) {
 (function () {
 	'use strict';
 
+	var saveData = function (data) {
+		return localforage.setItem('initiativetracker', data).then(function () {
+			console.log('initiativetracker data successfully saved');
+		}).catch(function (e) {
+			console.error(e);
+		});
+	};
+
+	var loadData = function () {
+		return localforage.getItem('initiativetracker').then(function (value) {
+			$('#dnd5-initiativetracker').data('data', value);
+			console.log('initiativetracker data successfully loaded');
+		}).catch(function (e) {
+			$('#dnd5-initiativetracker').data('data', []);
+			console.error(e);
+		});
+	};
+
 	var renderData = function (data) {
 		var $tbody = $('#dnd5-initiativetracker-table').empty();
-		data.sort(function (a, b) {
-			if (a.initiative > b.initiative) {
-				return -1;
-			} else if (a.initiative < b.initiative) {
-				return 1;
-			} else if (a.type === 'character') {
-				return -1
-			} else if (b.type === 'character') {
-				return 1;
-			} else {
-				return 0;
-			}
-		}).forEach(function (item) {
-			var input_style = 'width: 100%; color: whitesmoke; border: none; background: rgba(255, 255, 255, 0.1)';
+		data.forEach(function (item) {
 			$tbody.append(
-				'<tr style="background: ' + (item.type === 'character' ? '#39b54a75' : '#c4423075') + '">' +
-					'<td><input  data-id="' + item.id + '" data-field="initiative" type="number" value="' + item.initiative + '" class="input control" style="' + input_style + '"></td>' +
-					'<td><input  data-id="' + item.id + '" data-field="label" type="text" value="' + item.label + '" class="input control" style="' + input_style + '"></td>' +
-					'<td><input  data-id="' + item.id + '" data-field="ac" type="number" value="' + item.ac + '" class="input control" style="' + input_style + '"></td>' +
-					'<td><input  data-id="' + item.id + '" data-field="perception" type="number" value="' + item.perception + '" class="input control" style="' + input_style + '"></td>' +
-					'<td><input  data-id="' + item.id + '" data-field="hp" type="number" value="' + item.hp + '" class="input control" style="' + input_style + '"></td>' +
-					'<td><input  data-id="' + item.id + '" data-field="maxhp" type="number" value="' + item.maxhp + '" class="input control" style="' + input_style + '"></td>' +
-					'<td><button  data-id="' + item.id + '" data-action="delete" class="button" style="width: 100%">Delete</button></td>' +
+				//'<tr style="background: ' + (item.type === 'character' ? '#39b54a75' : '#c4423075') + '">' +
+				'<tr style="border-left: 10px solid ' + (item.type === 'character' ? '#39b54a' : '#c44230') + '">' +
+					'<td><input data-id="' + item.id + '" data-field="initiative" type="number" min="0" step="1" value="' + item.initiative + '" class="input input-quiet control" style="width: 100%"></td>' +
+					'<td><input data-id="' + item.id + '" data-field="label" type="text"' + (item.label ? ' value="' + item.label + '"' : '') + ' placeholder="' + item.type.toUpperCase() + '" class="input input-quiet control" style="width: 100%"></td>' +
+					'<td><input data-id="' + item.id + '" data-field="ac" type="number" min="0" step="1" value="' + item.ac + '" class="input input-quiet control" style="width: 100%"></td>' +
+					'<td><input data-id="' + item.id + '" data-field="perception" type="number" min="0" step="1" value="' + item.perception + '" class="input input-quiet control" style="width: 100%"></td>' +
+					'<td><input data-id="' + item.id + '" data-field="hp" type="number" min="0" step="1" value="' + item.hp + '" class="input input-quiet control" style="width: 100%"></td>' +
+					'<td class="flex-row flex-row-margins">' +
+						'<button data-id="' + item.id + '" data-action="roll" class="button" style="flex: 1">Roll</button>' +
+						'<button data-id="' + item.id + '" data-action="delete" class="button" style="flex: 1">Delete</button>' +
+					'</td>' +
 				'</tr>');
 		});
 	};
@@ -1005,6 +1013,20 @@ var dice_expression = function (expression) {
 		var action = $(this).data('action'),
 			data = $('#dnd5-initiativetracker').data('data') || [];
 		if (action === 'sort') {
+			data.sort(function (a, b) {
+				if (a.initiative > b.initiative) {
+					return -1;
+				} else if (a.initiative < b.initiative) {
+					return 1;
+				} else if (a.type === 'character') {
+					return -1
+				} else if (b.type === 'character') {
+					return 1;
+				} else {
+					return 0;
+				}
+			});
+			saveData(data);
 			renderData(data);
 		} else {
 			var type, message;
@@ -1022,14 +1044,14 @@ var dice_expression = function (expression) {
 			data.push({
 				id: id,
 				type: type,
-				label: type.toUpperCase(),
+				label: null,
 				initiative: 0,
 				ac: 10,
 				perception: 10,
-				hp: 0,
-				maxhp: 0
+				hp: 0
 			});
 			$('#dnd5-initiativetracker').data('data', data);
+			saveData(data);
 			renderData(data);
 		}
 	});
@@ -1045,6 +1067,7 @@ var dice_expression = function (expression) {
 				item[field] = value;
 			}
 		});
+		saveData(data);
 	});
 
 	$('#dnd5-initiativetracker-table').on('click', '[data-action]', function () {
@@ -1052,7 +1075,15 @@ var dice_expression = function (expression) {
 			action = $this.data('action'),
 			id = parseInt($this.data('id'), 10),
 			data = $('#dnd5-initiativetracker').data('data') || [];
-		if (action === 'delete') {
+		if (action === 'roll') {
+			data.forEach(function (item) {
+				if (item.id === id) {
+					item.initiative = dice(1, 20);
+				}
+			});
+			saveData(data);
+			renderData(data);
+		} else if (action === 'delete') {
 			var index = null;
 			data.forEach(function (item, data_index) {
 				if (item.id === id) {
@@ -1060,10 +1091,18 @@ var dice_expression = function (expression) {
 				}
 			});
 			if (index !== null) {
-				data.splice(index, 1);
-				renderData(data);
+				var item = data[index];
+				if (confirm('Are you sure to delete "' + (item.label ? item.label : item.type.toUpperCase()) + '"?')) {
+					data.splice(index, 1);
+					saveData(data);
+					renderData(data);
+				}
 			}
 		}
+	});
+
+	loadData().then(function () {
+		renderData($('#dnd5-initiativetracker').data('data'));
 	});
 })();
 
@@ -1076,23 +1115,27 @@ var dice_expression = function (expression) {
 		var treasure = DND5.individual_treasure($('#dnd5-individualtreasure-cr').val());
 		var output = [];
 		if (treasure.cp > 0) {
-			output.push('<span style="color: #b87333">' + treasure.cp + ' CP</span>');
+			output.push({ q: treasure.cp, l: '<span style="color: #b87333">CP</span>' });
 		}
 		if (treasure.sp > 0) {
-			output.push('<span style="color: silver">' + treasure.sp + ' SP</span>');
+			output.push({ q: treasure.sp, l: '<span style="color: silver">SP</span>' });
 		}
 		if (treasure.ep > 0) {
-			output.push('<span style="color: grey">' + treasure.ep + ' EP</span>');
+			output.push({ q: treasure.ep, l: '<span style="color: grey">EP</span>' });
 		}
 		if (treasure.gp > 0) {
-			output.push('<span style="color: gold">' + treasure.gp + ' GP</span>');
+			output.push({ q: treasure.gp, l: '<span style="color: gold">GP</span>' });
 		}
 		if (treasure.pp > 0) {
-			output.push('<span style="color: #7f7679">' + treasure.pp + ' PP</span>');
+			output.push({ q: treasure.pp, l: '<span style="color: #7f7679">PP</span>' });
 		}
+		var tbody_html = '';
+		output.forEach(function (item) {
+			tbody_html += '<tr><td style="width: 5rem; text-align: right">' + item.q + '</td><td>' + item.l + '</td></tr>';
+		});
+		$('#dnd5-individualtreasure-output').html(tbody_html);
 		var normalized = treasure.cp * 0.01 + treasure.sp * 0.1 + treasure.ep * 0.5 + treasure.gp + treasure.pp * 10;
-		output.push('<hr>Normalized: <span style="color: gold">' + normalized + ' GP</span>');
-		$('#dnd5-individualtreasure-output').html(output.join('<br>'));
+		$('#dnd5-individualtreasure-output-normalized').html('<tr><td style="width: 5rem; text-align: right">' + normalized + '</td><td><span style="color: gold">GP</span></td></tr>');
 	});
 })();
 
