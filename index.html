@@ -382,14 +382,13 @@
 				<button data-action="add-monster" class="button">+ Monster</button>
 			</div>
 			<div class="card">
-				<table class="table table-sticky table-bordered" style="width: 100%">
+				<table class="table table-sticky table-bordered table-striped" style="width: 100%">
 					<thead>
 						<th style="width: 6rem">Initiative</th>
 						<th>Label</th>
 						<th style="width: 6rem">AC</th>
 						<th style="width: 6rem">Passive Perception</th>
 						<th style="width: 6rem">HP</th>
-						<th style="width: 6rem">Max HP</th>
 						<th style="width: 10rem">&nbsp;</th>
 					</thead>
 					<tbody id="dnd5-initiativetracker-table"></tbody>
@@ -429,24 +428,24 @@
 				<h1 style="flex: 1; text-align: center; margin: 0">Monster Stats</h1>
 			</header>
 			<div class="card">
-				<h2 data-field="name">-</h2>
+				<h2 data-field="name" style="margin: 0 0 1rem 0">-</h2>
 				<p><em><span data-field="size">-</span> <span data-field="type">-</span>, <span data-field="alignment">-</span></em></p>
-				<hr>
-				<ul>
+				<hr class="hr-dnd">
+				<ul style="list-style: none outside none">
 					<li><strong>Armor Class</strong> <span data-field="armor_class">-</span></li>
 					<li><strong>Hit Points</strong> <span data-field="hit_points">-</span></li>
 					<li><strong>Speed</strong> <span data-field="speed">-</span></li>
 				</ul>
-				<hr>
+				<hr class="hr-dnd">
 				<table>
 					<thead>
 						<tr>
-							<th style="text-align: center">STR</th>
-							<th style="text-align: center">DEX</th>
-							<th style="text-align: center">CON</th>
-							<th style="text-align: center">INT</th>
-							<th style="text-align: center">WIS</th>
-							<th style="text-align: center">CHA</th>
+							<th style="text-align: center; width: 3rem">STR</th>
+							<th style="text-align: center; width: 3rem">DEX</th>
+							<th style="text-align: center; width: 3rem">CON</th>
+							<th style="text-align: center; width: 3rem">INT</th>
+							<th style="text-align: center; width: 3rem">WIS</th>
+							<th style="text-align: center; width: 3rem">CHA</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -460,8 +459,8 @@
 						</tr>
 					</tbody>
 				</table>
-				<hr>
-				<ul>
+				<hr class="hr-dnd">
+				<ul style="list-style: none outside none">
 					<li><strong>Damage Resistances</strong> <span data-field="damage_resistances">-</span></li>
 					<li><strong>Damage Immunities</strong> <span data-field="damage_immunities">-</span></li>
 					<li><strong>Condition Immunities</strong> <span data-field="condition_immunities">-</span></li>
@@ -469,7 +468,7 @@
 					<li><strong>Languages</strong> <span data-field="languages">-</span></li>
 					<li><strong>Challenge</strong> <span data-field="challenge_rating">-</span></li>
 				</ul>
-				<hr>
+				<hr class="hr-dnd">
 				<div data-field="special_abilities"></div>
 				<h3 data-header="actions">Actions</h3>
 				<div data-field="actions"></div>
@@ -571,7 +570,14 @@
 				</div>
 			</div>
 			<div class="card">
-				<p id="dnd5-individualtreasure-output" style="text-align: center; font-size: 3rem">-</p>
+				<table class="table table-sticky table-bordered table-striped table-hover" style="width: 100%">
+					<caption>Individual Treasure</caption>
+					<tbody id="dnd5-individualtreasure-output"></tbody>
+				</table>
+				<table class="table table-sticky table-bordered table-striped table-hover" style="width: 100%">
+					<caption>Normalized Individual Treasure</caption>
+					<tbody id="dnd5-individualtreasure-output-normalized"></tbody>
+				</table>
 			</div>
 		</div>
 
@@ -596,6 +602,7 @@
 			</div>
 			<div class="card">
 				<table class="table table-sticky table-bordered table-striped table-hover" style="width: 100%">
+					<caption>Treasure Hoard</caption>
 					<tbody id="dnd5-treasurehoard-output"></tbody>
 				</table>
 			</div>
@@ -633,6 +640,7 @@
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/localforage@1/dist/localforage.min.js"></script>
 		<script src="js/saveas.js"></script>
 		<script src="js/palette.min.js"></script>
 		<script src="js/dnd5.js"></script>
