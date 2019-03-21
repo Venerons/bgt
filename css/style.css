@@ -1,3 +1,15 @@
+:root {
+	--body-background: #3b3126;
+	--body-color: #fffefb;
+	--header-color: #edd9b4;
+	--card-background: #473d32;
+}
+.light-theme {
+	--body-background: #efe9d1;
+	--body-color: black;
+	--header-color: #58180d; /* border-bottom: 2px solid #c9ad6a; */
+	--card-background: #faf7ea;
+}
 *, *::before, *::after {
 	box-sizing: border-box;
 	margin: 0;
@@ -7,8 +19,8 @@ html,
 body {
 	width: 100%;
 	height: 100%;
-	background: #3b3126;
-	color: #fffefb;
+	background: var(--body-background);
+	color: var(--body-color);
 	font: 400 normal 14px/1.42857143 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body {
@@ -23,7 +35,7 @@ header {
 	top: 0;
 	z-index: 1;
 	min-height: 50px;
-	background: #3b3126;
+	background: var(--body-background);
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 	display: flex;
 	flex-flow: row nowrap;
@@ -33,7 +45,7 @@ header {
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 1rem 0;
-	color: #edd9b4;
+	color: var(--header-color);
 	font-family: inherit;
 	font-weight: 500;
 	line-height: 1.1;
@@ -60,7 +72,7 @@ a {
 	border: 1px solid #635747;
 	border-radius: 4px;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-	background: #473d32;
+	background: var(--card-background);
 }
 
 .flex-row {
@@ -129,21 +141,22 @@ a {
 .list {
 	display: block;
 	list-style: none outside none;
-	padding: 0;
-}
-.list li {
-	width: 100%;
 }
 .list-group {
-	font-size: 24px;
-	color: #edd9b4;
-	font-weight: 500;
+	width: 100%;
 	padding: 0.5rem;
+	text-align: left;
+	font-size: 1.2rem;
+	font-weight: bold;
+	vertical-align: middle;
+	color: var(--header-color);
+	background: var(--body-background);
 }
 .list-item {
-	color: #04a1ec;
+	width: 100%;
+	padding: 0.5rem 0.5rem 0.5rem 2rem;
 	cursor: pointer;
-	padding: 0.5rem;
+	color: #04a1ec;
 }
 .list-item:focus,
 .list-item:hover {
@@ -164,8 +177,8 @@ a {
 	text-align: left;
 	font-weight: bold;
 	vertical-align: middle;
-	color: #edd9b4;
-	background: #3b3126;
+	color: var(--header-color);
+	background: var(--body-background);
 }
 /*
 .table td[data-quantum-group] {
@@ -190,6 +203,7 @@ a {
 }
 .table.table-hover tbody tr:hover {
 	background: rgba(0, 0, 0, 0.2);
+	cursor: pointer;
 }
 
 .hr-dnd {
