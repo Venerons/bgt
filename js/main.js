@@ -995,9 +995,9 @@ var dice_expression = function (expression) {
 		data.forEach(function (item) {
 			$tbody.append(
 				//'<tr style="background: ' + (item.type === 'character' ? '#39b54a75' : '#c4423075') + '">' +
-				'<tr style="border-left: 10px solid ' + (item.type === 'character' ? '#39b54a' : '#c44230') + '">' +
+				'<tr style="box-shadow: -5px 0 0 0 ' + (item.type === 'character' ? '#39b54a' : '#c44230') + '">' +
 					'<td><input data-id="' + item.id + '" data-field="initiative" type="number" min="0" step="1" value="' + item.initiative + '" class="input input-quiet control" style="width: 100%"></td>' +
-					'<td><input data-id="' + item.id + '" data-field="label" type="text"' + (item.label ? ' value="' + item.label + '"' : '') + ' placeholder="' + item.type.toUpperCase() + '" class="input input-quiet control" style="width: 100%"></td>' +
+					'<td><input data-id="' + item.id + '" data-field="label" type="text"' + (item.label ? ' value="' + item.label + '"' : '') + ' placeholder="' + (item.type === 'character' ? 'Character' : 'Monster') + '" class="input input-quiet control" style="width: 100%"></td>' +
 					'<td><input data-id="' + item.id + '" data-field="ac" type="number" min="0" step="1" value="' + item.ac + '" class="input input-quiet control" style="width: 100%"></td>' +
 					'<td><input data-id="' + item.id + '" data-field="perception" type="number" min="0" step="1" value="' + item.perception + '" class="input input-quiet control" style="width: 100%"></td>' +
 					'<td><input data-id="' + item.id + '" data-field="hp" type="number" min="0" step="1" value="' + item.hp + '" class="input input-quiet control" style="width: 100%"></td>' +
@@ -1029,7 +1029,7 @@ var dice_expression = function (expression) {
 			saveData(data);
 			renderData(data);
 		} else {
-			var type, message;
+			var type;
 			if (action === 'add-character') {
 				type = 'character';
 			} else if (action === 'add-monster') {
@@ -1068,9 +1068,7 @@ var dice_expression = function (expression) {
 			}
 		});
 		saveData(data);
-	});
-
-	$('#dnd5-initiativetracker-table').on('click', '[data-action]', function () {
+	}).on('click', '[data-action]', function () {
 		var $this = $(this),
 			action = $this.data('action'),
 			id = parseInt($this.data('id'), 10),
@@ -1092,7 +1090,7 @@ var dice_expression = function (expression) {
 			});
 			if (index !== null) {
 				var item = data[index];
-				if (confirm('Are you sure to delete "' + (item.label ? item.label : item.type.toUpperCase()) + '"?')) {
+				if (confirm('Are you sure to delete "' + (item.label ? item.label : (item.type === 'character' ? 'Character' : 'Monster')) + '"?')) {
 					data.splice(index, 1);
 					saveData(data);
 					renderData(data);
@@ -1189,97 +1187,128 @@ var dice_expression = function (expression) {
 (function () {
 	'use strict';
 
+	var renderData = function (data) {
+		var $tbody = $('#7thsea-turntracker-table').empty();
+		data.forEach(function (item) {
+			var color;
+			if (item.type === 'character') {
+				color = '#39b54a';
+			} else if (item.type === 'villain') {
+				color = '#c44230';
+			} else if (item.type === 'squad') {
+				color = '#eda745';
+			}
+			$tbody.append(
+				'<tr style="box-shadow: -5px 0 0 0 ' + color + '">' +
+					'<td><input data-id="' + item.id + '" data-field="increments" type="number" min="0" step="1" value="' + item.increments + '" class="input input-quiet control" style="width: 100%"></td>' +
+					'<td><input data-id="' + item.id + '" data-field="label" type="text"' + (item.label ? ' value="' + item.label + '"' : '') + ' placeholder="' + (item.type === 'character' ? 'Character' : (item.type === 'villain' ? 'Villain' : 'Squad')) + '" class="input input-quiet control" style="width: 100%"></td>' +
+					'<td></td>' +
+					'<td class="flex-row flex-row-margins">' +
+						'<button data-id="' + item.id + '" data-action="add-increment" class="button" style="flex: 1">+</button>' +
+						'<button data-id="' + item.id + '" data-action="remove-increment" class="button" style="flex: 1">-</button>' +
+						'<button data-id="' + item.id + '" data-action="delete" class="button" style="flex: 1">Delete</button>' +
+					'</td>' +
+				'</tr>');
+		});
+	};
+
 	$('#7thsea-turntracker-toolbar').on('click', 'button', function () {
-		var action = $(this).data('action');
+		var action = $(this).data('action'),
+			data = $('#7thsea-turntracker').data('data') || [];
 		if (action === 'sort') {
-			var array = [];
-			$('#7thsea-turntracker-list > li[data-id]').each(function () {
-				array.push($(this));
-			});
-			var $list = $('#7thsea-turntracker-list').empty();
-			array.sort(function (a, b) {
-				var a_type = a.data('type'),
-					a_number = parseInt(a.find('.turn-row-number').text(), 10),
-					b_type = b.data('type'),
-					b_number = parseInt(b.find('.turn-row-number').text(), 10);
-				if (a_number === 0) {
+			data.sort(function (a, b) {
+				if (a.type === 'squad') {
 					return 1;
-				} else if (b_number === 0) {
+				} else if (b.type === 'squad') {
 					return -1;
-				} else if (a_type === 'squad') {
+				} else if (a.increments > b.increments) {
+					return -1;
+				} else if (a.increments < b.increments) {
 					return 1;
-				} else if (b_type === 'squad') {
+				} else if (a.type === 'villain') {
 					return -1;
-				} else if (a_number > b_number) {
-					return -1;
-				} else if (a_number < b_number) {
-					return 1;
-				} else if (a_type === 'villain') {
-					return -1;
-				} else if (b_type === 'villain') {
+				} else if (b.type === 'villain') {
 					return 1;
 				} else {
 					return 0;
 				}
-			}).forEach(function ($row) {
-				$list.append($row);
 			});
+			renderData(data);
 		} else {
-			var type, message;
+			var type;
 			if (action === 'add-character') {
 				type = 'character';
-				message = 'Character Name:';
 			} else if (action === 'add-villain') {
 				type = 'villain';
-				message = 'Villain Name:';
 			} else if (action === 'add-squad') {
 				type = 'squad';
-				message = 'Squad Name:';
 			}
-			var label = prompt(message);
-			if (label) {
-				var id = 0;
-				$('#7thsea-turntracker-list > li[data-id]').each(function () {
-					var value = parseInt($(this).data('id'), 10);
-					if (value >= id) {
-						id = value + 1;
-					}
-				});
-				var background;
-				if (type === 'character') {
-					background = '#39b54a';
-				} else if (type === 'villain') {
-					background = '#c44230';
-				} else if (type === 'squad') {
-					background = '#eda745';
+			var id = 0;
+			data.forEach(function (item) {
+				if (item.id >= id) {
+					id = item.id + 1;
 				}
-				var $row = $(
-					'<li data-id="' + id + '" data-type="' + type + '" class="flex-row flex-row-margins" style="margin: 0; padding: 1rem; background: ' + background + '">' +
-						'<button data-action="add" class="button">+</button>' +
-						'<button data-action="remove" class="button">-</button>' +
-						'<button data-action="delete" class="button">Delete</button>' +
-						'<div>' + label + '</div>' +
-						'<div class="turn-row-number">0</div>' +
-						'<div class="turn-row-increments flex-row flex-row-margins"></div>' +
-					'</li>');
-				$('#7thsea-turntracker-list').append($row);
+			});
+			data.push({
+				id: id,
+				type: type,
+				label: null,
+				increments: 0
+			});
+			$('#7thsea-turntracker').data('data', data);
+			renderData(data);
+		}
+	});
+
+	$('#7thsea-turntracker-table').on('change', '.control', function () {
+		var $this = $(this),
+			id = parseInt($this.data('id'), 10),
+			field = $this.data('field'),
+			value = field === 'label' ? $this.val() : parseFloat($this.val()),
+			data = $('#7thsea-turntracker').data('data') || [];
+		data.forEach(function (item) {
+			if (item.id === id) {
+				item[field] = value;
+			}
+		});
+	}).on('click', '[data-action]', function () {
+		var $this = $(this),
+			action = $this.data('action'),
+			id = parseInt($this.data('id'), 10),
+			data = $('#7thsea-turntracker').data('data') || [];
+		if (action === 'add-increment') {
+			data.forEach(function (item) {
+				if (item.id === id) {
+					item.increments++;
+				}
+			});
+			renderData(data);
+		} else if (action === 'remove-increment') {
+			data.forEach(function (item) {
+				if (item.id === id) {
+					item.increments--;
+				}
+			});
+			renderData(data);
+		} else if (action === 'delete') {
+			var index = null;
+			data.forEach(function (item, data_index) {
+				if (item.id === id) {
+					index = data_index;
+				}
+			});
+			if (index !== null) {
+				var item = data[index];
+				if (confirm('Are you sure to delete "' + (item.label ? item.label : (item.type === 'character' ? 'Character' : (item.type === 'villain' ? 'Villain' : 'Squad'))) + '"?')) {
+					data.splice(index, 1);
+					renderData(data);
+				}
 			}
 		}
 	});
-	$('#7thsea-turntracker-list').on('click', 'button', function () {
-		var action = $(this).data('action'),
-			$row = $('#7thsea-turntracker-list > li[data-id="' + $(this).parent().data('id') + '"]'),
-			number = parseInt($row.find('.turn-row-number').text(), 10);
-		if (action === 'add') {
-			$row.find('.turn-row-number').text(number + 1);
-			$row.find('.turn-row-increments').append('<div class="increment" style="width: 30px; height: 30px; border: 1px solid black; background: grey; border-radius: 4px"></div>');
-		} else if (action === 'remove') {
-			$row.find('.turn-row-number').text(Math.max(0, number - 1));
-			$row.find('.turn-row-increments').find('.increment:first-child').remove();
-		} else if (action === 'delete') {
-			$row.remove();
-		}
-	});
+
+	$('#7thsea-turntracker').data('data', []);
+	renderData($('#7thsea-turntracker').data('data'));
 })();
 
 // Fate Dice Simulator
