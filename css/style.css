@@ -21,7 +21,12 @@ body {
 	height: 100%;
 	background: var(--body-background);
 	color: var(--body-color);
-	font: 400 normal 14px/1.42857143 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 400 normal 14px/1.42857143 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/*
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Germania One', cursive;
+	font-family: 'Cinzel', serif;
+	*/
 }
 body {
 	display: flex;
