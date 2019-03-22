@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Boardgame Trove</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!--<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Germania+One&amp;subset=latin-ext" rel="stylesheet">-->
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -94,6 +95,25 @@
 				<div class="flex-row flex-row-margins">
 					<label for="generic-name-nameset" style="flex: 1">Name Set</label>
 					<select id="generic-name-nameset" class="input" style="flex: 2">
+						<optgroup label="Human Cultures">
+							<option value="arabic">Arabic</option>
+							<option value="celtic">Celtic</option>
+							<option value="chinese">Chinese</option>
+							<option value="egyptian">Egyptian</option>
+							<option value="english">English</option>
+							<option value="french">French</option>
+							<option value="german">German</option>
+							<option value="greek">Greek</option>
+							<option value="indian">Indian</option>
+							<option value="japanese">Japanese</option>
+							<option value="mesoamerican">Mesoamerican</option>
+							<option value="niger-congo">Niger-Congo</option>
+							<option value="norse">Norse</option>
+							<option value="polynesian">Polynesian</option>
+							<option value="roman">Roman</option>
+							<option value="slavic">Slavic</option>
+							<option value="spanish">Spanish</option>
+						</optgroup>
 						<optgroup label="Dungeons &amp; Dragons">
 							<option value="dnd-human">Human</option>
 							<option value="dnd-human-calishite">Human (Calishite)</option>
@@ -111,6 +131,37 @@
 							<option value="dnd-half-orc">Half-Orc</option>
 							<option value="dnd-dragonborn">Dragonborn</option>
 							<option value="dnd-tiefling">Tiefling</option>
+						</optgroup>
+						<optgroup label="Faerun">
+							<option value="faerun-human-arkaiun">Human (Arkaiun)</option>
+							<option value="faerun-human-bedine">Human (Bedine)</option>
+							<option value="faerun-human-ffolk">Human (Ffolk)</option>
+							<option value="faerun-human-gur">Human (Gur)</option>
+							<option value="faerun-human-halruaan">Human (Halruaan)</option>
+							<option value="faerun-human-imaskari">Human (Imaskari)</option>
+							<option value="faerun-human-nar">Human (Nar)</option>
+							<option value="faerun-human-shaaran">Human (Shaaran)</option>
+							<option value="faerun-human-tuigan">Human (Tuigan)</option>
+							<option value="faerun-human-ulutiun">Human (Ulutiun)</option>
+							<option value="faerun-tiefling-calishite">Tiefling (Calishite)</option>
+							<option value="faerun-tiefling-mulhorandi">Tiefling (Mulhorandi)</option>
+							<option value="faerun-dwarf">Dwarf</option>
+						</optgroup>
+						<optgroup label="Eberron">
+							<option value="eberron-changeling">Changeling</option>
+							<option value="eberron-kalashtar">Kalashtar</option>
+							<option value="eberron-shifter">Shifter</option>
+							<option value="eberron-warforged">Warforged</option>
+							<option value="eberron-gnome-zil">Gnome (Zil)</option>
+						</optgroup>
+						<optgroup label="Ravnica">
+							<option value="ravnica-human">Human</option>
+							<option value="ravnica-elf">Elf</option>
+							<option value="ravnica-centaur">Centaur</option>
+							<option value="ravnica-goblin">Goblin</option>
+							<option value="ravnica-loxodon">Loxodon</option>
+							<option value="ravnica-minotaur">Minotaur</option>
+							<option value="ravnica-vedalken">Vedalken</option>
 						</optgroup>
 						<optgroup label="7th Sea">
 							<option value="7thsea-avalon">Avalon</option>
@@ -132,12 +183,13 @@
 				<div class="flex-row flex-row-margins">
 					<label for="generic-name-gender" style="flex: 1">Gender</label>
 					<select id="generic-name-gender" class="input" style="flex: 2">
-						<option value="m">Male</option>
-						<option value="f">Female</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
 					</select>
 				</div>
 				<div class="flex-row flex-row-margins">
-					<button id="generic-name-button" class="button" style="flex: 1">Generate</button>
+					<button id="generic-name-random" class="button" style="flex: 1">Random</button>
+					<button id="generic-name-list" class="button" style="flex: 1">List</button>
 				</div>
 			</div>
 			<div class="card">
@@ -651,6 +703,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/localforage@1/dist/localforage.min.js"></script>
 		<script src="js/saveas.js"></script>
 		<script src="js/palette.min.js"></script>
+		<script src="js/names.js"></script>
 		<script src="js/dnd5.js"></script>
 		<script src="js/dnd5_monsters.js"></script>
 		<script src="js/main.js"></script>
