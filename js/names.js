@@ -35,40 +35,40 @@ var RCN = {
 		female: ['Acantha', 'Aella', 'Alektos', 'Alkippe', 'Andromeda', 'Antigone', 'Ariadne', 'Astraea', 'Chloros', 'Chryseos', 'Daphne', 'Despoina', 'Dione', 'Eileithyia', 'Elektra', 'Euadne', 'Eudora', 'Eunomia', 'Hekabe', 'Helene', 'Hermoione', 'Hippolyte', 'Ianthe', 'Iolkaste', 'Iole', 'Iphigenia', 'Ismene', 'Kalliope', 'Kallisto', 'Kalypso', 'Karme', 'Kassandra', 'Kassiopeia', 'Kirke', 'Kleio', 'Klotho', 'Klytie', 'Kynthia', 'Leto', 'Megaera', 'Melaina', 'Melpomene', 'Nausikaa', 'Nemesis', 'Niobe', 'Ourania', 'Phaenna', 'Polymnia', 'Semele', 'Theia']
 	},
 	'indian': {
-		male: [],
-		female: []
+		male: ['Abhay', 'Ahsan', 'Ajay', 'Ajit', 'Akhil', 'Amar', 'Amit', 'Ananta', 'Aseem', 'Ashok', 'Bahadur', 'Basu', 'Chand', 'Chandra', 'Damodar', 'Darhsan', 'Devdan', 'Dinesh', 'Dipak', 'Gopal', 'Govind', 'Harendra', 'Harsha', 'Ila', 'Isha', 'Johar', 'Kalyan', 'Kiran', 'Kumar', 'Lakshmana', 'Mahavir', 'Narayan', 'Naveen', 'Nirav', 'Prabhakar', 'Prasanna', 'Raghu', 'Rajanikant', 'Rakesh', 'Ranjeet', 'Rishi', 'Sanjay', 'Sekar', 'Shandar', 'Sumantra', 'Vijay', 'Vikram', 'Vimal', 'Vishal', 'Yash'],
+		female: ['Abha', 'Aishwarya', 'Amala', 'Ananda', 'Ankita', 'Archana', 'Avani', 'Chandana', 'Chandrakanta', 'Chetan', 'Darshana', 'Devi', 'Dipti', 'Esha', 'Gauro', 'Gita', 'Indira', 'Indu', 'Jaya', 'Kala', 'Kalpana', 'Kamala', 'Kanta', 'Kashi', 'Kishori', 'Lalita', 'Lina', 'Madhur', 'Manju', 'Meera', 'Mohana', 'Mukta', 'Nisha', 'Nitya', 'Padma', 'Pratima', 'Priya', 'Rani', 'Sarala', 'Shakti', 'Shanta', 'Shobha', 'Sima', 'Sonal', 'Sumana', 'Sunita', 'Tara', 'Valli', 'Vijaya', 'Vimala']
 	},
 	'japanese': {
-		male: [],
-		female: []
+		male: ['Akio', 'Atsushi', 'Daichi', 'Daiki', 'Daisuke', 'Eiji', 'Fumio', 'Hajime', 'Haru', 'Hideaki', 'Hideo', 'Hikaru', 'Hiro', 'Hiroki', 'Hisao', 'Hitoshi', 'Isamu', 'Isao', 'Jun', 'Katashi', 'Katsu', 'Kei', 'Ken', 'Kenshin', 'Kenta', 'Kioshi', 'Makoto', 'Mamoru', 'Masato', 'Masumi', 'Noboru', 'Norio', 'Osamu', 'Ryota', 'Sadao', 'Satoshi', 'Shigeo', 'Shin', 'Sora', 'Tadao', 'Takehiko', 'Takeo', 'Takeshi', 'Takumi', 'Tamotsu', 'Tatsuo', 'Toru', 'Toshio', 'Yasuo', 'Yukio'],
+		female: ['Aika', 'Akemi', 'Akiko', 'Amaya', 'Asami', 'Ayumi', 'Bunko', 'Chieko', 'Chika', 'Chiyo', 'Cho', 'Eiko', 'Emiko', 'Eri', 'Etsuko', 'Gina', 'Hana', 'Haruki', 'Hideko', 'Hikari', 'Hiroko', 'Hisoka', 'Hishi', 'Hotaru', 'Izumi', 'Kameyo', 'Kasumi', 'Kimiko', 'Kotone', 'Kyoko', 'Maiko', 'Masako', 'Mi', 'Minori', 'Mizuki', 'Naoki', 'Natsuko', 'Noriko', 'Rei', 'Ren', 'Saki', 'Shigeko', 'Shinju', 'Sumiko', 'Toshiko', 'Tsukiko', 'Ume', 'Usagi', 'Yasuko', 'Yuriko']
 	},
 	'mesoamerican': {
-		male: [],
-		female: []
+		male: ['Achcauhtli', 'Amoxtli', 'Chicahua', 'Chimalli', 'Cipactli', 'Coaxoch', 'Coyotl', 'Cualli', 'Cuauhtémoc', 'Cuetlachtilo', 'Cuetzpalli', 'Cuixtli', 'Ehecatl', 'Etalpalli', 'Huemac', 'Huitzilihuitl', 'Iccauhtli', 'Ilhicamina', 'Itztli', 'Ixtli', 'Mahuizoh', 'Manauia', 'Matlal', 'Matlalihuitl', 'Mazatl', 'Mictlantecuhtli', 'Milintica', 'Momoztli', 'Namacuix', 'Necalli', 'Necuametl', 'Nezahualcoyotl', 'Nexahualpilli', 'Nochehuatl', 'Nopaltzin', 'Ollin', 'Quauhtli', 'Tenoch', 'Teoxihuitl', 'Tepiltzin', 'Tezcacoatl', 'Tlacaelel', 'Tlacelel', 'Tlaloc', 'Tlanextic', 'Tlazohtlaloni', 'Tlazopillo', 'Uetzcayotl', 'Xipilli', 'Yaotl'],
+		female: ['Ahuiliztli', 'Atl', 'Centehua', 'Chalchiuitl', 'Chipahua', 'Cihuaton', 'Citlali', 'Citlalmina', 'Coszcatl', 'Cozamalotl', 'Cuicatl', 'Eleuia', 'Eloxochitl', 'Eztli', 'Ichtaca', 'Icnoyotl', 'Ihuicatl', 'Ilhuitl', 'Itotia', 'Iuitl', 'Ixcatzin', 'Izel', 'Malinalxochitl', 'Mecatl', 'Meztli', 'Miyaoaxochitl', 'Mizquixaual', 'Moyolehuani', 'Nahuatl', 'Necahual', 'Nenetl', 'Nochtli', 'Noxochicoztli', 'Ohtli', 'Papan', 'Patli', 'Quetzalxochitl', 'Sacnite', 'Teicui', 'Tepin', 'Teuicui', 'Teyacapan', 'Tlaco', 'Tlacoehua', 'Tlacotl', 'Tlalli', 'Tlanextli', 'Xihuitl', 'Xiuhcoatl', 'Xiuhtonal']
 	},
 	'niger-congo': {
-		male: [],
-		female: []
+		male: ['Abebe', 'Abel', 'Abidemi', 'Abrafo', 'Adisa', 'Amadi', 'Amara', 'Anyim', 'Azubuike', 'Bapoto', 'Baraka', 'Bohlale', 'Bongani', 'Bujune', 'Buziba', 'Chakide', 'Chibuzo', 'Chika', 'Chimola', 'Chiratidzo', 'Dabulamanzi', 'Dumisa', 'Dwanh', 'Emeka', 'Folami', 'Gatura', 'Gebhuza', 'Gero', 'Isoba', 'Kagiso', 'Kamau', 'Katlego', 'Masego', 'Matata', 'Nthanda', 'Ogechi', 'Olwenyo', 'Osumare', 'Paki', 'Qinisela', 'Quanda', 'Samanya', 'Shanika', 'Sibonakaliso', 'Tapiwa', 'Thabo', 'Themba', 'Uzoma', 'Zuberi', 'Zuri'],
+		female: ['Abebi', 'Abena', 'Abimbola', 'Akoko', 'Akachi', 'Alaba', 'Anuli', 'Ayo', 'Bolanle', 'Bosede', 'Chiamaka', 'Chidi', 'Chidimma', 'Chinyere', 'Chioma', 'Dada', 'Ebele', 'Efemena', 'Ejiro', 'Ekundayo', 'Enitan', 'Funanya', 'Ifunanya', 'Ige', 'Ime', 'Kunto', 'Lesedi', 'Lumusi', 'Mojisola', 'Monifa', 'Nakato', 'Ndidi', 'Ngozi', 'Nkiruka', 'Nneka', 'Ogechi', 'Olamide', 'Oluchi', 'Omolara', 'Onyeka', 'Simisola', 'Temitope', 'Thema', 'Titlayo', 'Udo', 'Uduak', 'Ufuoma', 'Yaa', 'Yejide', 'Yewande']
 	},
 	'norse': {
-		male: [],
-		female: []
+		male: ['Agni', 'Alaric', 'Anvindr', 'Arvid', 'Asger', 'Asmund', 'Bjarte', 'Bjorg', 'Bjorn', 'Brandr', 'Brandt', 'Brynjar', 'Calder', 'Colborn', 'Cuyler', 'Egil', 'Einar', 'Eric', 'Erland', 'Fiske', 'Folkvar', 'Fritjof', 'Frede', 'Geir', 'Halvar', 'Hemming', 'Hjalmar', 'Hjortr', 'Ingimarr', 'Ivar', 'Knud', 'Leif', 'Liufr', 'Manning', 'Oddr', 'Olin', 'Ormr', 'Ove', 'Rannulfr', 'Sigurd', 'Skari', 'Snorri', 'Sten', 'Stigandr', 'Stigr', 'Sven', 'Trygve', 'Ulf', 'Vali', 'Vidar'],
+		female: ['Alfhild', 'Arnbjorg', 'Ase', 'Aslog', 'Astrid', 'Auda', 'Audhid', 'Bergljot', 'Birghild', 'Bodil', 'Brenna', 'Brynhild', 'Dagmar', 'Eerika', 'Eira', 'Gudrun', 'Gunborg', 'Gunhild', 'Gunvor', 'Helga', 'Hertha', 'Hilde', 'Hillevi', 'Ingrid', 'Iona', 'Jorunn', 'Kari', 'Kenna', 'Magnhild', 'Nanna', 'Ragna', 'Ragnhild', 'Ranveig', 'Runa', 'Saga', 'Sigfrid', 'Signe', 'Sigrid', 'Sigrunn', 'Solveg', 'Svanhild', 'Thora', 'Torborg', 'Torunn', 'Tove', 'Unn', 'Vigdis', 'Ylva', 'Yngvild']
 	},
 	'polynesian': {
-		male: [],
-		female: []
+		male: ['Afa', 'Ahohako', 'Aisake', 'Aleki', 'Anewa', 'Anitelu', 'Aputi', 'Ariki', 'Butat', 'Enele', 'Fef', 'Fuifui', 'Ha\'aheo', 'Hanohano', 'Haunui', 'Hekili', 'Hiapo', 'Hikawera', 'Hanano', 'Ho\'onani', 'Hoku', 'Hu\'eu', 'Ina', 'Itu', 'Ka\'aukai', 'Ka\'eo', 'Kaelani', 'Kahale', 'Kaiea', 'Kaikoa', 'Kana\'l', 'Koamalu', 'Ka', 'Laki', 'Makai', 'Manu', 'Manuka', 'Nui', 'Pono', 'Popoki', 'Ruru', 'Tahu', 'Taurau', 'Tuala', 'Turoa', 'Tusitala', 'Uaine', 'Waata', 'Waipuna', 'Zamar'],
+		female: ['Ahulani', 'Airini', 'Alani', 'Aluala', 'Anahera', 'Anuhea', 'Aolani', 'Elenoa', 'Emele', 'Fetia', 'Fiva', 'Halona', 'Hi\'ilei', 'Hina', 'Hinatea', 'Huali', 'Inia', 'Inina', 'Iolani', 'Isa', 'Ka\'ana\'ana', 'Ka\'ena', 'Kaamia', 'Kahula', 'Kailani', 'Kamaile', 'Kamakani', 'Kamea', 'Latai', 'Liona', 'Lokelani', 'Marva', 'Mehana', 'Millawa', 'Moana', 'Ngana', 'Nohea', 'Pelika', 'Sanoe', 'Satina', 'Tahia', 'Tasi', 'Tiaho', 'Tihani', 'Toroa', 'Ulanni', 'Uluwehi', 'Vaina', 'Waiola', 'Waitara']
 	},
 	'roman': {
-		male: [],
-		female: []
+		male: ['Aelius', 'Aetius', 'Agrippa', 'Albanus', 'Albus', 'Antonius', 'Appius', 'Aquilinus', 'Atilus', 'Augustus', 'Aurelius', 'Avitus', 'Balbus', 'Blandus', 'Blasius', 'Brutus', 'Caelius', 'Caius', 'Casian', 'Cassius', 'Cato', 'Celsus', 'Claudius', 'Cloelius', 'Cnaeus', 'Crispus', 'Cyprianus', 'Diocletianus', 'Egnatius', 'Ennius', 'Fabricius', 'Faustus', 'Gaius', 'Germanus', 'Gnaeus', 'Horatius', 'Iovianus', 'Iulius', 'Lucilius', 'Manius', 'Marcus', 'Marius', 'Maximus', 'Octavius', 'Paulus', 'Quintilian', 'Regulus', 'Servius', 'Tacitus', 'Varius'],
+		female: ['Aelia', 'Aemilia', 'Agrippina', 'Alba', 'Antonia', 'Aquila', 'Augusta', 'Aurelia', 'Balbina', 'Blandina', 'Caelia', 'Camilla', 'Casia', 'Claudia', 'Cloelia', 'Domitia', 'Drusa', 'Fabia', 'Fabricia', 'Fausta', 'Flavia', 'Floriana', 'Fulvia', 'Germana', 'Glaucia', 'Gratiana', 'Hadriana', 'Hermina', 'Horatia', 'Hortensia', 'Iovita', 'Iulia', 'Laelia', 'Laurentia', 'Livia', 'Longina', 'Lucilla', 'Lucretia', 'Marcella', 'Marcia', 'Maxima', 'Nona', 'Octavia', 'Paulina', 'Petronia', 'Porcia', 'Tacita', 'Tullia', 'Verginia', 'Vita']
 	},
 	'slavic': {
-		male: [],
-		female: []
+		male: ['Aleksandru', 'Berislav', 'Blazh', 'Bogumir', 'Boguslav', 'Borislav', 'Bozhidar', 'Bratomil', 'Bratoslav', 'Bronislav', 'Chedomir', 'Chestibor', 'Chestirad', 'Chestislav', 'Desilav', 'Dmitrei', 'Dobromil', 'Dobroslav', 'Dragomir', 'Dragutin', 'Drazhan', 'Gostislav', 'Kazimir', 'Kyrilu', 'Lyubomir', 'Mechislav', 'Milivoj', 'Milosh', 'Mstislav', 'Nikola', 'Ninoslav', 'Premislav', 'Radomir', 'Radovan', 'Ratimir', 'Rostislav', 'Slavomir', 'Stanislav', 'Svetoslav', 'Tomislav', 'Vasili', 'Velimir', 'Vladimir', 'Vladislav', 'Vlastimir', 'Volodimeru', 'Vratislav', 'Yarognev', 'Yaromir', 'Zbignev'],
+		female: ['Agripina', 'Anastasiya', 'Bogdana', 'Boleslava', 'Bozhena', 'Danica', 'Darya', 'Desislava', 'Dragoslava', 'Dunja', 'Efrosinia', 'Ekaterina', 'Elena', 'Faina', 'Galina', 'Irina', 'Iskra', 'Jasna', 'Katarina', 'Katya', 'Kresimira', 'Lyudmila', 'Magda', 'Mariya', 'Militsa', 'Miloslava', 'Mira', 'Miroslava', 'Mokosh', 'Morana', 'Natasha', 'Nika', 'Olga', 'Rada', 'Radoslava', 'Raisa', 'Slavitsa', 'Sofiya', 'Stanislava', 'Svetlana', 'Tatyana', 'Tomislava', 'Veronika', 'Vesna', 'Vladimira', 'Yaroslava', 'Yelena', 'Zaria', 'Zarya', 'Zoria']
 	},
 	'spanish': {
-		male: [],
-		female: []
+		male: ['Alexandre', 'Alfonso', 'Alonso', 'Anthon', 'Arcos', 'Arnaut', 'Arturo', 'Bartoleme', 'Benito', 'Bernat', 'Blasco', 'Carlos', 'Damian', 'Diego', 'Domingo', 'Escobar', 'Etter', 'Fernando', 'Franciso', 'Gabriel', 'Garcia', 'Gaspar', 'Gil', 'Gomes', 'Goncalo', 'Gostantin', 'Jayme', 'Joan', 'Jorge', 'Jose', 'Juan', 'Machin', 'Martin', 'Mateu', 'Miguel', 'Nicolas', 'Pascual', 'Pedro', 'Perico', 'Ramiro', 'Ramon', 'Rodrigo', 'Sabastian', 'Salvador', 'Simon', 'Tomas', 'Tristan', 'Valeriano', 'Ynigo'],
+		female: ['Abella', 'Adalina', 'Adora', 'Adriana', 'Ana', 'Antonia', 'Basilia', 'Beatriz', 'Bonita', 'Camila', 'Cande', 'Carmen', 'Catlina', 'Dolores', 'Dominga', 'Dorotea', 'Elena', 'Elicia', 'Esmerelda', 'Felipina', 'Francisca', 'Gabriela', 'Imelda', 'Ines', 'Isabel', 'Juana', 'Leocadia', 'Leonor', 'Leta', 'Lucinda', 'Maresol', 'Maria', 'Maricela', 'Matilde', 'Melania', 'Monica', 'Neva', 'Nilda', 'Petrona', 'Rafaela', 'Ramira', 'Rosario', 'Sofia', 'Suelo', 'Teresa', 'Tomasa', 'Valentia', 'Veronica', 'Ynes', 'Ysabel']
 	},
 
 	// DUNGEONS & DRAGONS
