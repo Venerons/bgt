@@ -891,7 +891,8 @@ var dice_expression = function (expression) {
 		data.forEach(function (item) {
 			$tbody.append(
 				//'<tr style="background: ' + (item.type === 'character' ? '#39b54a75' : '#c4423075') + '">' +
-				'<tr style="box-shadow: -5px 0 0 0 ' + (item.type === 'character' ? '#39b54a' : '#c44230') + '">' +
+				//'<tr style="box-shadow: -5px 0 0 0 ' + (item.type === 'character' ? '#39b54a' : '#c44230') + '">' +
+				'<tr style="border-left: 5px solid ' + (item.type === 'character' ? '#39b54a' : '#c44230') + '">' +
 					'<td><input data-id="' + item.id + '" data-field="initiative" type="number" min="0" step="1" value="' + item.initiative + '" class="input input-quiet control" style="width: 100%"></td>' +
 					'<td><input data-id="' + item.id + '" data-field="label" type="text"' + (item.label ? ' value="' + item.label + '"' : '') + ' placeholder="' + (item.type === 'character' ? 'Character' : 'Monster') + '" class="input input-quiet control" style="width: 100%"></td>' +
 					'<td><input data-id="' + item.id + '" data-field="ac" type="number" min="0" step="1" value="' + item.ac + '" class="input input-quiet control" style="width: 100%"></td>' +
