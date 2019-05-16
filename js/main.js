@@ -719,18 +719,26 @@ var dice_expression = function (expression) {
 			$page.find('[data-field="armor_class"]').text(monster.armor_class || '-');
 			$page.find('[data-field="hit_points"]').text(monster.hit_points || '-');
 			$page.find('[data-field="speed"]').text(monster.speed || '-');
-			$page.find('[data-field="strength"]').text(monster.strength || '-');
-			$page.find('[data-field="dexterity"]').text(monster.dexterity || '-');
-			$page.find('[data-field="constitution"]').text(monster.constitution || '-');
-			$page.find('[data-field="intelligence"]').text(monster.intelligence || '-');
-			$page.find('[data-field="wisdom"]').text(monster.wisdom || '-');
-			$page.find('[data-field="charisma"]').text(monster.charisma || '-');
+			$page.find('[data-field="strength"]').text(monster.strength ? monster.strength + ' (' + Math.floor((monster.strength - 10) / 2) + ')' : '-');
+			$page.find('[data-field="dexterity"]').text(monster.dexterity ? monster.dexterity + ' (' + Math.floor((monster.dexterity - 10) / 2) + ')' : '-');
+			$page.find('[data-field="constitution"]').text(monster.constitution ? monster.constitution + ' (' + Math.floor((monster.constitution - 10) / 2) + ')' : '-');
+			$page.find('[data-field="intelligence"]').text(monster.intelligence ? monster.intelligence + ' (' + Math.floor((monster.intelligence - 10) / 2) + ')' : '-');
+			$page.find('[data-field="wisdom"]').text(monster.wisdom ? monster.wisdom + ' (' + Math.floor((monster.wisdom - 10) / 2) + ')' : '-');
+			$page.find('[data-field="charisma"]').text(monster.charisma ? monster.charisma + ' (' + Math.floor((monster.charisma - 10) / 2) + ')' : '-');
 			$page.find('[data-field="damage_resistances"]').text(monster.damage_resistances || '-');
 			$page.find('[data-field="damage_immunities"]').text(monster.damage_immunities || '-');
 			$page.find('[data-field="condition_immunities"]').text(monster.condition_immunities || '-');
 			$page.find('[data-field="senses"]').text(monster.senses || '-');
 			$page.find('[data-field="languages"]').text(monster.languages || '-');
-			$page.find('[data-field="challenge_rating"]').text(monster.challenge_rating || '-');
+			var cr = monster.challenge_rating;
+			if (cr === 0.125) {
+				cr = '1/8';
+			} else if (cr === 0.25) {
+				cr = '1/4';
+			} else if (cr === 0.5) {
+				cr = '1/2';
+			}
+			$page.find('[data-field="challenge_rating"]').text(cr || '-');
 			if (!monster.special_abilities) {
 				$page.find('[data-field="special_abilities"]').empty().hide();
 			} else {
